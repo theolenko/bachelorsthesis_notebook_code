@@ -1,0 +1,613 @@
+2025-05-23 16:32:49,127 - INFO - Starte Suche für Filterwort 'vng'
+2025-05-23 16:32:49,374 - INFO - Für 'vng' keine Ergebnisse.
+2025-05-23 16:32:51,375 - INFO - Starte Suche für Filterwort 'verbundnetz gas'
+2025-05-23 16:32:51,824 - INFO - verbundnetz gas: verarbeite Seite 1
+2025-05-23 16:32:54,106 - INFO - Starte Suche für Filterwort 'ontras'
+2025-05-23 16:32:54,234 - INFO - Für 'ontras' keine Ergebnisse.
+2025-05-23 16:32:56,238 - INFO - Starte Suche für Filterwort 'erdgas'
+2025-05-23 16:32:56,481 - INFO - erdgas: verarbeite Seite 1
+2025-05-23 16:32:58,708 - INFO - erdgas: verarbeite Seite 2
+2025-05-23 16:33:00,952 - INFO - erdgas: verarbeite Seite 3
+2025-05-23 16:33:03,220 - INFO - erdgas: verarbeite Seite 4
+2025-05-23 16:33:05,444 - INFO - erdgas: verarbeite Seite 5
+2025-05-23 16:33:05,702 - INFO - Filter 'erdgas' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99606/6_sportbericht_der_thueringer_landesregierung_fuer_den_berichtszeitraum_2019_bis_2023.pdf
+2025-05-23 16:33:05,702 - INFO - Filter 'erdgas' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93754/demografiebericht_2022_teil_2_herausforderungen_und_handlungsansaetze_bei_der_sicherung_ausgewaehlter_schwerpunkte_der_daseinsvorsorge_auf_grundlage_d.pdf
+2025-05-23 16:33:07,713 - INFO - Starte Suche für Filterwort 'wasserstoff'
+2025-05-23 16:33:08,134 - INFO - wasserstoff: verarbeite Seite 1
+2025-05-23 16:33:10,424 - INFO - wasserstoff: verarbeite Seite 2
+2025-05-23 16:33:13,043 - INFO - wasserstoff: verarbeite Seite 3
+2025-05-23 16:33:15,461 - INFO - wasserstoff: verarbeite Seite 4
+2025-05-23 16:33:17,786 - INFO - wasserstoff: verarbeite Seite 5
+2025-05-23 16:33:20,066 - INFO - wasserstoff: verarbeite Seite 6
+2025-05-23 16:33:20,373 - INFO - Filter 'wasserstoff' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99620/2_plenarsitzung.pdf
+2025-05-23 16:33:20,374 - INFO - Filter 'wasserstoff' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99202/gesetz_und_verordnungsblatt_nr_12_2024.pdf
+2025-05-23 16:33:20,374 - INFO - Filter 'wasserstoff' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97950/ausbau_der_windenergie_in_thueringen.pdf
+2025-05-23 16:33:20,374 - INFO - Filter 'wasserstoff' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97714/139_plenarsitzung.pdf
+2025-05-23 16:33:20,374 - INFO - Filter 'wasserstoff' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97118/134_plenarsitzung.pdf
+2025-05-23 16:33:20,374 - INFO - Filter 'wasserstoff' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96866/ist_thueringen_sicher_bestandsaufnahme_und_perspektiven_bei_polizei_feuerwehr_und_sicherheitskraeften.pdf
+2025-05-23 16:33:20,374 - INFO - Filter 'wasserstoff' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96566/131_plenarsitzung.pdf
+2025-05-23 16:33:20,374 - INFO - Filter 'wasserstoff' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96451/faellt_thueringen_zurueck_bestandsaufnahme_und_perspektiven_fuer_die_thueringer_wirtschaft.pdf
+2025-05-23 16:33:20,374 - INFO - Filter 'wasserstoff' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95882/zweiter_entwurf_zur_aenderung_des_landesentwicklungsprogramms_thueringen_hier_beteiligung_des_landtags_gemaess_4_abs_3_des_thueringer_landesplanungsge.pdf
+2025-05-23 16:33:20,374 - INFO - Filter 'wasserstoff' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95243/122_plenarsitzung.pdf
+2025-05-23 16:33:20,374 - INFO - Filter 'wasserstoff' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94822/120_plenarsitzung.pdf
+2025-05-23 16:33:20,374 - INFO - Filter 'wasserstoff' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94612/thueringer_wasserstoffzukunftsgesetz.pdf
+2025-05-23 16:33:20,374 - INFO - Filter 'wasserstoff' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94787/44_sitzung_ausschuss_fuer_umwelt_energie_und_naturschutz.pdf
+2025-05-23 16:33:20,374 - INFO - Filter 'wasserstoff' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93875/thueringer_gesetz_ueber_die_feststellung_des_landeshaushaltsplans_fuer_das_haushaltsjahr_2024_thueringer_haushaltsgesetz_2024_thuerhhg_2024.pdf
+2025-05-23 16:33:20,374 - INFO - Filter 'wasserstoff' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93754/demografiebericht_2022_teil_2_herausforderungen_und_handlungsansaetze_bei_der_sicherung_ausgewaehlter_schwerpunkte_der_daseinsvorsorge_auf_grundlage_d.pdf
+2025-05-23 16:33:20,378 - INFO - Filter 'wasserstoff' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92842/112_plenarsitzung.pdf
+2025-05-23 16:33:20,378 - INFO - Filter 'wasserstoff' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92836/111_plenarsitzung.pdf
+2025-05-23 16:33:20,378 - INFO - Filter 'wasserstoff' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92554/fuer_eine_realistische_und_marktfaehige_wasserstoffstrategie_keine_planwirtschaftlich_verordnete_umstellung_von_erdgas_auf_insbesondere_gruenen_wasser.pdf
+2025-05-23 16:33:22,378 - INFO - Starte Suche für Filterwort 'biogas'
+2025-05-23 16:33:22,585 - INFO - biogas: verarbeite Seite 1
+2025-05-23 16:33:24,808 - INFO - biogas: verarbeite Seite 2
+2025-05-23 16:33:25,005 - INFO - Filter 'biogas' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101842/18_plenarsitzung_arbeitsfassung.pdf
+2025-05-23 16:33:25,005 - INFO - Filter 'biogas' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101007/verwertung_entsorgung_und_schadstoffbelastung_von_stoffen_fuer_die_nutzung_in_biogasanlagen_sowie_die_oekologischen_und_technischen_rahmenbedingunge.pdf
+2025-05-23 16:33:25,005 - INFO - Filter 'biogas' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99202/gesetz_und_verordnungsblatt_nr_12_2024.pdf
+2025-05-23 16:33:25,005 - INFO - Filter 'biogas' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97762/vierter_indikatorenbericht_zur_nachhaltigen_entwicklung_in_thueringen_neufassung.pdf
+2025-05-23 16:33:25,005 - INFO - Filter 'biogas' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97118/134_plenarsitzung.pdf
+2025-05-23 16:33:25,005 - INFO - Filter 'biogas' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96506/130_plenarsitzung.pdf
+2025-05-23 16:33:25,005 - INFO - Filter 'biogas' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95882/zweiter_entwurf_zur_aenderung_des_landesentwicklungsprogramms_thueringen_hier_beteiligung_des_landtags_gemaess_4_abs_3_des_thueringer_landesplanungsge.pdf
+2025-05-23 16:33:25,005 - INFO - Filter 'biogas' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95243/122_plenarsitzung.pdf
+2025-05-23 16:33:25,005 - INFO - Filter 'biogas' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94930/46_sitzung_ausschuss_fuer_infrastruktur_landwirtschaft_und_forsten.pdf
+2025-05-23 16:33:25,005 - INFO - Filter 'biogas' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94826/bericht_zum_monitoring_zum_umsetzungsstand_der_klimaneutralen_landesverwaltung_inklusive_hochschulen.pdf
+2025-05-23 16:33:25,005 - INFO - Filter 'biogas' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94787/44_sitzung_ausschuss_fuer_umwelt_energie_und_naturschutz.pdf
+2025-05-23 16:33:25,005 - INFO - Filter 'biogas' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93340/113_plenarsitzung.pdf
+2025-05-23 16:33:25,005 - INFO - Filter 'biogas' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92842/112_plenarsitzung.pdf
+2025-05-23 16:33:27,019 - INFO - Starte Suche für Filterwort 'biomethan'
+2025-05-23 16:33:27,152 - INFO - biomethan: verarbeite Seite 1
+2025-05-23 16:33:27,245 - INFO - Filter 'biomethan' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101007/verwertung_entsorgung_und_schadstoffbelastung_von_stoffen_fuer_die_nutzung_in_biogasanlagen_sowie_die_oekologischen_und_technischen_rahmenbedingunge.pdf
+2025-05-23 16:33:27,245 - INFO - Filter 'biomethan' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92836/111_plenarsitzung.pdf
+2025-05-23 16:33:29,252 - INFO - Starte Suche für Filterwort 'heitmüller'
+2025-05-23 16:33:29,398 - INFO - Für 'heitmüller' keine Ergebnisse.
+2025-05-23 16:33:31,404 - INFO - Starte Suche für Filterwort 'kaltefleiter'
+2025-05-23 16:33:31,546 - INFO - Für 'kaltefleiter' keine Ergebnisse.
+2025-05-23 16:33:33,551 - INFO - Starte Suche für Filterwort 'lng'
+2025-05-23 16:33:33,745 - INFO - lng: verarbeite Seite 1
+2025-05-23 16:33:33,874 - INFO - Filter 'lng' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100774/10_plenarsitzung.pdf
+2025-05-23 16:33:33,874 - INFO - Filter 'lng' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95243/122_plenarsitzung.pdf
+2025-05-23 16:33:33,874 - INFO - Filter 'lng' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94998/landesentwicklungsbericht_thueringen_2023.pdf
+2025-05-23 16:33:33,874 - INFO - Filter 'lng' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94827/121_plenarsitzung.pdf
+2025-05-23 16:33:33,874 - INFO - Filter 'lng' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94826/bericht_zum_monitoring_zum_umsetzungsstand_der_klimaneutralen_landesverwaltung_inklusive_hochschulen.pdf
+2025-05-23 16:33:33,874 - INFO - Filter 'lng' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93407/bericht_ueber_programmliche_leistungen_und_perspektiven_von_deutschlandradio_2022_bis_2024_gemaess_11e_abs_2_rundfunkstaatsvertrag.pdf
+2025-05-23 16:33:33,874 - INFO - Filter 'lng' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92842/112_plenarsitzung.pdf
+2025-05-23 16:33:35,877 - INFO - Starte Suche für Filterwort 'kraftwerke'
+2025-05-23 16:33:36,347 - INFO - kraftwerke: verarbeite Seite 1
+2025-05-23 16:33:38,709 - INFO - kraftwerke: verarbeite Seite 2
+2025-05-23 16:33:39,087 - INFO - Filter 'kraftwerke' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101842/18_plenarsitzung_arbeitsfassung.pdf
+2025-05-23 16:33:39,087 - INFO - Filter 'kraftwerke' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101007/verwertung_entsorgung_und_schadstoffbelastung_von_stoffen_fuer_die_nutzung_in_biogasanlagen_sowie_die_oekologischen_und_technischen_rahmenbedingunge.pdf
+2025-05-23 16:33:39,087 - INFO - Filter 'kraftwerke' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100774/10_plenarsitzung.pdf
+2025-05-23 16:33:39,087 - INFO - Filter 'kraftwerke' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99202/gesetz_und_verordnungsblatt_nr_12_2024.pdf
+2025-05-23 16:33:39,087 - INFO - Filter 'kraftwerke' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97950/ausbau_der_windenergie_in_thueringen.pdf
+2025-05-23 16:33:39,087 - INFO - Filter 'kraftwerke' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97762/vierter_indikatorenbericht_zur_nachhaltigen_entwicklung_in_thueringen_neufassung.pdf
+2025-05-23 16:33:39,087 - INFO - Filter 'kraftwerke' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97714/139_plenarsitzung.pdf
+2025-05-23 16:33:39,087 - INFO - Filter 'kraftwerke' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95882/zweiter_entwurf_zur_aenderung_des_landesentwicklungsprogramms_thueringen_hier_beteiligung_des_landtags_gemaess_4_abs_3_des_thueringer_landesplanungsge.pdf
+2025-05-23 16:33:39,087 - INFO - Filter 'kraftwerke' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95243/122_plenarsitzung.pdf
+2025-05-23 16:33:39,087 - INFO - Filter 'kraftwerke' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94827/121_plenarsitzung.pdf
+2025-05-23 16:33:39,087 - INFO - Filter 'kraftwerke' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94822/120_plenarsitzung.pdf
+2025-05-23 16:33:39,087 - INFO - Filter 'kraftwerke' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94930/46_sitzung_ausschuss_fuer_infrastruktur_landwirtschaft_und_forsten.pdf
+2025-05-23 16:33:41,095 - INFO - Starte Suche für Filterwort 'wärmeplanung'
+2025-05-23 16:33:41,488 - INFO - wärmeplanung: verarbeite Seite 1
+2025-05-23 16:33:43,756 - INFO - wärmeplanung: verarbeite Seite 2
+2025-05-23 16:33:46,087 - INFO - wärmeplanung: verarbeite Seite 3
+2025-05-23 16:33:48,388 - INFO - wärmeplanung: verarbeite Seite 4
+2025-05-23 16:33:50,684 - INFO - wärmeplanung: verarbeite Seite 5
+2025-05-23 16:33:50,975 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99460/thueringer_gesetz_ueber_die_feststellung_des_landeshaushaltsplans_fuer_das_haushaltsjahr_2025_thueringer_haushaltsgesetz_2025_thuerhhg_2025.pdf
+2025-05-23 16:33:50,975 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99202/gesetz_und_verordnungsblatt_nr_12_2024.pdf
+2025-05-23 16:33:50,975 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97645/136_plenarsitzung.pdf
+2025-05-23 16:33:50,975 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96566/131_plenarsitzung.pdf
+2025-05-23 16:33:50,975 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96506/130_plenarsitzung.pdf
+2025-05-23 16:33:50,975 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96499/129_plenarsitzung.pdf
+2025-05-23 16:33:50,975 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96473/fragen_zu_angekuendigten_beratungsangeboten_fuer_die_kommunale_waermeplanung_in_thueringen.pdf
+2025-05-23 16:33:50,975 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95882/zweiter_entwurf_zur_aenderung_des_landesentwicklungsprogramms_thueringen_hier_beteiligung_des_landtags_gemaess_4_abs_3_des_thueringer_landesplanungsge.pdf
+2025-05-23 16:33:50,975 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95434/125_plenarsitzung.pdf
+2025-05-23 16:33:50,975 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95266/123_plenarsitzung.pdf
+2025-05-23 16:33:50,975 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95243/122_plenarsitzung.pdf
+2025-05-23 16:33:50,975 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94822/120_plenarsitzung.pdf
+2025-05-23 16:33:50,975 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94612/thueringer_wasserstoffzukunftsgesetz.pdf
+2025-05-23 16:33:50,975 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94930/46_sitzung_ausschuss_fuer_infrastruktur_landwirtschaft_und_forsten.pdf
+2025-05-23 16:33:50,975 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94826/bericht_zum_monitoring_zum_umsetzungsstand_der_klimaneutralen_landesverwaltung_inklusive_hochschulen.pdf
+2025-05-23 16:33:50,975 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94163/fernwaerme_im_freistaat_thueringen.pdf
+2025-05-23 16:33:50,975 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94787/44_sitzung_ausschuss_fuer_umwelt_energie_und_naturschutz.pdf
+2025-05-23 16:33:50,991 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93754/demografiebericht_2022_teil_2_herausforderungen_und_handlungsansaetze_bei_der_sicherung_ausgewaehlter_schwerpunkte_der_daseinsvorsorge_auf_grundlage_d.pdf
+2025-05-23 16:33:50,991 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93340/113_plenarsitzung.pdf
+2025-05-23 16:33:50,991 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92836/111_plenarsitzung.pdf
+2025-05-23 16:33:50,991 - INFO - Filter 'wärmeplanung' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92801/110_plenarsitzung.pdf
+2025-05-23 16:33:52,992 - INFO - Starte Suche für Filterwort 'kernnetz'
+2025-05-23 16:33:53,145 - INFO - kernnetz: verarbeite Seite 1
+2025-05-23 16:33:53,293 - INFO - Filter 'kernnetz' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99202/gesetz_und_verordnungsblatt_nr_12_2024.pdf
+2025-05-23 16:33:53,293 - INFO - Filter 'kernnetz' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93795/aktueller_und_zukuenftiger_wasserstoffbedarf_in_thueringen.pdf
+2025-05-23 16:33:55,308 - INFO - Starte Suche für Filterwort 'carbon management'
+2025-05-23 16:33:55,541 - INFO - carbon management: verarbeite Seite 1
+2025-05-23 16:33:55,665 - INFO - Filter 'carbon management' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99861/5_plenarsitzung.pdf
+2025-05-23 16:33:55,665 - INFO - Filter 'carbon management' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94930/46_sitzung_ausschuss_fuer_infrastruktur_landwirtschaft_und_forsten.pdf
+2025-05-23 16:33:55,665 - INFO - Filter 'carbon management' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94826/bericht_zum_monitoring_zum_umsetzungsstand_der_klimaneutralen_landesverwaltung_inklusive_hochschulen.pdf
+2025-05-23 16:33:55,665 - INFO - Filter 'carbon management' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93833/beschluss_des_thueringer_landtags_drucksache_7_7269_zu_der_drucksache_7_5519_verwendung_von_mitteln_aus_dem_eu_aufbaufonds_fuer_thueringen_hier_berich.pdf
+2025-05-23 16:33:57,669 - INFO - Starte Suche für Filterwort 'co2'
+2025-05-23 16:33:57,975 - INFO - co2: verarbeite Seite 1
+2025-05-23 16:34:00,223 - INFO - co2: verarbeite Seite 2
+2025-05-23 16:34:02,497 - INFO - co2: verarbeite Seite 3
+2025-05-23 16:34:04,793 - INFO - co2: verarbeite Seite 4
+2025-05-23 16:34:07,081 - INFO - co2: verarbeite Seite 5
+2025-05-23 16:34:09,356 - INFO - co2: verarbeite Seite 6
+2025-05-23 16:34:11,633 - INFO - co2: verarbeite Seite 7
+2025-05-23 16:34:13,927 - INFO - co2: verarbeite Seite 8
+2025-05-23 16:34:16,240 - INFO - co2: verarbeite Seite 9
+2025-05-23 16:34:18,540 - INFO - co2: verarbeite Seite 10
+2025-05-23 16:34:20,818 - INFO - co2: verarbeite Seite 11
+2025-05-23 16:34:23,197 - INFO - co2: verarbeite Seite 12
+2025-05-23 16:34:23,658 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101842/18_plenarsitzung_arbeitsfassung.pdf
+2025-05-23 16:34:23,658 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101824/17_plenarsitzung_arbeitsfassung.pdf
+2025-05-23 16:34:23,658 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101805/lage_der_busunternehmen_in_thueringen.pdf
+2025-05-23 16:34:23,658 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101281/14_plenarsitzung.pdf
+2025-05-23 16:34:23,658 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101288/abstimmungsverhalten_der_landesregierung_in_der_1051_sitzung_des_bundesrats_zum_gesetz_zur_anpassung_des_treibhausgas_emissionshandelsgesetzes_an_di.pdf
+2025-05-23 16:34:23,658 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100793/11_plenarsitzung.pdf
+2025-05-23 16:34:23,674 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100367/8_plenarsitzung.pdf
+2025-05-23 16:34:23,674 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100342/7_plenarsitzung.pdf
+2025-05-23 16:34:23,674 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99861/5_plenarsitzung.pdf
+2025-05-23 16:34:23,674 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99828/mittelfristiger_finanzplan_fuer_die_jahre_2024_bis_2028_fuer_den_freistaat_thueringen.pdf
+2025-05-23 16:34:23,674 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99749/abschaffung_der_co2_steuer_thueringen_muss_sich_fuer_ein_ende_der_ideologisch_forcierten_teuerung_einsetzen.pdf
+2025-05-23 16:34:23,674 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99460/thueringer_gesetz_ueber_die_feststellung_des_landeshaushaltsplans_fuer_das_haushaltsjahr_2025_thueringer_haushaltsgesetz_2025_thuerhhg_2025.pdf
+2025-05-23 16:34:23,674 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99202/gesetz_und_verordnungsblatt_nr_12_2024.pdf
+2025-05-23 16:34:23,674 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97903/pruefung_der_haushalts_und_wirtschaftsfuehrung_der_gemeinschaftssendung_einrichtung_und_aufgabe_gsea_der_ard_rundfunkanstalten_ard_aktuell_der_jahre_2.pdf
+2025-05-23 16:34:23,674 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97837/bericht_ueber_die_wirtschaftliche_und_finanzielle_lage_des_zdf_gemaess_5a_rundfunkfinanzierungsstaatsvertrag.pdf
+2025-05-23 16:34:23,674 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97767/zweiter_bericht_zur_lage_der_natur_in_thueringen.pdf
+2025-05-23 16:34:23,674 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97762/vierter_indikatorenbericht_zur_nachhaltigen_entwicklung_in_thueringen_neufassung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97761/140_plenarsitzung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97714/139_plenarsitzung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97763/jahresabschluss_und_konzernabschluss_nebst_zusammengefasstem_lagebericht_und_konzernlagebericht_der_thueringer_aufbaubank_zum_31_dezember_2022.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97667/138_plenarsitzung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97645/136_plenarsitzung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97275/29_sitzung_des_stabilitaetsrats_am_6_mai_2024.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97118/134_plenarsitzung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96566/131_plenarsitzung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96506/130_plenarsitzung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96499/129_plenarsitzung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96473/fragen_zu_angekuendigten_beratungsangeboten_fuer_die_kommunale_waermeplanung_in_thueringen.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96451/faellt_thueringen_zurueck_bestandsaufnahme_und_perspektiven_fuer_die_thueringer_wirtschaft.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95902/127_plenarsitzung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95882/zweiter_entwurf_zur_aenderung_des_landesentwicklungsprogramms_thueringen_hier_beteiligung_des_landtags_gemaess_4_abs_3_des_thueringer_landesplanungsge.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95434/125_plenarsitzung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95290/124_plenarsitzung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95266/123_plenarsitzung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95243/122_plenarsitzung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95038/sieben_prozent_muessen_dauerhaft_sein_mehrwertsteuer_auf_gas_und_fernwaerme_senken_energiepreiserhoehung_stoppen_neufassung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94998/landesentwicklungsbericht_thueringen_2023.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94827/121_plenarsitzung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94822/120_plenarsitzung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94664/abschaffung_der_co2_steuer_thueringen_muss_sich_fuer_ein_ende_der_ideologisch_forcierten_teuerung_einsetzen_neufassung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94612/thueringer_wasserstoffzukunftsgesetz.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96993/75_sitzung_haushalts_und_finanzausschuss_wortprotokoll.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94930/46_sitzung_ausschuss_fuer_infrastruktur_landwirtschaft_und_forsten.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94826/bericht_zum_monitoring_zum_umsetzungsstand_der_klimaneutralen_landesverwaltung_inklusive_hochschulen.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94787/44_sitzung_ausschuss_fuer_umwelt_energie_und_naturschutz.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93875/thueringer_gesetz_ueber_die_feststellung_des_landeshaushaltsplans_fuer_das_haushaltsjahr_2024_thueringer_haushaltsgesetz_2024_thuerhhg_2024.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93754/demografiebericht_2022_teil_2_herausforderungen_und_handlungsansaetze_bei_der_sicherung_ausgewaehlter_schwerpunkte_der_daseinsvorsorge_auf_grundlage_d.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93833/beschluss_des_thueringer_landtags_drucksache_7_7269_zu_der_drucksache_7_5519_verwendung_von_mitteln_aus_dem_eu_aufbaufonds_fuer_thueringen_hier_berich.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93340/113_plenarsitzung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93407/bericht_ueber_programmliche_leistungen_und_perspektiven_von_deutschlandradio_2022_bis_2024_gemaess_11e_abs_2_rundfunkstaatsvertrag.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93030/27_sitzung_des_stabilitaetsrates_am_2_mai_2023.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92842/112_plenarsitzung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92836/111_plenarsitzung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92801/110_plenarsitzung.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93003/47_sitzung_ausschuss_fuer_europa_kultur_und_medien.pdf
+2025-05-23 16:34:23,677 - INFO - Filter 'co2' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93035/nachhaltiges_mobilitaetsmanagement_der_thueringer_landesregierung_und_der_ihr_nachgeordneten_landesverwaltung.pdf
+2025-05-23 16:34:25,684 - INFO - Starte Suche für Filterwort 'wärmewende'
+2025-05-23 16:34:26,074 - INFO - wärmewende: verarbeite Seite 1
+2025-05-23 16:34:28,414 - INFO - wärmewende: verarbeite Seite 2
+2025-05-23 16:34:30,746 - INFO - wärmewende: verarbeite Seite 3
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101281/14_plenarsitzung.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100793/11_plenarsitzung.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100168/thueringens_zukunft_entwickeln_mit_investitionen_und_beteiligungen_den_wirtschaftsstandort_nachhaltig_modernisieren_und_unternehmen_mit_ihren_arbeitsp.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99620/2_plenarsitzung.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97761/140_plenarsitzung.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97667/138_plenarsitzung.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97645/136_plenarsitzung.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97118/134_plenarsitzung.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96566/131_plenarsitzung.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96304/thueringer_gesetz_zur_landesrechtlichen_umsetzung_des_waermeplanungsgesetzes.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95434/125_plenarsitzung.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95243/122_plenarsitzung.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94822/120_plenarsitzung.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94580/kommunale_waermeplanung.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94260/20_sitzung_unterausschuss_kommunaler_finanzausgleich.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93782/kommunale_waermeplanung.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93393/115_plenarsitzung.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93340/113_plenarsitzung.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93066/thueringer_gesetz_ueber_die_beteiligung_von_einwohnerinnen_und_einwohnern_sowie_gemeinden_an_windparks_thuerwindbeteilg_neuer_titel_thueringer_geset.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92842/112_plenarsitzung.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92836/111_plenarsitzung.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92801/110_plenarsitzung.pdf
+2025-05-23 16:34:31,039 - INFO - Filter 'wärmewende' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92600/heizungsverbote_der_bundesregierung_im_bundesrat_stoppen_untragbare_belastungen_fuer_eigentuemer_und_mieter_verhindern.pdf
+2025-05-23 16:34:33,049 - INFO - Starte Suche für Filterwort 'kommunale haushalte'
+2025-05-23 16:34:33,738 - INFO - kommunale haushalte: verarbeite Seite 1
+2025-05-23 16:34:36,210 - INFO - kommunale haushalte: verarbeite Seite 2
+2025-05-23 16:34:38,705 - INFO - kommunale haushalte: verarbeite Seite 3
+2025-05-23 16:34:41,185 - INFO - kommunale haushalte: verarbeite Seite 4
+2025-05-23 16:34:43,677 - INFO - kommunale haushalte: verarbeite Seite 5
+2025-05-23 16:34:46,319 - INFO - kommunale haushalte: verarbeite Seite 6
+2025-05-23 16:34:48,851 - INFO - kommunale haushalte: verarbeite Seite 7
+2025-05-23 16:34:51,357 - INFO - kommunale haushalte: verarbeite Seite 8
+2025-05-23 16:34:53,849 - INFO - kommunale haushalte: verarbeite Seite 9
+2025-05-23 16:34:56,374 - INFO - kommunale haushalte: verarbeite Seite 10
+2025-05-23 16:34:58,899 - INFO - kommunale haushalte: verarbeite Seite 11
+2025-05-23 16:35:01,452 - INFO - kommunale haushalte: verarbeite Seite 12
+2025-05-23 16:35:04,052 - INFO - kommunale haushalte: verarbeite Seite 13
+2025-05-23 16:35:06,606 - INFO - kommunale haushalte: verarbeite Seite 14
+2025-05-23 16:35:09,176 - INFO - kommunale haushalte: verarbeite Seite 15
+2025-05-23 16:35:11,671 - INFO - kommunale haushalte: verarbeite Seite 16
+2025-05-23 16:35:14,251 - INFO - kommunale haushalte: verarbeite Seite 17
+2025-05-23 16:35:16,735 - INFO - kommunale haushalte: verarbeite Seite 18
+2025-05-23 16:35:19,216 - INFO - kommunale haushalte: verarbeite Seite 19
+2025-05-23 16:35:21,704 - INFO - kommunale haushalte: verarbeite Seite 20
+2025-05-23 16:35:24,175 - INFO - kommunale haushalte: verarbeite Seite 21
+2025-05-23 16:35:26,674 - INFO - kommunale haushalte: verarbeite Seite 22
+2025-05-23 16:35:29,273 - INFO - kommunale haushalte: verarbeite Seite 23
+2025-05-23 16:35:31,838 - INFO - kommunale haushalte: verarbeite Seite 24
+2025-05-23 16:35:34,327 - INFO - kommunale haushalte: verarbeite Seite 25
+2025-05-23 16:35:36,842 - INFO - kommunale haushalte: verarbeite Seite 26
+2025-05-23 16:35:39,354 - INFO - kommunale haushalte: verarbeite Seite 27
+2025-05-23 16:35:41,875 - INFO - kommunale haushalte: verarbeite Seite 28
+2025-05-23 16:35:44,379 - INFO - kommunale haushalte: verarbeite Seite 29
+2025-05-23 16:35:46,894 - INFO - kommunale haushalte: verarbeite Seite 30
+2025-05-23 16:35:49,439 - INFO - kommunale haushalte: verarbeite Seite 31
+2025-05-23 16:35:51,943 - INFO - kommunale haushalte: verarbeite Seite 32
+2025-05-23 16:35:54,512 - INFO - kommunale haushalte: verarbeite Seite 33
+2025-05-23 16:35:57,023 - INFO - kommunale haushalte: verarbeite Seite 34
+2025-05-23 16:35:59,530 - INFO - kommunale haushalte: verarbeite Seite 35
+2025-05-23 16:36:02,044 - INFO - kommunale haushalte: verarbeite Seite 36
+2025-05-23 16:36:04,552 - INFO - kommunale haushalte: verarbeite Seite 37
+2025-05-23 16:36:07,073 - INFO - kommunale haushalte: verarbeite Seite 38
+2025-05-23 16:36:09,600 - INFO - kommunale haushalte: verarbeite Seite 39
+2025-05-23 16:36:12,105 - INFO - kommunale haushalte: verarbeite Seite 40
+2025-05-23 16:36:14,614 - INFO - kommunale haushalte: verarbeite Seite 41
+2025-05-23 16:36:17,169 - INFO - kommunale haushalte: verarbeite Seite 42
+2025-05-23 16:36:19,644 - INFO - kommunale haushalte: verarbeite Seite 43
+2025-05-23 16:36:22,165 - INFO - kommunale haushalte: verarbeite Seite 44
+2025-05-23 16:36:24,674 - INFO - kommunale haushalte: verarbeite Seite 45
+2025-05-23 16:36:27,237 - INFO - kommunale haushalte: verarbeite Seite 46
+2025-05-23 16:36:29,753 - INFO - kommunale haushalte: verarbeite Seite 47
+2025-05-23 16:36:32,243 - INFO - kommunale haushalte: verarbeite Seite 48
+2025-05-23 16:36:34,778 - INFO - kommunale haushalte: verarbeite Seite 49
+2025-05-23 16:36:37,493 - INFO - kommunale haushalte: verarbeite Seite 50
+2025-05-23 16:36:40,024 - INFO - kommunale haushalte: verarbeite Seite 51
+2025-05-23 16:36:42,579 - INFO - kommunale haushalte: verarbeite Seite 52
+2025-05-23 16:36:45,153 - INFO - kommunale haushalte: verarbeite Seite 53
+2025-05-23 16:36:47,692 - INFO - kommunale haushalte: verarbeite Seite 54
+2025-05-23 16:36:50,210 - INFO - kommunale haushalte: verarbeite Seite 55
+2025-05-23 16:36:52,718 - INFO - kommunale haushalte: verarbeite Seite 56
+2025-05-23 16:36:55,226 - INFO - kommunale haushalte: verarbeite Seite 57
+2025-05-23 16:36:57,718 - INFO - kommunale haushalte: verarbeite Seite 58
+2025-05-23 16:37:00,219 - INFO - kommunale haushalte: verarbeite Seite 59
+2025-05-23 16:37:02,745 - INFO - kommunale haushalte: verarbeite Seite 60
+2025-05-23 16:37:05,249 - INFO - kommunale haushalte: verarbeite Seite 61
+2025-05-23 16:37:07,770 - INFO - kommunale haushalte: verarbeite Seite 62
+2025-05-23 16:37:10,271 - INFO - kommunale haushalte: verarbeite Seite 63
+2025-05-23 16:37:12,750 - INFO - kommunale haushalte: verarbeite Seite 64
+2025-05-23 16:37:15,241 - INFO - kommunale haushalte: verarbeite Seite 65
+2025-05-23 16:37:17,747 - INFO - kommunale haushalte: verarbeite Seite 66
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101842/18_plenarsitzung_arbeitsfassung.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101824/17_plenarsitzung_arbeitsfassung.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101802/16_plenarsitzung_arbeitsfassung.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101805/lage_der_busunternehmen_in_thueringen.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101281/14_plenarsitzung.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101360/stand_und_weiterentwicklung_einer_vernetzten_gesundheitsversorgung_im_freistaat_thueringen.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100992/12_plenarsitzung_sondersitzung.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101007/verwertung_entsorgung_und_schadstoffbelastung_von_stoffen_fuer_die_nutzung_in_biogasanlagen_sowie_die_oekologischen_und_technischen_rahmenbedingunge.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100793/11_plenarsitzung.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100774/10_plenarsitzung.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100839/entwicklung_der_abfallgebuehren_in_thueringen.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100367/8_plenarsitzung.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100342/7_plenarsitzung.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100168/thueringens_zukunft_entwickeln_mit_investitionen_und_beteiligungen_den_wirtschaftsstandort_nachhaltig_modernisieren_und_unternehmen_mit_ihren_arbeitsp.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100027/energie_contracting_als_ergebnis_aus_dem_kabinettsbeschluss_vom_27_juni_2023.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99861/5_plenarsitzung.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99959/haushaltsrechnung_des_freistaats_thueringen_fuer_das_haushaltsjahr_2023_enthaelt_band_1_band_2_rechnungen_der_einzelplaene_01_bis_18_korrigierte_fassu.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99828/mittelfristiger_finanzplan_fuer_die_jahre_2024_bis_2028_fuer_den_freistaat_thueringen.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99749/abschaffung_der_co2_steuer_thueringen_muss_sich_fuer_ein_ende_der_ideologisch_forcierten_teuerung_einsetzen.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99624/3_plenarsitzung.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99620/2_plenarsitzung.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99606/6_sportbericht_der_thueringer_landesregierung_fuer_den_berichtszeitraum_2019_bis_2023.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99460/thueringer_gesetz_ueber_die_feststellung_des_landeshaushaltsplans_fuer_das_haushaltsjahr_2025_thueringer_haushaltsgesetz_2025_thuerhhg_2025.pdf
+2025-05-23 16:37:18,213 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99340/taetigkeitsberichte_des_thueringer_landesbeauftragten_fuer_den_datenschutz_und_die_informationsfreiheit_6_taetigkeitsbericht_zum_datenschutz_nach_de.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99227/gesetz_und_verordnungsblatt_nr_13_2024.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99202/gesetz_und_verordnungsblatt_nr_12_2024.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/98016/gesetz_und_verordnungsblatt_nr_9_2024.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/98015/gesetz_und_verordnungsblatt_nr_8_2024.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97903/pruefung_der_haushalts_und_wirtschaftsfuehrung_der_gemeinschaftssendung_einrichtung_und_aufgabe_gsea_der_ard_rundfunkanstalten_ard_aktuell_der_jahre_2.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97837/bericht_ueber_die_wirtschaftliche_und_finanzielle_lage_des_zdf_gemaess_5a_rundfunkfinanzierungsstaatsvertrag.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97767/zweiter_bericht_zur_lage_der_natur_in_thueringen.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97762/vierter_indikatorenbericht_zur_nachhaltigen_entwicklung_in_thueringen_neufassung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97768/141_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97761/140_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97714/139_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97763/jahresabschluss_und_konzernabschluss_nebst_zusammengefasstem_lagebericht_und_konzernlagebericht_der_thueringer_aufbaubank_zum_31_dezember_2022.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97667/138_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97618/gesetz_und_verordnungsblatt_nr_6_2024.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97645/136_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97511/bericht_des_untersuchungsausschusses_7_2_treuhand_in_thueringen_erfolgsgeschichte_oder_ausverkauf_rolle_und_untersuchung_der_arbeit_der_treuhandanstal.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97673/umwandlung_der_apoldaer_martinskirche_in_einen_soziokulturellen_treffpunkt.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99146/50_sitzung_petitionsausschuss.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97275/29_sitzung_des_stabilitaetsrats_am_6_mai_2024.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97153/135_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97118/134_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97235/54_sitzung_ausschuss_fuer_europa_kultur_und_medien.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96908/viertes_gesetz_zur_aenderung_des_thueringer_aufbaubankgesetzes_korrigierte_fassung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96879/thueringer_gesetz_zur_anpassung_der_besoldung_und_versorgung_in_den_jahren_2024_und_2025_und_zur_aenderung_besoldungs_und_versorgungsrechtlicher_sowie.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96856/6_bericht_der_landesregierung_zu_ihren_aktivitaeten_auf_dem_gebiet_der_aufarbeitung_der_sed_diktatur_in_thueringen_fuer_den_zeitraum_april_2022_bis_de.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96866/ist_thueringen_sicher_bestandsaufnahme_und_perspektiven_bei_polizei_feuerwehr_und_sicherheitskraeften.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96566/131_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96506/130_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96499/129_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96304/thueringer_gesetz_zur_landesrechtlichen_umsetzung_des_waermeplanungsgesetzes.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96285/thueringer_bauordnung_thuerbo.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97041/48_sitzung_petitionsausschuss.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96451/faellt_thueringen_zurueck_bestandsaufnahme_und_perspektiven_fuer_die_thueringer_wirtschaft.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95902/127_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96377/ist_die_thueringer_justiz_noch_leistungsfaehig_bestandsaufnahme_und_perspektiven_der_justiz_und_des_justizvollzugs_in_thueringen.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95887/126_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95882/zweiter_entwurf_zur_aenderung_des_landesentwicklungsprogramms_thueringen_hier_beteiligung_des_landtags_gemaess_4_abs_3_des_thueringer_landesplanungsge.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96194/80_sitzung_haushalts_und_finanzausschuss.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95434/125_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95290/124_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95402/haushaltsrechnung_des_freistaats_thueringen_fuer_das_haushaltsjahr_2022_enthaelt_band_1_band_2_rechnungen_der_einzelplaene_01_bis_18.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95266/123_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95243/122_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95075/gesetz_und_verordnungsblatt_nr_14_2023.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95179/foerdermittelantraege_zum_abbau_des_investitionsstaus_in_der_gemeinde_barchfeld_immelborn.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94998/landesentwicklungsbericht_thueringen_2023.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94827/121_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94822/120_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94746/gesetz_zur_aenderung_des_thueringer_vergabegesetzes_buerokratieabbau_und_verfahrensvereinfachung_im_thueringer_vergaberecht.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94664/abschaffung_der_co2_steuer_thueringen_muss_sich_fuer_ein_ende_der_ideologisch_forcierten_teuerung_einsetzen_neufassung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94612/thueringer_wasserstoffzukunftsgesetz.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96993/75_sitzung_haushalts_und_finanzausschuss_wortprotokoll.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94930/46_sitzung_ausschuss_fuer_infrastruktur_landwirtschaft_und_forsten.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94583/stellungnahme_der_landesregierung_gemaess_97_abs_1_satz_3_der_thueringer_landeshaushaltsordnung_thuerlho_zu_dem_jahresbericht_2023_des_thueringer_rech.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94419/mittelfristiger_finanzplan_fuer_die_jahre_2023_bis_2027_fuer_den_freistaat_thueringen.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94826/bericht_zum_monitoring_zum_umsetzungsstand_der_klimaneutralen_landesverwaltung_inklusive_hochschulen.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94234/118_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94163/fernwaerme_im_freistaat_thueringen.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94197/116_plenarsitzung.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94130/beschaffung_neuer_strassenbahnen_fuer_die_stadt_jena_nachgefragt.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94787/44_sitzung_ausschuss_fuer_umwelt_energie_und_naturschutz.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94422/42_sitzung_ausschuss_fuer_wirtschaft_wissenschaft_und_digitale_gesellschaft.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93875/thueringer_gesetz_ueber_die_feststellung_des_landeshaushaltsplans_fuer_das_haushaltsjahr_2024_thueringer_haushaltsgesetz_2024_thuerhhg_2024.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94260/20_sitzung_unterausschuss_kommunaler_finanzausgleich.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93754/demografiebericht_2022_teil_2_herausforderungen_und_handlungsansaetze_bei_der_sicherung_ausgewaehlter_schwerpunkte_der_daseinsvorsorge_auf_grundlage_d.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93833/beschluss_des_thueringer_landtags_drucksache_7_7269_zu_der_drucksache_7_5519_verwendung_von_mitteln_aus_dem_eu_aufbaufonds_fuer_thueringen_hier_berich.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93877/taetigkeitsberichte_des_thueringer_landesbeauftragten_fuer_den_datenschutz_und_die_informationsfreiheit_5_taetigkeitsbericht_zum_datenschutz_nach_de.pdf
+2025-05-23 16:37:18,222 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93393/115_plenarsitzung.pdf
+2025-05-23 16:37:18,227 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93341/114_plenarsitzung.pdf
+2025-05-23 16:37:18,227 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93340/113_plenarsitzung.pdf
+2025-05-23 16:37:18,227 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93759/47_sitzung_innen_und_kommunalausschuss.pdf
+2025-05-23 16:37:18,227 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93143/jahresbericht_2023_mit_bemerkungen_zur_haushalts_und_wirtschaftsfuehrung_und_zur_haushaltsrechnung_2021_gemaess_artikel_103_abs_3_satz_3_der_verfassun.pdf
+2025-05-23 16:37:18,227 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93066/thueringer_gesetz_ueber_die_beteiligung_von_einwohnerinnen_und_einwohnern_sowie_gemeinden_an_windparks_thuerwindbeteilg_neuer_titel_thueringer_geset.pdf
+2025-05-23 16:37:18,227 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93030/27_sitzung_des_stabilitaetsrates_am_2_mai_2023.pdf
+2025-05-23 16:37:18,227 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92863/jahresabschluss_und_konzernabschluss_nebst_zusammengefasstem_lagebericht_und_konzernlagebericht_der_thueringer_aufbaubank_zum_31_dezember_2022.pdf
+2025-05-23 16:37:18,227 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92842/112_plenarsitzung.pdf
+2025-05-23 16:37:18,227 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92836/111_plenarsitzung.pdf
+2025-05-23 16:37:18,227 - INFO - Filter 'kommunale haushalte' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92801/110_plenarsitzung.pdf
+2025-05-23 16:37:20,228 - INFO - Starte Suche für Filterwort 'stadtwerk'
+2025-05-23 16:37:20,496 - INFO - stadtwerk: verarbeite Seite 1
+2025-05-23 16:37:22,714 - INFO - stadtwerk: verarbeite Seite 2
+2025-05-23 16:37:24,992 - INFO - stadtwerk: verarbeite Seite 3
+2025-05-23 16:37:27,236 - INFO - stadtwerk: verarbeite Seite 4
+2025-05-23 16:37:29,420 - INFO - stadtwerk: verarbeite Seite 5
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101842/18_plenarsitzung_arbeitsfassung.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101588/kommunale_investitionsspielraeume_und_eigenkapitalausstattung_der_stadtwerke_in_thueringen.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101290/15_plenarsitzung_arbeitsfassung.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101259/bericht_ueber_die_unmittelbaren_und_mittelbaren_kapitalbeteiligungen_des_freistaats_thueringen_an_unternehmen_des_privaten_und_oeffentlichen_rechts_zu.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100793/11_plenarsitzung.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100401/ruecklage_aus_der_sonderabgabe_abwasserabgabe_kapitel_09_05_titelgruppe_77.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99620/2_plenarsitzung.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97950/ausbau_der_windenergie_in_thueringen.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97761/140_plenarsitzung.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97714/139_plenarsitzung.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97763/jahresabschluss_und_konzernabschluss_nebst_zusammengefasstem_lagebericht_und_konzernlagebericht_der_thueringer_aufbaubank_zum_31_dezember_2022.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97667/138_plenarsitzung.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97597/viertes_gesetz_zur_aenderung_des_thueringer_aufbaubankgesetzes_eigenkapitalerhoehung_der_thueringer_aufbaubank_fuer_wohnungsbau_nutzen_zusammenarbei.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97301/4_taetigkeitsbericht_fuer_den_zeitraum_der_jahre_2019_bis_2023_des_thueringer_landesbeauftragten_fuer_menschen_mit_behinderungen.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97326/gestiegene_energiekosten_von_hallenbaedern_in_thueringen.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97345/preisunterschiede_in_der_versorgung_mit_fernwaerme.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97118/134_plenarsitzung.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96879/thueringer_gesetz_zur_anpassung_der_besoldung_und_versorgung_in_den_jahren_2024_und_2025_und_zur_aenderung_besoldungs_und_versorgungsrechtlicher_sowie.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97233/51_sitzung_ausschuss_fuer_infrastruktur_landwirtschaft_und_forsten.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96566/131_plenarsitzung.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96473/fragen_zu_angekuendigten_beratungsangeboten_fuer_die_kommunale_waermeplanung_in_thueringen.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95409/fragen_zu_angekuendigten_beratungsangeboten_fuer_die_kommunale_waermeplanung_in_thueringen.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95192/thueringer_gesetz_zur_freiwilligen_neugliederung_kreisangehoeriger_gemeinden_im_jahr_2024_zur_anpassung_gerichtsorganisatorischer_vorschriften_und_zur.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94827/121_plenarsitzung.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94612/thueringer_wasserstoffzukunftsgesetz.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96993/75_sitzung_haushalts_und_finanzausschuss_wortprotokoll.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94930/46_sitzung_ausschuss_fuer_infrastruktur_landwirtschaft_und_forsten.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94163/fernwaerme_im_freistaat_thueringen.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94128/wie_sicher_ist_thueringens_trinkwasserversorgung.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94787/44_sitzung_ausschuss_fuer_umwelt_energie_und_naturschutz.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94260/20_sitzung_unterausschuss_kommunaler_finanzausgleich.pdf
+2025-05-23 16:37:29,654 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93833/beschluss_des_thueringer_landtags_drucksache_7_7269_zu_der_drucksache_7_5519_verwendung_von_mitteln_aus_dem_eu_aufbaufonds_fuer_thueringen_hier_berich.pdf
+2025-05-23 16:37:29,658 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93340/113_plenarsitzung.pdf
+2025-05-23 16:37:29,658 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92842/112_plenarsitzung.pdf
+2025-05-23 16:37:29,658 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92836/111_plenarsitzung.pdf
+2025-05-23 16:37:29,658 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92801/110_plenarsitzung.pdf
+2025-05-23 16:37:29,658 - INFO - Filter 'stadtwerk' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92600/heizungsverbote_der_bundesregierung_im_bundesrat_stoppen_untragbare_belastungen_fuer_eigentuemer_und_mieter_verhindern.pdf
+2025-05-23 16:37:31,659 - INFO - Starte Suche für Filterwort 'strompreis'
+2025-05-23 16:37:32,164 - INFO - strompreis: verarbeite Seite 1
+2025-05-23 16:37:34,485 - INFO - strompreis: verarbeite Seite 2
+2025-05-23 16:37:36,879 - INFO - strompreis: verarbeite Seite 3
+2025-05-23 16:37:39,200 - INFO - strompreis: verarbeite Seite 4
+2025-05-23 16:37:39,532 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101842/18_plenarsitzung_arbeitsfassung.pdf
+2025-05-23 16:37:39,532 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101259/bericht_ueber_die_unmittelbaren_und_mittelbaren_kapitalbeteiligungen_des_freistaats_thueringen_an_unternehmen_des_privaten_und_oeffentlichen_rechts_zu.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100774/10_plenarsitzung.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100170/neustart_der_kernkraft_bezahlbare_und_sichere_energieversorgung_wiederherstellen.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99861/5_plenarsitzung.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99606/6_sportbericht_der_thueringer_landesregierung_fuer_den_berichtszeitraum_2019_bis_2023.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97714/139_plenarsitzung.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97275/29_sitzung_des_stabilitaetsrats_am_6_mai_2024.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97345/preisunterschiede_in_der_versorgung_mit_fernwaerme.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96879/thueringer_gesetz_zur_anpassung_der_besoldung_und_versorgung_in_den_jahren_2024_und_2025_und_zur_aenderung_besoldungs_und_versorgungsrechtlicher_sowie.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96602/einwohnerantraege_buergerbegehren_und_buergerentscheide_in_thueringen_stand_und_ergebnisse_der_verfahren_zum_31_dezember_2023.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96499/129_plenarsitzung.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96483/jahresbericht_des_buergerbeauftragten_des_freistaats_thueringen_fuer_das_jahr_2023.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96451/faellt_thueringen_zurueck_bestandsaufnahme_und_perspektiven_fuer_die_thueringer_wirtschaft.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95887/126_plenarsitzung.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95243/122_plenarsitzung.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94827/121_plenarsitzung.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94822/120_plenarsitzung.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94930/46_sitzung_ausschuss_fuer_infrastruktur_landwirtschaft_und_forsten.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94826/bericht_zum_monitoring_zum_umsetzungsstand_der_klimaneutralen_landesverwaltung_inklusive_hochschulen.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94141/thueringer_interessen_im_bundesrat_vertreten_heizungsgesetz_ablehnen_heizungsgesetz_stoppen_marktwirtschaftlicher_wettbewerb_statt_subventionierung_vo.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94197/116_plenarsitzung.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94006/blackout_verhindern_strompreisexplosion_stoppen_marktwirtschaftlicher_wettbewerb_statt_subventionierung_von_waermepumpen_und_technologieverboten.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94787/44_sitzung_ausschuss_fuer_umwelt_energie_und_naturschutz.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94170/offener_brief_der_buergerinitiative_gegenwind_fahner_hoehe.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93341/114_plenarsitzung.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93066/thueringer_gesetz_ueber_die_beteiligung_von_einwohnerinnen_und_einwohnern_sowie_gemeinden_an_windparks_thuerwindbeteilg_neuer_titel_thueringer_geset.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93030/27_sitzung_des_stabilitaetsrates_am_2_mai_2023.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92836/111_plenarsitzung.pdf
+2025-05-23 16:37:39,548 - INFO - Filter 'strompreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92801/110_plenarsitzung.pdf
+2025-05-23 16:37:41,551 - INFO - Starte Suche für Filterwort 'gaspreis'
+2025-05-23 16:37:41,878 - INFO - gaspreis: verarbeite Seite 1
+2025-05-23 16:37:44,098 - INFO - gaspreis: verarbeite Seite 2
+2025-05-23 16:37:44,325 - INFO - Filter 'gaspreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99606/6_sportbericht_der_thueringer_landesregierung_fuer_den_berichtszeitraum_2019_bis_2023.pdf
+2025-05-23 16:37:44,325 - INFO - Filter 'gaspreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97345/preisunterschiede_in_der_versorgung_mit_fernwaerme.pdf
+2025-05-23 16:37:44,325 - INFO - Filter 'gaspreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96695/preisunterschiede_in_der_versorgung_mit_fernwaerme.pdf
+2025-05-23 16:37:44,325 - INFO - Filter 'gaspreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96483/jahresbericht_des_buergerbeauftragten_des_freistaats_thueringen_fuer_das_jahr_2023.pdf
+2025-05-23 16:37:44,325 - INFO - Filter 'gaspreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96451/faellt_thueringen_zurueck_bestandsaufnahme_und_perspektiven_fuer_die_thueringer_wirtschaft.pdf
+2025-05-23 16:37:44,325 - INFO - Filter 'gaspreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95243/122_plenarsitzung.pdf
+2025-05-23 16:37:44,325 - INFO - Filter 'gaspreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94826/bericht_zum_monitoring_zum_umsetzungsstand_der_klimaneutralen_landesverwaltung_inklusive_hochschulen.pdf
+2025-05-23 16:37:44,325 - INFO - Filter 'gaspreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94197/116_plenarsitzung.pdf
+2025-05-23 16:37:44,325 - INFO - Filter 'gaspreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94787/44_sitzung_ausschuss_fuer_umwelt_energie_und_naturschutz.pdf
+2025-05-23 16:37:44,325 - INFO - Filter 'gaspreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94170/offener_brief_der_buergerinitiative_gegenwind_fahner_hoehe.pdf
+2025-05-23 16:37:44,325 - INFO - Filter 'gaspreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93066/thueringer_gesetz_ueber_die_beteiligung_von_einwohnerinnen_und_einwohnern_sowie_gemeinden_an_windparks_thuerwindbeteilg_neuer_titel_thueringer_geset.pdf
+2025-05-23 16:37:44,325 - INFO - Filter 'gaspreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93030/27_sitzung_des_stabilitaetsrates_am_2_mai_2023.pdf
+2025-05-23 16:37:46,335 - INFO - Starte Suche für Filterwort 'wärmepreis'
+2025-05-23 16:37:46,749 - INFO - wärmepreis: verarbeite Seite 1
+2025-05-23 16:37:47,003 - INFO - Filter 'wärmepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101304/ermittlungen_des_bundeskartellamts_gegen_fernwaermeanbieter_auswirkungen_auf_thueringen.pdf
+2025-05-23 16:37:47,003 - INFO - Filter 'wärmepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97345/preisunterschiede_in_der_versorgung_mit_fernwaerme.pdf
+2025-05-23 16:37:47,003 - INFO - Filter 'wärmepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96695/preisunterschiede_in_der_versorgung_mit_fernwaerme.pdf
+2025-05-23 16:37:47,003 - INFO - Filter 'wärmepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95243/122_plenarsitzung.pdf
+2025-05-23 16:37:47,003 - INFO - Filter 'wärmepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93030/27_sitzung_des_stabilitaetsrates_am_2_mai_2023.pdf
+2025-05-23 16:37:47,003 - INFO - Filter 'wärmepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92801/110_plenarsitzung.pdf
+2025-05-23 16:37:49,008 - INFO - Starte Suche für Filterwort 'energiepreis'
+2025-05-23 16:37:49,543 - INFO - energiepreis: verarbeite Seite 1
+2025-05-23 16:37:51,918 - INFO - energiepreis: verarbeite Seite 2
+2025-05-23 16:37:54,290 - INFO - energiepreis: verarbeite Seite 3
+2025-05-23 16:37:56,688 - INFO - energiepreis: verarbeite Seite 4
+2025-05-23 16:37:59,045 - INFO - energiepreis: verarbeite Seite 5
+2025-05-23 16:38:01,424 - INFO - energiepreis: verarbeite Seite 6
+2025-05-23 16:38:03,850 - INFO - energiepreis: verarbeite Seite 7
+2025-05-23 16:38:06,266 - INFO - energiepreis: verarbeite Seite 8
+2025-05-23 16:38:08,665 - INFO - energiepreis: verarbeite Seite 9
+2025-05-23 16:38:11,037 - INFO - energiepreis: verarbeite Seite 10
+2025-05-23 16:38:13,368 - INFO - energiepreis: verarbeite Seite 11
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101842/18_plenarsitzung_arbeitsfassung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101824/17_plenarsitzung_arbeitsfassung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101805/lage_der_busunternehmen_in_thueringen.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101671/den_politisch_verursachten_abstieg_der_automobilindustrie_in_thueringen_stoppen_arbeitsplaetze_und_industrielle_wertschoepfung_sichern.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101436/rueckzahlung_von_ukraine_hilfen_sicherstellung_der_konnexitaet_trotz_des_rechtskreiswechsels_teil_ii_zielsetzung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101290/15_plenarsitzung_arbeitsfassung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101281/14_plenarsitzung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101207/thueringer_gesetz_ueber_die_feststellung_des_landeshaushaltsplans_fuer_das_haushaltsjahr_2025_thueringer_haushaltsgesetz_2025_thuerhhg_2025_wasservers.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101280/13_plenarsitzung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101288/abstimmungsverhalten_der_landesregierung_in_der_1051_sitzung_des_bundesrats_zum_gesetz_zur_anpassung_des_treibhausgas_emissionshandelsgesetzes_an_di.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100994/thueringer_gesetz_zur_staerkung_der_kommunen_im_jahr_2025.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100879/jahresbericht_des_buergerbeauftragten_des_freistaats_thueringen_fuer_das_jahr_2024.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100793/11_plenarsitzung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100774/10_plenarsitzung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100342/7_plenarsitzung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100168/thueringens_zukunft_entwickeln_mit_investitionen_und_beteiligungen_den_wirtschaftsstandort_nachhaltig_modernisieren_und_unternehmen_mit_ihren_arbeitsp.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/100170/neustart_der_kernkraft_bezahlbare_und_sichere_energieversorgung_wiederherstellen.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99907/30_sitzung_des_stabilitaetsrats_am_5_dezember_2024.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99815/abschaffung_der_c02_steuer_thueringen_muss_sich_fuer_ein_ende_der_ideologisch_forcierten_teuerung_einsetzen_aussetzung_der_erhoehung_der_c02_abgabe_20.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99861/5_plenarsitzung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99959/haushaltsrechnung_des_freistaats_thueringen_fuer_das_haushaltsjahr_2023_enthaelt_band_1_band_2_rechnungen_der_einzelplaene_01_bis_18_korrigierte_fassu.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99828/mittelfristiger_finanzplan_fuer_die_jahre_2024_bis_2028_fuer_den_freistaat_thueringen.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99620/2_plenarsitzung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99606/6_sportbericht_der_thueringer_landesregierung_fuer_den_berichtszeitraum_2019_bis_2023.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99443/stellungnahme_der_landesregierung_gemaess_97_abs_1_satz_3_der_thueringer_landeshaushaltsordnung_zu_dem_jahresbericht_2024_des_thueringer_rechnungshofs.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99202/gesetz_und_verordnungsblatt_nr_12_2024.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99145/bundesratsinitiativen_aus_thueringen.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/98016/gesetz_und_verordnungsblatt_nr_9_2024.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/98015/gesetz_und_verordnungsblatt_nr_8_2024.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97903/pruefung_der_haushalts_und_wirtschaftsfuehrung_der_gemeinschaftssendung_einrichtung_und_aufgabe_gsea_der_ard_rundfunkanstalten_ard_aktuell_der_jahre_2.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97761/140_plenarsitzung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97667/138_plenarsitzung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97661/137_plenarsitzung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97645/136_plenarsitzung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97275/29_sitzung_des_stabilitaetsrats_am_6_mai_2024.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97118/134_plenarsitzung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96910/thueringer_gesetz_zur_ausreichung_von_leistungen_an_kommunen_zur_kompensation_gestiegener_energiepreise_bei_schwimmbaedern_thueringer_ausreichungsvere.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96879/thueringer_gesetz_zur_anpassung_der_besoldung_und_versorgung_in_den_jahren_2024_und_2025_und_zur_aenderung_besoldungs_und_versorgungsrechtlicher_sowie.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96602/einwohnerantraege_buergerbegehren_und_buergerentscheide_in_thueringen_stand_und_ergebnisse_der_verfahren_zum_31_dezember_2023.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96566/131_plenarsitzung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96483/jahresbericht_des_buergerbeauftragten_des_freistaats_thueringen_fuer_das_jahr_2023.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96127/bericht_zu_nummer_iv_des_beschlusses_des_thueringer_landtags_drucksache_7_3678_zu_der_drucksache_7_2874_gemeinsam_den_strukturwandel_in_der_automobi.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96193/24_bericht_der_kommission_zur_ermittlung_des_finanzbedarfs_der_rundfunkanstalten_kef_bericht.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96451/faellt_thueringen_zurueck_bestandsaufnahme_und_perspektiven_fuer_die_thueringer_wirtschaft.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95912/128_plenarsitzung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95902/127_plenarsitzung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95887/126_plenarsitzung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95882/zweiter_entwurf_zur_aenderung_des_landesentwicklungsprogramms_thueringen_hier_beteiligung_des_landtags_gemaess_4_abs_3_des_thueringer_landesplanungsge.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95734/erstes_gesetz_zur_aenderung_des_thueringer_tierische_nebenprodukte_beseitigungsgesetzes.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95749/wiedereinstieg_in_die_kernenergie_und_in_die_kernkraftforschung.pdf
+2025-05-23 16:38:13,702 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95757/28_sitzung_des_stabilitaetsrates_am_18_dezember_2023.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95523/runder_tisch_dorflaeden_in_thueringen.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95627/energiehilfen_an_kommunen_fortfuehren_schwimmbaeder_als_kommunale_daseinsvorsorge_unterstuetzen.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95628/energiehilfen_an_kommunen_fortfuehren_schwimmbaeder_als_kommunale_daseinsvorsorge_unterstuetzen.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95385/viertes_gesetz_zur_aenderung_des_thueringer_energiekrise_und_corona_pandemie_hilfefondsgesetzes_energiehilfen_an_kommunen_fortfuehren_schwimmbaeder_al.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95380/viertes_gesetz_zur_aenderung_des_thueringer_energiekrise_und_corona_pandemie_hilfefondsgesetzes_energiehilfen_an_kommunen_fortfuehren_schwimmbaeder_al.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95434/125_plenarsitzung.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95402/haushaltsrechnung_des_freistaats_thueringen_fuer_das_haushaltsjahr_2022_enthaelt_band_1_band_2_rechnungen_der_einzelplaene_01_bis_18.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95266/123_plenarsitzung.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95243/122_plenarsitzung.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95111/aktuelle_stunde_keine_rueckkehr_zu_19_prozent_mehrwertsteuer_auf_gas_und_fernwaerme_thueringen_muss_sich_im_bundesrat_fuer_die_dauerhafte_beibehaltung.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95038/sieben_prozent_muessen_dauerhaft_sein_mehrwertsteuer_auf_gas_und_fernwaerme_senken_energiepreiserhoehung_stoppen_neufassung.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94822/120_plenarsitzung.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/96993/75_sitzung_haushalts_und_finanzausschuss_wortprotokoll.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94583/stellungnahme_der_landesregierung_gemaess_97_abs_1_satz_3_der_thueringer_landeshaushaltsordnung_thuerlho_zu_dem_jahresbericht_2023_des_thueringer_rech.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94419/mittelfristiger_finanzplan_fuer_die_jahre_2023_bis_2027_fuer_den_freistaat_thueringen.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94826/bericht_zum_monitoring_zum_umsetzungsstand_der_klimaneutralen_landesverwaltung_inklusive_hochschulen.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94234/118_plenarsitzung.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94219/117_plenarsitzung.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94197/116_plenarsitzung.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/99206/70_sitzung_haushalts_und_finanzausschuss.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94787/44_sitzung_ausschuss_fuer_umwelt_energie_und_naturschutz.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94422/42_sitzung_ausschuss_fuer_wirtschaft_wissenschaft_und_digitale_gesellschaft.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94154/bericht_zu_nummer_iv_des_beschlusses_des_thueringer_landtags_drucksache_7_3678_zu_der_drucksache_7_2874_gemeinsam_den_strukturwandel_in_der_automobi.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94245/45_sitzung_ausschuss_fuer_infrastruktur_landwirtschaft_und_forsten.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97042/43_sitzung_petitionsausschuss.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94483/faellt_thueringen_zurueck_bestandsaufnahme_und_perspektiven_fuer_die_thueringer_wirtschaft.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93875/thueringer_gesetz_ueber_die_feststellung_des_landeshaushaltsplans_fuer_das_haushaltsjahr_2024_thueringer_haushaltsgesetz_2024_thuerhhg_2024.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93754/demografiebericht_2022_teil_2_herausforderungen_und_handlungsansaetze_bei_der_sicherung_ausgewaehlter_schwerpunkte_der_daseinsvorsorge_auf_grundlage_d.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93393/115_plenarsitzung.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93341/114_plenarsitzung.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93340/113_plenarsitzung.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93407/bericht_ueber_programmliche_leistungen_und_perspektiven_von_deutschlandradio_2022_bis_2024_gemaess_11e_abs_2_rundfunkstaatsvertrag.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93143/jahresbericht_2023_mit_bemerkungen_zur_haushalts_und_wirtschaftsfuehrung_und_zur_haushaltsrechnung_2021_gemaess_artikel_103_abs_3_satz_3_der_verfassun.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93066/thueringer_gesetz_ueber_die_beteiligung_von_einwohnerinnen_und_einwohnern_sowie_gemeinden_an_windparks_thuerwindbeteilg_neuer_titel_thueringer_geset.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93079/thueringer_gesetz_zur_freiwilligen_neugliederung_kreisangehoeriger_gemeinden_im_jahr_2024_zur_anpassung_gerichtsorganisatorischer_vorschriften_und_zur.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93030/27_sitzung_des_stabilitaetsrates_am_2_mai_2023.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92931/haertefallhilfen_fuer_nicht_leitungsgebundene_energietraeger_antraege_aus_thueringen.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92898/gebuehrenerhoehungen_bei_abwasserzweckverbaenden_durch_novelliertes_thueringer_wassergesetz_sowie_allgemeine_preissteigerungen.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92863/jahresabschluss_und_konzernabschluss_nebst_zusammengefasstem_lagebericht_und_konzernlagebericht_der_thueringer_aufbaubank_zum_31_dezember_2022.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92842/112_plenarsitzung.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92836/111_plenarsitzung.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92801/110_plenarsitzung.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92804/versammlungslagen_im_zusammenhang_mit_dem_sogenannten_heissen_herbst_in_thueringen.pdf
+2025-05-23 16:38:13,718 - INFO - Filter 'energiepreis' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92594/gutachten_politische_kultur_in_stadt_und_land_ergebnisse_des_thueringen_monitors_2022.pdf
+2025-05-23 16:38:15,722 - INFO - Starte Suche für Filterwort 'netzentgelt'
+2025-05-23 16:38:16,177 - INFO - netzentgelt: verarbeite Seite 1
+2025-05-23 16:38:18,485 - INFO - netzentgelt: verarbeite Seite 2
+2025-05-23 16:38:18,838 - INFO - Filter 'netzentgelt' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101842/18_plenarsitzung_arbeitsfassung.pdf
+2025-05-23 16:38:18,838 - INFO - Filter 'netzentgelt' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/101750/den_politisch_verursachten_abstieg_der_automobilindustrie_in_thueringen_stoppen_arbeitsplaetze_und_industrielle_wertschoepfung_sichern_automobilindust.pdf
+2025-05-23 16:38:18,838 - INFO - Filter 'netzentgelt' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97950/ausbau_der_windenergie_in_thueringen.pdf
+2025-05-23 16:38:18,838 - INFO - Filter 'netzentgelt' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97275/29_sitzung_des_stabilitaetsrats_am_6_mai_2024.pdf
+2025-05-23 16:38:18,838 - INFO - Filter 'netzentgelt' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/97394/49_sitzung_petitionsausschuss.pdf
+2025-05-23 16:38:18,838 - INFO - Filter 'netzentgelt' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95902/127_plenarsitzung.pdf
+2025-05-23 16:38:18,838 - INFO - Filter 'netzentgelt' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/95243/122_plenarsitzung.pdf
+2025-05-23 16:38:18,838 - INFO - Filter 'netzentgelt' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94827/121_plenarsitzung.pdf
+2025-05-23 16:38:18,838 - INFO - Filter 'netzentgelt' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94197/116_plenarsitzung.pdf
+2025-05-23 16:38:18,838 - INFO - Filter 'netzentgelt' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/94170/offener_brief_der_buergerinitiative_gegenwind_fahner_hoehe.pdf
+2025-05-23 16:38:18,838 - INFO - Filter 'netzentgelt' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/93754/demografiebericht_2022_teil_2_herausforderungen_und_handlungsansaetze_bei_der_sicherung_ausgewaehlter_schwerpunkte_der_daseinsvorsorge_auf_grundlage_d.pdf
+2025-05-23 16:38:18,838 - INFO - Filter 'netzentgelt' ergänzt bei https://parldok.thueringer-landtag.de/ParlDok/dokument/92842/112_plenarsitzung.pdf
+2025-05-23 16:38:20,862 - INFO - Thüringen-Scraping abgeschlossen.

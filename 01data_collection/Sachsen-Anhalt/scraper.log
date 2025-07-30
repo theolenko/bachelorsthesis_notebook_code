@@ -1,0 +1,65 @@
+2025-05-17 15:55:43,040 - INFO - Processing vng
+2025-05-17 15:55:45,560 - INFO - Fetching report_id MjAyNTA1MTctMTU1NTQ0LTU5MzEtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjU6OldFQlNPMS9EIFdFQlNPMjo6L2hvbWUvc3Rhci9zY3JpcHRzL25vZGVqcy9FUkUvdG1wL2VyZWFrM0E1ZEMxNC5qc29ubDo6Ojo6OjU6OjE3NDc0OTAxNDY for 'vng'
+2025-05-17 15:56:05,680 - INFO - Processing skw
+2025-05-17 15:56:08,488 - INFO - Fetching report_id MjAyNTA1MTctMTU1NjA2LTM4ODgtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjE4ODo6V0VCU08xL0QgV0VCU08yOjovaG9tZS9zdGFyL3NjcmlwdHMvbm9kZWpzL0VSRS90bXAvZXJlMlZmNzBEZ2RKLmpzb25sOjo6Ojo6MjI6OjE3NDc0OTAxNjg for 'skw'
+2025-05-17 15:56:28,801 - INFO - Processing verbundnetz gas
+2025-05-17 15:56:30,994 - INFO - No report_id for 'verbundnetz gas', retrying with search_id 20250517-155629-8295-LSA
+2025-05-17 15:56:43,140 - ERROR - Fallback also returned no report_id for 'verbundnetz gas'
+2025-05-17 15:57:03,142 - INFO - Processing ontras
+2025-05-17 15:57:05,437 - INFO - Fetching report_id MjAyNTA1MTctMTU1NzAzLTk2NTYtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjEzOjpXRUJTTzEvRCBXRUJTTzI6Oi9ob21lL3N0YXIvc2NyaXB0cy9ub2RlanMvRVJFL3RtcC9lcmU3eTgyLXdKSnouanNvbmw6Ojo6OjozOjoxNzQ3NDkwMjI2 for 'ontras'
+2025-05-17 15:57:25,548 - INFO - Processing erdgas
+2025-05-17 15:57:32,845 - INFO - Fetching report_id MjAyNTA1MTctMTU1NzI2LTY3MDgtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjUzNzo6V0VCU08xL0QgV0VCU08yOjovaG9tZS9zdGFyL3NjcmlwdHMvbm9kZWpzL0VSRS90bXAvZXJlOVpLTi1lZFJKLmpzb25sOjo6Ojo6NTY6OjE3NDc0OTAyNTI for 'erdgas'
+2025-05-17 15:57:53,644 - INFO - Processing wasserstoff
+2025-05-17 15:58:03,408 - INFO - Fetching report_id MjAyNTA1MTctMTU1NzU0LTkwMDAtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjEyNDk6OldFQlNPMS9EIFdFQlNPMjo6L2hvbWUvc3Rhci9zY3JpcHRzL25vZGVqcy9FUkUvdG1wL2VyZW4wcVFYUFN4NC5qc29ubDo6Ojo6OjEwNzo6MTc0NzQ5MDI4Mg for 'wasserstoff'
+2025-05-17 15:58:24,714 - INFO - Processing biogas
+2025-05-17 15:58:28,290 - INFO - Fetching report_id MjAyNTA1MTctMTU1ODI1LTMyNTUtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjE1MTo6V0VCU08xL0QgV0VCU08yOjovaG9tZS9zdGFyL3NjcmlwdHMvbm9kZWpzL0VSRS90bXAvZXJlaDFTWThqTkdoLmpzb25sOjo6Ojo6Mjk6OjE3NDc0OTAzMDg for 'biogas'
+2025-05-17 15:58:48,604 - INFO - Processing biomethan
+2025-05-17 15:58:52,589 - INFO - Fetching report_id MjAyNTA1MTctMTU1ODUxLTA3MDgtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjMxOjpXRUJTTzEvRCBXRUJTTzI6Oi9ob21lL3N0YXIvc2NyaXB0cy9ub2RlanMvRVJFL3RtcC9lcmU3THo3dHJfMFUuanNvbmw6Ojo6Ojo3OjoxNzQ3NDkwMzMz for 'biomethan'
+2025-05-17 15:59:12,915 - INFO - Processing heitmüller
+2025-05-17 15:59:15,083 - INFO - No report_id for 'heitmüller', retrying with search_id 20250517-155913-2413-LSA
+2025-05-17 15:59:27,215 - ERROR - Fallback also returned no report_id for 'heitmüller'
+2025-05-17 15:59:47,218 - INFO - Processing kaltefleiter
+2025-05-17 15:59:49,387 - INFO - No report_id for 'kaltefleiter', retrying with search_id 20250517-155948-2075-LSA
+2025-05-17 16:00:01,535 - ERROR - Fallback also returned no report_id for 'kaltefleiter'
+2025-05-17 16:00:21,537 - INFO - Processing lng
+2025-05-17 16:00:30,065 - INFO - Fetching report_id MjAyNTA1MTctMTYwMDIyLTMyODAtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjI4Mjo6V0VCU08xL0QgV0VCU08yOjovaG9tZS9zdGFyL3NjcmlwdHMvbm9kZWpzL0VSRS90bXAvZXJlWEktc1RuR0ctLmpzb25sOjo6Ojo6MjM6OjE3NDc0OTA0Mjc for 'lng'
+2025-05-17 16:00:51,713 - INFO - Processing kraftwerke
+2025-05-17 16:00:56,703 - INFO - Fetching report_id MjAyNTA1MTctMTYwMDUyLTQ4MDktTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjQzMzo6V0VCU08xL0QgV0VCU08yOjovaG9tZS9zdGFyL3NjcmlwdHMvbm9kZWpzL0VSRS90bXAvZXJlWUplQkdfZVUyLmpzb25sOjo6Ojo6MzQ6OjE3NDc0OTA0NTY for 'kraftwerke'
+2025-05-17 16:01:17,186 - INFO - Processing wärmeplanung
+2025-05-17 16:01:20,046 - INFO - Fetching report_id MjAyNTA1MTctMTYwMTE4LTY3NjItTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjI5Mzo6V0VCU08xL0QgV0VCU08yOjovaG9tZS9zdGFyL3NjcmlwdHMvbm9kZWpzL0VSRS90bXAvZXJla0VlZHkyU2FDLmpzb25sOjo6Ojo6MzY6OjE3NDc0OTA0ODA for 'wärmeplanung'
+2025-05-17 16:01:40,515 - INFO - Processing kernnetz
+2025-05-17 16:01:43,004 - INFO - Fetching report_id MjAyNTA1MTctMTYwMTQxLTczODUtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjgwOjpXRUJTTzEvRCBXRUJTTzI6Oi9ob21lL3N0YXIvc2NyaXB0cy9ub2RlanMvRVJFL3RtcC9lcmV5dGlDejlPWE0uanNvbmw6Ojo6Ojo5OjoxNzQ3NDkwNTAz for 'kernnetz'
+2025-05-17 16:02:03,204 - INFO - Processing energiepark
+2025-05-17 16:02:05,686 - INFO - Fetching report_id MjAyNTA1MTctMTYwMjA0LTAyOTQtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjEyOTo6V0VCU08xL0QgV0VCU08yOjovaG9tZS9zdGFyL3NjcmlwdHMvbm9kZWpzL0VSRS90bXAvZXJlNHE3SXMzNHRVLmpzb25sOjo6Ojo6MTA6OjE3NDc0OTA1MjY for 'energiepark'
+2025-05-17 16:02:25,883 - INFO - Processing mibrag
+2025-05-17 16:02:28,497 - INFO - Fetching report_id MjAyNTA1MTctMTYwMjI2LTk1OTItTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjIwNDo6V0VCU08xL0QgV0VCU08yOjovaG9tZS9zdGFyL3NjcmlwdHMvbm9kZWpzL0VSRS90bXAvZXJlc0FqVjBJMURWLmpzb25sOjo6Ojo6MjQ6OjE3NDc0OTA1NDg for 'mibrag'
+2025-05-17 16:02:48,777 - INFO - Processing stickstoffwerke
+2025-05-17 16:02:51,293 - INFO - Fetching report_id MjAyNTA1MTctMTYwMjQ5LTg4NDAtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjEzNTo6V0VCU08xL0QgV0VCU08yOjovaG9tZS9zdGFyL3NjcmlwdHMvbm9kZWpzL0VSRS90bXAvZXJlZjdyUDRORHNiLmpzb25sOjo6Ojo6MTM6OjE3NDc0OTA1NzE for 'stickstoffwerke'
+2025-05-17 16:03:11,527 - INFO - Processing piesteritz
+2025-05-17 16:03:15,224 - INFO - Fetching report_id MjAyNTA1MTctMTYwMzEyLTgwNDktTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjI2Mjo6V0VCU08xL0QgV0VCU08yOjovaG9tZS9zdGFyL3NjcmlwdHMvbm9kZWpzL0VSRS90bXAvZXJlV3phZ3d1QlptLmpzb25sOjo6Ojo6Mzc6OjE3NDc0OTA1OTU for 'piesteritz'
+2025-05-17 16:03:35,650 - INFO - Processing lauchstädt
+2025-05-17 16:03:42,887 - INFO - Fetching report_id MjAyNTA1MTctMTYwMzM2LTQzMzAtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjQ5OTo6V0VCU08xL0QgV0VCU08yOjovaG9tZS9zdGFyL3NjcmlwdHMvbm9kZWpzL0VSRS90bXAvZXJlSnJ1NVFHb2x3Lmpzb25sOjo6Ojo6MTAxOjoxNzQ3NDkwNjIy for 'lauchstädt'
+2025-05-17 16:04:03,928 - INFO - Processing wittenberg
+2025-05-17 16:04:16,095 - INFO - No report_id for 'wittenberg', retrying with search_id 20250517-160404-5799-LSA
+2025-05-17 16:04:37,680 - INFO - Fetching fallback report_id MjAyNTA1MTctMTYwNDA0LTU3OTktTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjI3MDk6OldFQlNPMS9EIFdFQlNPMjo6L2hvbWUvc3Rhci9zY3JpcHRzL25vZGVqcy9FUkUvdG1wL2VyZXk0bm1iY0J2My5qc29ubDo6Ojo6OjY1ODo6MTc0NzQ5MDY3NA for 'wittenberg'
+2025-05-17 16:05:04,734 - INFO - Processing carbon management
+2025-05-17 16:05:06,966 - INFO - Fetching report_id MjAyNTA1MTctMTYwNTA1LTIwMTItTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjE6OldFQlNPMS9EIFdFQlNPMjo6L2hvbWUvc3Rhci9zY3JpcHRzL25vZGVqcy9FUkUvdG1wL2VyZWh4QWZib2NkVi5qc29ubDo6Ojo6OjE6OjE3NDc0OTA3MDc for 'carbon management'
+2025-05-17 16:05:27,066 - INFO - Processing co2
+2025-05-17 16:05:39,532 - INFO - Fetching report_id MjAyNTA1MTctMTYwNTI3LTMzNjgtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjEzNDg6OldFQlNPMS9EIFdFQlNPMjo6L2hvbWUvc3Rhci9zY3JpcHRzL25vZGVqcy9FUkUvdG1wL2VyZVM0VFFEWFN5OS5qc29ubDo6Ojo6OjEzMzo6MTc0NzQ5MDczOA for 'co2'
+2025-05-17 16:06:01,031 - INFO - Processing wärmewende
+2025-05-17 16:06:03,686 - INFO - Fetching report_id MjAyNTA1MTctMTYwNjAxLTE2NzAtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjE2NTo6V0VCU08xL0QgV0VCU08yOjovaG9tZS9zdGFyL3NjcmlwdHMvbm9kZWpzL0VSRS90bXAvZXJlUzF0TTB0LWx0Lmpzb25sOjo6Ojo6MTg6OjE3NDc0OTA3NjQ for 'wärmewende'
+2025-05-17 16:06:23,913 - INFO - Processing kommunale haushalte
+2025-05-17 16:06:28,885 - INFO - Fetching report_id MjAyNTA1MTctMTYwNjI0LTc0OTYtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjMxNDo6V0VCU08xL0QgV0VCU08yOjovaG9tZS9zdGFyL3NjcmlwdHMvbm9kZWpzL0VSRS90bXAvZXJldTBrSXNzRXpkLmpzb25sOjo6Ojo6MzU6OjE3NDc0OTA3ODg for 'kommunale haushalte'
+2025-05-17 16:06:49,531 - INFO - Processing stadtwerk
+2025-05-17 16:06:56,012 - INFO - Fetching report_id MjAyNTA1MTctMTYwNjUwLTk2NDAtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjYyMDo6V0VCU08xL0QgV0VCU08yOjovaG9tZS9zdGFyL3NjcmlwdHMvbm9kZWpzL0VSRS90bXAvZXJlbUo4ZGFuamtsLmpzb25sOjo6Ojo6NTI6OjE3NDc0OTA4MTU for 'stadtwerk'
+2025-05-17 16:07:16,736 - INFO - Processing strompreis
+2025-05-17 16:07:23,188 - INFO - Fetching report_id MjAyNTA1MTctMTYwNzE3LTI2NTgtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjcwNzo6V0VCU08xL0QgV0VCU08yOjovaG9tZS9zdGFyL3NjcmlwdHMvbm9kZWpzL0VSRS90bXAvZXJlcjIyZXZ5ak1yLmpzb25sOjo6Ojo6NTU6OjE3NDc0OTA4NDI for 'strompreis'
+2025-05-17 16:07:43,882 - INFO - Processing gaspreis
+2025-05-17 16:07:46,678 - INFO - Fetching report_id MjAyNTA1MTctMTYwNzQ0LTA1NDUtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjI5MTo6V0VCU08xL0QgV0VCU08yOjovaG9tZS9zdGFyL3NjcmlwdHMvbm9kZWpzL0VSRS90bXAvZXJlRWpRSkhCVUF6Lmpzb25sOjo6Ojo6MTg6OjE3NDc0OTA4NjY for 'gaspreis'
+2025-05-17 16:08:06,963 - INFO - Processing wärmepreis
+2025-05-17 16:08:09,204 - INFO - Fetching report_id MjAyNTA1MTctMTYwODA3LTczODYtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjE6OldFQlNPMS9EIFdFQlNPMjo6L2hvbWUvc3Rhci9zY3JpcHRzL25vZGVqcy9FUkUvdG1wL2VyZTlDa0lnWE5nNS5qc29ubDo6Ojo6OjE6OjE3NDc0OTA4ODk for 'wärmepreis'
+2025-05-17 16:08:29,321 - INFO - Processing energiepreis
+2025-05-17 16:08:37,089 - INFO - Fetching report_id MjAyNTA1MTctMTYwODMwLTA3NTktTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6Ojg1OTo6V0VCU08xL0QgV0VCU08yOjovaG9tZS9zdGFyL3NjcmlwdHMvbm9kZWpzL0VSRS90bXAvZXJlZGxTY3FFWlFJLmpzb25sOjo6Ojo6OTQ6OjE3NDc0OTA5MTY for 'energiepreis'
+2025-05-17 16:08:58,158 - INFO - Processing netzentgelt
+2025-05-17 16:09:02,293 - INFO - Fetching report_id MjAyNTA1MTctMTYwODU4LTg5ODYtTFNBOjpnZW5lcmljMi1zaG9ydDo6aHRtbDo6Ojo6OjUyNDo6V0VCU08xL0QgV0VCU08yOjovaG9tZS9zdGFyL3NjcmlwdHMvbm9kZWpzL0VSRS90bXAvZXJlZjVkdUh4TE1ILmpzb25sOjo6Ojo6MzY6OjE3NDc0OTA5NDI for 'netzentgelt'
+2025-05-17 16:09:22,870 - INFO - Wrote 870 records to C:\Users\tdoro\Documents\GitHub\bachelorarbeit\Sachsen-Anhalt\SachsenAnhalt_Meta.json
