@@ -1,10 +1,11 @@
 # 28.07.25
-# io_utils.py
-# Utility functions for cleaning text data in JSON or CSV files using the clean_text function and Segmenting.
+# preprocessing.py
+# collection of preprocessing functions and helpers for cleaning text data in JSON or CSV files using the clean_text function and Segmenting.
 # Supports both file output and in-memory return.
 
 import json
 import pandas as pd
+import os
 from src.cleaning import clean_text
 
 #TBD 26.07 ggf. noch eine Funktion die aus json eine csv macht, und auch dann process file aufruft. Mal schauen wie man die Struktur beibehalten kann. 
@@ -25,7 +26,7 @@ def process_file(
         text_key (str): Key/column with text to clean.
         output_mode (str): "file" to write output, "memory" to return cleaned data.
     Returns:
-        Cleaned data (if output_mode is "memory"). (list[dicts] for JSON, pd.DataFrame for CSV)
+        Cleaned data (if output_mode is "memory"). (pd.DataFrame for json and csv)
     Raises:
         ValueError: If file_format is not supported.
     """
@@ -39,16 +40,21 @@ def process_file(
     if file_format == "json":
         with open(filepath, "r", encoding="utf-8") as f:
             data = json.load(f)
-        for entry in data:
-            if text_key in entry:
-                entry[text_key] = clean_text(entry[text_key], mode=mode)
+
         if output_mode == "file":
+            # In-place im JSON-Objekt bereinigen und zurückschreiben
+            for entry in data:
+                if text_key in entry:
+                    entry[text_key] = clean_text(entry[text_key], mode=mode)
             base, ext = filepath.rsplit('.', 1)
             new_path = f"{base}_cleaned.{ext}"
             with open(new_path, "w", encoding="utf-8") as f:
                 json.dump(data, f, ensure_ascii=False, indent=2)
-        else:
-            return data
+        else: #"memory"
+            # DataFrame zurückliefern und EINMAL bereinigen
+            df = pd.json_normalize(data)
+            df[text_key] = df[text_key].astype(str).map(lambda txt: clean_text(txt, mode=mode))
+            return df
 
     # CSV: clean the text_key column and write or return
     else:
@@ -83,7 +89,7 @@ def segment_documents(
     Functionality based on findings from exploratory_analysis.ipynb Notebook 28.07.25
 
     Args:
-        documents (list[dict]): List of documents (dicts) to Segment. Only works for JSON-like data.
+        documents (list[dict]): List of documents (dicts) to Segment and pd.DataFrame (will be converted to list of dicts internally).
         text_key (str): Key in each dict containing the text to split and filter.
         min_tokens (int): Minimum number of tokens required for a document to be kept.
         max_tokens (int): Maximum number of tokens allowed for a document to be kept.
@@ -92,7 +98,7 @@ def segment_documents(
         verbose (bool): If True, prints summary statistics after processing.
 
     Returns:
-        list[dict]: List of Segment dictionaries, each with metadata and Segment text.
+        pf.DataFrame: DataFrame containing the filtered and segmented documents.
 
     Note:
         This function cannot be used with CSVs or pandas DataFrames. It is only for lists of dicts (JSON-like data).
@@ -102,6 +108,10 @@ def segment_documents(
         segments = segment_documents(cleaned)
 
     """
+    #also support for df input, transform it to list of dicts
+    if isinstance(documents, pd.DataFrame):
+        documents = documents.to_dict(orient="records")
+
     # Initialize counters and Segment list
     removed_empty = 0
     removed_too_short = 0
@@ -151,8 +161,8 @@ def segment_documents(
 
     # Final small-Segment filter: remove segments with too few tokens
     filtered_segments = [
-        b for b in segments
-        if len(b["SegmentText"].split()) >= min_segment_tokens
+        s for s in segments
+        if len(s["SegmentText"].split()) >= min_segment_tokens
     ]
 
     # Print summary statistics
@@ -175,42 +185,95 @@ def segment_documents(
         print(f"Removed (TokenLength < {min_segment_tokens}): {removed_small}")
         print(f"Remaining segments: {len(filtered_segments)}")
 
-    return filtered_segments
+    return pd.DataFrame(filtered_segments)
 
 
-#28.07.25 for checking if in-memory data matches file, maybe delete later on
-def compare_list_to_json(data_list, json_path):
+#30.07.25 for checking if in-memory data matches file, maybe delete later on
+def compare_data(a, b, fmt=None):
     """
-    Compare an in-memory list[dict] to a JSON file on disk, character by character.
-    Prints first diff or “identical”.
+    Compare two data sources of the same type: JSON file path, CSV file path,
+    in‐memory list[dict], or pandas.DataFrame. Prints first diff or “identical.”
     Returns True if identical, False otherwise.
 
-    Example usage: compare_list_to_json(cleaned_data, "1BasicCleanedData.json")
+    Args:
+        a, b: Either file paths (str) ending in .json or .csv, or in‐memory data:
+              list[dict] for JSON-like, or pd.DataFrame for CSV-like.
+        fmt (str, optional): Force format "json" or "csv". If None, inferred.
+
+    Example usage:
+        compare_data("clean1.json", "clean2.json")
+        compare_data(df1, df2)
+        compare_data(cleaned_list, "cleaned.json")
     """
-    # 1) Serialisiere die Liste exakt so, wie die JSON-Datei geschrieben würde
-    s1 = json.dumps(data_list, ensure_ascii=False, indent=2)
-    # 2) Lese die Datei
-    with open(json_path, 'r', encoding='utf-8') as f:
-        s2 = f.read()
-    # 3) Exakter Vergleich
+    # Helper to load or serialize to text
+    def to_text(x, fmt):
+        if isinstance(x, str) and os.path.isfile(x):
+            # path
+            with open(x, "r", encoding="utf-8") as f:
+                return f.read()
+        elif fmt == "json":
+            # list or dataframe -> JSON text
+            if isinstance(x, pd.DataFrame):
+                obj = json.loads(x.to_json(orient="records", force_ascii=False))
+            else:
+                obj = x
+            return json.dumps(obj, ensure_ascii=False, indent=2)
+        elif fmt == "csv":
+            # dataframe or list -> CSV text
+            if isinstance(x, str):
+                # path fallback
+                with open(x, "r", encoding="utf-8") as f:
+                    return f.read()
+            elif isinstance(x, pd.DataFrame):
+                return x.to_csv(index=False)
+            else:
+                # list of dicts -> DataFrame
+                df = pd.DataFrame(x)
+                return df.to_csv(index=False)
+        else:
+            raise ValueError(f"Cannot serialize object of type {type(x)} as {fmt}")
+
+    # Infer format if not provided
+    def infer_format(x):
+        if isinstance(x, str) and os.path.isfile(x):
+            _, ext = os.path.splitext(x)
+            return ext.lower().lstrip(".")
+        elif isinstance(x, pd.DataFrame):
+            return "csv"
+        elif isinstance(x, list):
+            return "json"
+        else:
+            raise ValueError(f"Cannot infer format for object of type {type(x)}")
+
+    fmt_a = fmt or infer_format(a)
+    fmt_b = fmt or infer_format(b)
+    if fmt_a != fmt_b:
+        raise ValueError(f"Formats differ: {fmt_a} vs {fmt_b}")
+    fmt = fmt_a
+
+    s1 = to_text(a, fmt)
+    s2 = to_text(b, fmt)
+
     if s1 == s2:
-        print("In-memory data and file are identical")
+        print("Data sources are identical")
         return True
-    # 4) Finde erste Abweichung
+
+    # find first difference
     min_len = min(len(s1), len(s2))
     for idx in range(min_len):
         if s1[idx] != s2[idx]:
             line = s1.count('\n', 0, idx) + 1
             col = idx - s1.rfind('\n', 0, idx)
             print(f"Difference at idx={idx} (line {line}, col {col}):")
-            print(f"  in-memory has: {s1[idx]!r}")
-            print(f"  in file    has: {s2[idx]!r}")
+            print(f"  first  has: {s1[idx]!r}")
+            print(f"  second has: {s2[idx]!r}")
             break
     else:
         print(f"Match for first {min_len} chars, lengths differ:")
-        print(f"  in-memory length = {len(s1)}")
-        print(f"  file length      = {len(s2)}")
+        print(f"  first  length = {len(s1)}")
+        print(f"  second length = {len(s2)}")
     return False
+
 
 
 
