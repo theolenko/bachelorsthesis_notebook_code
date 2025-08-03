@@ -8,7 +8,6 @@ import pandas as pd
 import os
 from src.cleaning import clean_text
 
-#TBD 26.07 ggf. noch eine Funktion die aus json eine csv macht, und auch dann process file aufruft. Mal schauen wie man die Struktur beibehalten kann. 
 def process_file(
     filepath: str,
     mode: str = "basic",

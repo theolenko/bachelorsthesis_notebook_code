@@ -1,10 +1,45 @@
 import re
+import os
 import unicodedata
+import nltk
+nltk.download("stopwords", quiet=True)
+from nltk.corpus import stopwords
+from nltk.stem import SnowballStemmer
+from gensim.models.phrases import Phrases, Phraser
+
+
+
+# Load German stopwords and stemmer
+_german_stop = set(stopwords.words("german"))
+_stemmer = SnowballStemmer("german")
+
+# Load trained phraser for multiword grouping
+bigram = None  # Will be loaded when needed
+
+def _load_phraser():
+    """Load the trained phraser from pkl file from 05modeling_pipelines directory."""
+    global bigram
+    if bigram is None:
+        try:
+            # Try to load from 05modeling_pipelines directory. 
+            # IMPORTANT: file must be named 'bigram.pkl' and in the correct directory
+            phraser_path = os.path.join(os.path.dirname(__file__), '..', '05modeling_pipelines', 'bigram.pkl')
+            if os.path.exists(phraser_path):
+                bigram = Phraser.load(phraser_path)
+            else:
+                # Fallback: no phraser available
+                print("Warning: bigram.pkl not found. Multiword grouping will be skipped.")
+                bigram = None
+        except Exception as e:
+            print(f"Warning: Could not load phraser: {e}. Multiword grouping will be skipped.")
+            bigram = None
+    return bigram
+
 
 def clean_text(text: str, mode: str = "basic") -> str:
     """
     Main function for text cleaning.
-    Currently available: mode = "basic"
+    Currently available: mode = "basic", "advanced"
 
     Args:
         text (str): The input text to be cleaned.
@@ -18,8 +53,10 @@ def clean_text(text: str, mode: str = "basic") -> str:
     """
     if mode == "basic":
         return _clean_basic(text)
+    elif mode == "advanced":
+        return _clean_advanced(text)
     else:
-        raise ValueError("Mode not supported: Use 'basic'.")
+        raise ValueError("Mode not supported: Use 'basic' or 'advanced'.")
 
 def _clean_basic(text: str) -> str:
     """
@@ -100,16 +137,11 @@ def _clean_basic(text: str) -> str:
     cleaned_tokens.extend(buffer)
     text = " ".join(cleaned_tokens)
 
-    # 8a. Remove runs of symbols (dot, dash, underscore)
+    # 8. Remove runs of symbols (dot, dash, underscore)
     # Any sequence of 3 or more consecutive '.', '-', or '_' characters—regardless of order or mix—will be replaced by a single space.
     # Example: 'hello---world' -> 'hello world', 'foo___bar' -> 'foo bar', 'wait...' -> 'wait '
     #          'foo-._--__...bar' -> 'foo bar'
     text = re.sub(r"[\.\-\_]{3,}", " ", text)
-    # 8b. Remove most punctuation and typographic symbols
-    # Example: 'hello, world!' -> 'hello  world '
-    #          '«quote»' -> ' quote '
-    text = re.sub(r"[!\"#$%&'()*+,./:;<=>?@[\\]^_`{|}~]", " ", text)
-    text = re.sub(r"[„“‚‘‹›«»\"]", " ", text)
 
     # 9. Remove control characters (ASCII control chars and replacement char)
     # Example: 'foo\x00bar' -> 'foobar'
@@ -120,3 +152,94 @@ def _clean_basic(text: str) -> str:
     text = re.sub(r"\s+", " ", text).strip()
 
     return text
+
+def _clean_advanced(text: str) -> str:
+    """
+    Advanced text cleaning pipeline for German federal parliamentary documents.
+    Builds on basic cleaning and adds domain-specific processing, multiword grouping, 
+    stopword removal, and stemming.
+    
+    Steps:
+        1. Apply basic cleaning pipeline
+        2. Remove URLs and email addresses  
+        3. Remove parliamentary boilerplate patterns
+        4. Remove non-alphabetic characters
+        5. Normalize whitespace
+        6. Initial tokenization and single character filtering
+        7. Multiword grouping via trained Phraser
+        8. Stopword removal
+        9. Phrase-aware stemming
+       10. Final whitespace normalization
+    """
+    # 1. Start from basic cleanup
+    # Apply all basic normalization steps (unicode, lowercase, symbol removal, etc.)
+    text = _clean_basic(text)
+    
+    # 2. Remove URLs and email addresses
+    # Example: 'Visit https://example.com or email test@domain.de' -> 'Visit  or email '
+    text = re.sub(r'https?://\S+|www\.\S+', ' ', text)
+    text = re.sub(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}', ' ', text)
+    
+    # 3. Remove parliamentary boilerplate patterns
+    # Example: 'Text drucksache 7/1234 mehr text' -> 'Text  mehr text'
+    text = re.sub(r'drucksache\s+\d+/\d+[^\w]*', ' ', text)
+    
+    # Remove common parliamentary boilerplate phrases (case-insensitive matching)
+    # Example: 'der sächsische landtag beschließt' -> ' beschließt'
+    # Example: 'mit freundlichen grüßen dr müller' -> ' dr müller'
+    for p in ["landtag", "hausanschrift", "mit freundlichen grüßen", "wahlperiode",
+              "namens und im auftrag", "anlage", "seite", "aktenzeichen", "acrobat reader"
+              "verarbeitung personenbezogener daten", "amtsbekannter rex"]:
+        # Match the phrase with word boundaries to avoid partial matches
+        text = re.sub(rf'\b{re.escape(p)}\b', ' ', text)
+    
+    # 4. Remove non-alphabetic characters (keep spaces) - BEFORE tokenization
+    # This matches the preprocessing used during phraser training
+    # Example: 'klimaschutz-maßnahmen 2024!' -> 'klimaschutz maßnahmen '
+    text = re.sub(r'[^a-zäöüß\s]', ' ', text)
+    
+    # 5. Normalize whitespace and tokenize
+    text = re.sub(r'\s+', ' ', text).strip()
+    tokens = text.split()
+    
+    # 6. Remove single character tokens (matching phraser training preprocessing)
+    # Example: ['klimaschutz', 'maßnahmen', 'a', 'für'] -> ['klimaschutz', 'maßnahmen', 'für']
+    tokens = [t for t in tokens if len(t) > 1]
+    
+    # 7. Multiword grouping via trained Phraser (if available)
+    # The phraser detects common word combinations and joins them with underscores
+    # Example: ['soziale', 'gerechtigkeit'] -> ['soziale_gerechtigkeit']
+    # Example: ['klimaschutz', 'maßnahmen'] -> ['klimaschutz_maßnahmen'] 
+    # IMPORTANT: Text preprocessing here matches exactly the preprocessing used during training
+    phraser = _load_phraser()
+    if phraser is not None:
+        tokens = phraser[tokens]  # Apply phrase detection to token list
+    
+    # 8. Stopword removal and additional filtering
+    # Example: ['die', 'regierung_will', 'neue', 'gesetze'] -> ['regierung_will', 'neue', 'gesetze']
+    # Removes German stopwords (der, die, das, und, etc.)
+    tokens = [t for t in tokens if t not in _german_stop and len(t) > 1]
+    
+    # 9. Stemming - reduce words to their root form with phrase-aware processing
+    # For single words: ['regierung', 'gesetze'] -> ['regier', 'gesetz']
+    # For multiword phrases: ['soziale_gerechtigkeit'] -> ['sozial_gerecht']
+    # Uses German Snowball stemmer while preserving phrase structure
+    stemmed_tokens = []
+    for token in tokens:
+        if '_' in token:
+            # Handle multiword phrases: stem each component separately
+            # Example: 'soziale_gerechtigkeit' -> ['soziale', 'gerechtigkeit'] -> ['sozial', 'gerecht'] -> 'sozial_gerecht'
+            parts = token.split('_')
+            stemmed_parts = [_stemmer.stem(part) for part in parts]
+            stemmed_tokens.append('_'.join(stemmed_parts))
+        else:
+            # Handle single words normally
+            # Example: 'regierung' -> 'regier'
+            stemmed_tokens.append(_stemmer.stem(token))
+    tokens = stemmed_tokens
+    
+    # 10. Final whitespace normalization
+    # Ensure single spaces between tokens and trim
+    result = " ".join(tokens)
+    return re.sub(r'\s+', ' ', result).strip()
+
