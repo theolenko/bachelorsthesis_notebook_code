@@ -1,10 +1,10 @@
 # evaluation_visualization.py
 """
-Collection of visualization functions for machine learning model evaluation.
+Pure visualization functions for machine learning model evaluation.
 
 This module provides standardized plotting functions for common evaluation metrics
-in binary classification. All functions are model-independent and can be used with
-any classifier that follows scikit-learn conventions.
+in binary classification. For threshold optimization, use the optimize_threshold module.
+All functions are model-independent and focus solely on visualization.
 """
 
 import numpy as np
@@ -72,6 +72,54 @@ def extended_classification_report(y_true, y_pred, y_prob=None):
     return standard_report + additional_report
 
 
+def get_metrics_dict(y_true, y_pred, y_prob=None):
+    """
+    Extract structured metrics using same calculations as extended_classification_report.
+    
+    This function provides machine-readable structured output that complements
+    the human-readable format from extended_classification_report.
+    
+    Parameters:
+    -----------
+    y_true : array-like
+        True labels
+    y_pred : array-like
+        Predicted labels
+    y_prob : array-like, optional
+        Predicted probabilities for the positive class
+        Required for AUC-ROC and AUC-PR calculations
+        
+    Returns:
+    --------
+    dict
+        Structured metrics dictionary containing:
+        - 'classification_report': Standard sklearn classification report as dict
+        - 'additional_metrics': Dict with accuracy, f2_score, and AUC metrics
+        - 'class_1_metrics': Quick access to positive class metrics
+    """
+    # Get classification report as dict (same as in extended_classification_report)
+    standard_dict = classification_report(y_true, y_pred, output_dict=True)
+    
+    # Calculate additional metrics (same logic as extended_classification_report)
+    additional_metrics = {}
+    additional_metrics['accuracy'] = accuracy_score(y_true, y_pred)
+    additional_metrics['f2_score'] = fbeta_score(y_true, y_pred, beta=2)
+    
+    if y_prob is not None:
+        additional_metrics['roc_auc'] = roc_auc_score(y_true, y_prob)
+        additional_metrics['auc_pr'] = average_precision_score(y_true, y_prob)
+    
+    # Combine for comprehensive results
+    return {
+        'classification_report': standard_dict,
+        'additional_metrics': additional_metrics,
+        'class_1_metrics': {
+            'precision': standard_dict['1']['precision'],
+            'recall': standard_dict['1']['recall'], 
+            'f1_score': standard_dict['1']['f1-score']
+        }
+    }
+
 
 def plot_learning_curves(estimator, X, y, cv, 
                         metrics=DEFAULT_METRICS,
@@ -90,12 +138,12 @@ def plot_learning_curves(estimator, X, y, cv,
         Target values
     cv : int or cross-validation generator
         Cross-validation splitting strategy
-    metrics : list of str, default=['accuracy', 'f1', 'precision', 'recall']
+    metrics : list of str, default=DEFAULT_METRICS
         Metrics to evaluate. Can include: 'accuracy', 'f1', 'f2', 'precision', 'recall', 
-        'roc_auc', 'average_precision'
+        'roc_auc', 'auc_pr'
     train_sizes : array-like, default=np.linspace(0.1, 1.0, 5)
         Points at which to evaluate training set size
-    figsize : tuple, default=(15, 10)
+    figsize : tuple, default=(20, 15)
         Size of the figure in inches
         
     Returns:
@@ -106,7 +154,7 @@ def plot_learning_curves(estimator, X, y, cv,
     Notes:
     ------
     - Requires cross-validation (cv parameter) for meaningful results
-    - For imbalanced datasets, consider using 'f1' or 'average_precision' metrics
+    - For imbalanced datasets, use f2
     - Memory usage increases with train_sizes points
     """
     n_metrics = len(metrics)
@@ -265,73 +313,16 @@ def plot_roc_and_pr_curves(y_true, y_prob, ax=None):
     plt.tight_layout()
     return plt.gcf()
 
-def evaluate_thresholds(y_true, y_prob, thresholds=np.linspace(0.1, 0.9, 17),
-                       metrics=DEFAULT_METRICS):
-    """
-    Evaluates model performance at different classification thresholds.
-    
-    Parameters:
-    -----------
-    y_true : array-like
-        True labels
-    y_prob : array-like
-        Predicted probabilities for the positive class
-    thresholds : array-like, default=np.linspace(0.1, 0.9, 17)
-        Thresholds to evaluate
-    metrics : list of str, default=['precision', 'recall', 'f1', 'f2']
-        Metrics to calculate
-    
-    Returns:
-    --------
-    list of dict
-        Evaluation results for each threshold
-    
-    Notes:
-    ------
-    - Useful for finding optimal threshold for imbalanced datasets
-    - Requires probability predictions
-    - Consider your use case when choosing threshold (precision vs recall trade-off)
-    """
-    results = []
-    
-    # Calculate area under curves (AUC) metrics
-    # These don't depend on threshold as they consider all possible thresholds
-    auc_roc = roc_auc_score(y_true, y_prob)  # Area under ROC curve
-    auc_pr = average_precision_score(y_true, y_prob)  # Area under Precision-Recall curve
-    
-    for t in thresholds:
-        y_pred = (y_prob >= t).astype(int)
-        result = {'threshold': t}
-        
-        if 'accuracy' in metrics:
-            result['accuracy'] = accuracy_score(y_true, y_pred)
-        if 'precision' in metrics:
-            result['precision'] = precision_score(y_true, y_pred)
-        if 'recall' in metrics:
-            result['recall'] = recall_score(y_true, y_pred)
-        if 'f1' in metrics:
-            result['f1'] = f1_score(y_true, y_pred)
-        if 'f2' in metrics:
-            result['f2'] = fbeta_score(y_true, y_pred, beta=2)
-        if 'roc_auc' in metrics:
-            result['roc_auc'] = auc_roc
-        if 'auc_pr' in metrics:
-            result['auc_pr'] = auc_pr  # Also known as average precision (AP)
-            
-        results.append(result)
-    
-    return results
-
-def plot_threshold_curves(results, metrics=None):
+def plot_threshold_curves(threshold_results, metrics=DEFAULT_METRICS):
     """
     Visualizes how different metrics change with threshold.
     
     Parameters:
     -----------
-    results : list of dict
-        Output from evaluate_thresholds function
+    threshold_results : list of dict
+        Threshold evaluation results from optimize_threshold module
     metrics : list of str, optional
-        Specific metrics to plot. If None, all metrics will be plotted.
+        Specific metrics to plot. If None, all available metrics will be plotted.
     
     Returns:
     --------
@@ -340,12 +331,15 @@ def plot_threshold_curves(results, metrics=None):
     
     Notes:
     ------
-    - Useful for finding optimal threshold
+    - Input data should come from optimize_threshold.get_threshold_evaluation_data()
     - Look for intersection points of precision and recall
     - AUC metrics are shown as horizontal lines as they don't depend on threshold
     """
+    if not threshold_results:
+        raise ValueError("threshold_results cannot be empty")
+        
     if metrics is None:
-        metrics = list(results[0].keys())
+        metrics = list(threshold_results[0].keys())
         metrics.remove('threshold')
     
     plt.figure(figsize=(12, 6))
@@ -353,12 +347,12 @@ def plot_threshold_curves(results, metrics=None):
         if metric in ['roc_auc', 'auc_pr']:
             # AUC metrics are constant across thresholds (plot as horizontal lines)
             metric_label = 'AUC-ROC' if metric == 'roc_auc' else 'AUC-PR'
-            plt.axhline(y=results[0][metric], 
-                       label=f'{metric_label} = {results[0][metric]:.3f}',
+            plt.axhline(y=threshold_results[0][metric], 
+                       label=f'{metric_label} = {threshold_results[0][metric]:.3f}',
                        linestyle='--', alpha=0.5)
         else:
-            plt.plot([r['threshold'] for r in results],
-                     [r[metric] for r in results],
+            plt.plot([r['threshold'] for r in threshold_results],
+                     [r[metric] for r in threshold_results],
                      'o-', label=metric)
     
     plt.xlabel('Threshold')
