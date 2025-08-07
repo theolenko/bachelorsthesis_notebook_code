@@ -172,39 +172,56 @@ def plot_parameter_distributions(study, figsize=(18, 5)):
                     param_values.append(value)
         
         if param_values:
-            # Determine if parameter is numeric
-            numeric_values = []
-            for val in param_values:
-                try:
-                    numeric_values.append(float(val))
-                except (ValueError, TypeError):
-                    break
+            # First check if we have boolean values specifically
+            has_boolean = any(isinstance(val, bool) for val in param_values)
             
-            if len(numeric_values) == len(param_values):
-                # Numeric parameter - histogram
-                #Use log scale for parameters with wide ranges clf__c
-                if param_name.endswith('__C') or 'C' in param_name:
-                   axes[i].set_xscale('log')
-                   # Distribute bins evenly in log space
-                   bins = np.logspace(
-                       np.log10(min(numeric_values)),
-                       np.log10(max(numeric_values)),
-                       30  # fixed number of bins
-                   )
-                   axes[i].hist(numeric_values, bins=bins, alpha=0.7, 
-                              edgecolor='black')
-                else:
-                    # Other numeric parameters
-                    bins = min(30, len(set(numeric_values)))
-                    axes[i].hist(numeric_values, bins=bins, alpha=0.7, 
-                               edgecolor='black')
-            else:
-                # Categorical parameter - bar plot
+            if has_boolean:
+                # Treat as categorical even if it could be converted to float
                 value_counts = pd.Series(param_values).value_counts()
-                axes[i].bar(range(len(value_counts)), value_counts.values, 
-                           alpha=0.7, edgecolor='black')
-                axes[i].set_xticks(range(len(value_counts)))
-                axes[i].set_xticklabels(value_counts.index, rotation=45, ha='right')
+                categories = [str(cat) for cat in value_counts.index]
+                x_positions = range(len(categories))
+                
+                axes[i].bar(x_positions, value_counts.values, alpha=0.7, edgecolor='black')
+                axes[i].set_xticks(x_positions)
+                axes[i].set_xticklabels(categories)
+            else:
+                # Determine if parameter is numeric (excluding booleans)
+                numeric_values = []
+                for val in param_values:
+                    try:
+                        if not isinstance(val, bool):  # Explicitly exclude booleans
+                            numeric_values.append(float(val))
+                    except (ValueError, TypeError):
+                        break
+                
+                if len(numeric_values) == len(param_values):
+                    # Numeric parameter - histogram
+                    # Use log scale for specific parameters that need it
+                    log_scale_params = ['clf__alpha', 'clf__C', 'alpha', 'C']
+                    if param_name in log_scale_params:
+                       axes[i].set_xscale('log')
+                       # Distribute bins evenly in log space
+                       bins = np.logspace(
+                           np.log10(min(numeric_values)),
+                           np.log10(max(numeric_values)),
+                           30  # fixed number of bins
+                       )
+                       axes[i].hist(numeric_values, bins=bins, alpha=0.7, 
+                                  edgecolor='black')
+                    else:
+                        # Other numeric parameters
+                        bins = min(30, len(set(numeric_values)))
+                        axes[i].hist(numeric_values, bins=bins, alpha=0.7, 
+                                   edgecolor='black')
+                else:
+                    # Categorical parameter - bar plot
+                    value_counts = pd.Series(param_values).value_counts()
+                    categories = [str(cat) for cat in value_counts.index]
+                    x_positions = range(len(categories))
+                    
+                    axes[i].bar(x_positions, value_counts.values, alpha=0.7, edgecolor='black')
+                    axes[i].set_xticks(x_positions)
+                    axes[i].set_xticklabels(categories)
         
         axes[i].set_xlabel(param_name.replace('__', ' ').title())
         axes[i].set_ylabel('Frequency')
@@ -287,20 +304,39 @@ def plot_performance_correlations(study, figsize=(18, 5)):
                 numeric_values = [float(val) for val in param_values]
                 axes[i].scatter(numeric_values, param_scores, alpha=0.6)
                 
-                # Use log scale for C parameters
-                if param_name.endswith('__C') or 'C' in param_name:
+                # Use log scale for specific parameters that need it
+                log_scale_params = ['clf__alpha', 'clf__C', 'alpha', 'C']
+                if param_name in log_scale_params:
                     axes[i].set_xscale('log')
                     
             except (ValueError, TypeError):
-                # Categorical parameter
+                # Categorical parameter - create proper categorical scatter plot
                 unique_vals = list(set(param_values))
+                # Sort boolean values for better display
+                if all(isinstance(v, bool) or str(v).lower() in ['true', 'false'] for v in unique_vals):
+                    unique_vals = sorted(unique_vals, key=lambda x: str(x))
+                
+                x_positions = []
+                y_values = []
+                labels = []
+                
                 for k, val in enumerate(unique_vals):
                     val_scores = [s for v, s in zip(param_values, param_scores) if v == val]
-                    axes[i].scatter([k] * len(val_scores), val_scores, alpha=0.6, label=str(val))
+                    x_positions.extend([k] * len(val_scores))
+                    y_values.extend(val_scores)
+                    labels.append(str(val))
+                
+                axes[i].scatter(x_positions, y_values, alpha=0.6)
                 axes[i].set_xticks(range(len(unique_vals)))
-                axes[i].set_xticklabels(unique_vals, rotation=45, ha='right')
+                axes[i].set_xticklabels(labels)
+                
+                # Add jitter for better visibility
                 if len(unique_vals) <= 5:
-                    axes[i].legend()
+                    for k, val in enumerate(unique_vals):
+                        val_scores = [s for v, s in zip(param_values, param_scores) if v == val]
+                        if len(val_scores) > 1:
+                            jitter = np.random.normal(0, 0.05, len(val_scores))
+                            axes[i].scatter([k] * len(val_scores) + jitter, val_scores, alpha=0.6)
         
         axes[i].set_xlabel(param_name.replace('__', ' ').title())
         axes[i].set_ylabel('Objective Score')
