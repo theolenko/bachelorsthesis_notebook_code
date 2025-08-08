@@ -197,7 +197,7 @@ def plot_parameter_distributions(study, figsize=(18, 5)):
                 if len(numeric_values) == len(param_values):
                     # Numeric parameter - histogram
                     # Use log scale for specific parameters that need it
-                    log_scale_params = ['clf__alpha', 'clf__C', 'alpha', 'C']
+                    log_scale_params = ['clf__alpha', 'clf__C', 'alpha', 'C', 'clf__learning_rate']
                     if param_name in log_scale_params:
                        axes[i].set_xscale('log')
                        # Distribute bins evenly in log space
@@ -305,7 +305,7 @@ def plot_performance_correlations(study, figsize=(18, 5)):
                 axes[i].scatter(numeric_values, param_scores, alpha=0.6)
                 
                 # Use log scale for specific parameters that need it
-                log_scale_params = ['clf__alpha', 'clf__C', 'alpha', 'C']
+                log_scale_params = ['clf__alpha', 'clf__C', 'alpha', 'C', 'clf__learning_rate']
                 if param_name in log_scale_params:
                     axes[i].set_xscale('log')
                     
