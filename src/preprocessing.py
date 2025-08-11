@@ -20,7 +20,7 @@ def process_file(
 
     Args:
         filepath (str): Path to the file to process.
-        mode (str): Cleaning mode, "basic" or "extended".
+        mode (str): Cleaning mode, "basic" or "advanced".
         file_format (str): File type, "json" or "csv".
         text_key (str): Key/column with text to clean.
         output_mode (str): "file" to write output, "memory" to return cleaned data.
@@ -185,94 +185,6 @@ def segment_documents(
         print(f"Remaining segments: {len(filtered_segments)}")
 
     return pd.DataFrame(filtered_segments)
-
-
-#30.07.25 for checking if in-memory data matches file, maybe delete later on
-def compare_data(a, b, fmt=None):
-    """
-    Compare two data sources of the same type: JSON file path, CSV file path,
-    in‐memory list[dict], or pandas.DataFrame. Prints first diff or “identical.”
-    Returns True if identical, False otherwise.
-
-    Args:
-        a, b: Either file paths (str) ending in .json or .csv, or in‐memory data:
-              list[dict] for JSON-like, or pd.DataFrame for CSV-like.
-        fmt (str, optional): Force format "json" or "csv". If None, inferred.
-
-    Example usage:
-        compare_data("clean1.json", "clean2.json")
-        compare_data(df1, df2)
-        compare_data(cleaned_list, "cleaned.json")
-    """
-    # Helper to load or serialize to text
-    def to_text(x, fmt):
-        if isinstance(x, str) and os.path.isfile(x):
-            # path
-            with open(x, "r", encoding="utf-8") as f:
-                return f.read()
-        elif fmt == "json":
-            # list or dataframe -> JSON text
-            if isinstance(x, pd.DataFrame):
-                obj = json.loads(x.to_json(orient="records", force_ascii=False))
-            else:
-                obj = x
-            return json.dumps(obj, ensure_ascii=False, indent=2)
-        elif fmt == "csv":
-            # dataframe or list -> CSV text
-            if isinstance(x, str):
-                # path fallback
-                with open(x, "r", encoding="utf-8") as f:
-                    return f.read()
-            elif isinstance(x, pd.DataFrame):
-                return x.to_csv(index=False)
-            else:
-                # list of dicts -> DataFrame
-                df = pd.DataFrame(x)
-                return df.to_csv(index=False)
-        else:
-            raise ValueError(f"Cannot serialize object of type {type(x)} as {fmt}")
-
-    # Infer format if not provided
-    def infer_format(x):
-        if isinstance(x, str) and os.path.isfile(x):
-            _, ext = os.path.splitext(x)
-            return ext.lower().lstrip(".")
-        elif isinstance(x, pd.DataFrame):
-            return "csv"
-        elif isinstance(x, list):
-            return "json"
-        else:
-            raise ValueError(f"Cannot infer format for object of type {type(x)}")
-
-    fmt_a = fmt or infer_format(a)
-    fmt_b = fmt or infer_format(b)
-    if fmt_a != fmt_b:
-        raise ValueError(f"Formats differ: {fmt_a} vs {fmt_b}")
-    fmt = fmt_a
-
-    s1 = to_text(a, fmt)
-    s2 = to_text(b, fmt)
-
-    if s1 == s2:
-        print("Data sources are identical")
-        return True
-
-    # find first difference
-    min_len = min(len(s1), len(s2))
-    for idx in range(min_len):
-        if s1[idx] != s2[idx]:
-            line = s1.count('\n', 0, idx) + 1
-            col = idx - s1.rfind('\n', 0, idx)
-            print(f"Difference at idx={idx} (line {line}, col {col}):")
-            print(f"  first  has: {s1[idx]!r}")
-            print(f"  second has: {s2[idx]!r}")
-            break
-    else:
-        print(f"Match for first {min_len} chars, lengths differ:")
-        print(f"  first  length = {len(s1)}")
-        print(f"  second length = {len(s2)}")
-    return False
-
 
 
 

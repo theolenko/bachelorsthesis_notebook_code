@@ -2,38 +2,20 @@ import re
 import os
 import unicodedata
 import nltk
-nltk.download("stopwords", quiet=True)
+#load stopwords more robustly
+try:
+    nltk.data.find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords', quiet=True)
+
 from nltk.corpus import stopwords
 from nltk.stem import SnowballStemmer
-from gensim.models.phrases import Phrases, Phraser
 
 
 
-# Load German stopwords and stemmer
+# Load German stopwords and stemmer for advanced cleaning/preprocessing
 _german_stop = set(stopwords.words("german"))
 _stemmer = SnowballStemmer("german")
-
-# Load trained phraser for multiword grouping
-bigram = None  # Will be loaded when needed
-
-def _load_phraser():
-    """Load the trained phraser from pkl file from 05modeling_pipelines directory."""
-    global bigram
-    if bigram is None:
-        try:
-            # Try to load from 05modeling_pipelines directory. 
-            # IMPORTANT: file must be named 'bigram.pkl' and in the correct directory
-            phraser_path = os.path.join(os.path.dirname(__file__), '..', '05modeling_pipelines', 'bigram.pkl')
-            if os.path.exists(phraser_path):
-                bigram = Phraser.load(phraser_path)
-            else:
-                # Fallback: no phraser available
-                print("Warning: bigram.pkl not found. Multiword grouping will be skipped.")
-                bigram = None
-        except Exception as e:
-            print(f"Warning: Could not load phraser: {e}. Multiword grouping will be skipped.")
-            bigram = None
-    return bigram
 
 
 def clean_text(text: str, mode: str = "basic") -> str:
@@ -57,6 +39,7 @@ def clean_text(text: str, mode: str = "basic") -> str:
         return _clean_advanced(text)
     else:
         raise ValueError("Mode not supported: Use 'basic' or 'advanced'.")
+    
 
 def _clean_basic(text: str) -> str:
     """
@@ -166,7 +149,7 @@ def _clean_advanced(text: str) -> str:
         4. Remove non-alphabetic characters
         5. Normalize whitespace
         6. Initial tokenization and single character filtering
-        7. Multiword grouping via trained Phraser
+        7. Multiword grouping via trained Phraser (not done here, but for each split during model training in extra module)
         8. Stopword removal
         9. Phrase-aware stemming
        10. Final whitespace normalization
@@ -188,13 +171,13 @@ def _clean_advanced(text: str) -> str:
     # Example: 'der sächsische landtag beschließt' -> ' beschließt'
     # Example: 'mit freundlichen grüßen dr müller' -> ' dr müller'
     for p in ["landtag", "hausanschrift", "mit freundlichen grüßen", "wahlperiode",
-              "namens und im auftrag", "anlage", "seite", "aktenzeichen", "acrobat reader"
+              "namens und im auftrag", "anlage", "seite", "aktenzeichen", "acrobat reader",
               "verarbeitung personenbezogener daten", "amtsbekannter rex"]:
         # Match the phrase with word boundaries to avoid partial matches
         text = re.sub(rf'\b{re.escape(p)}\b', ' ', text)
     
     # 4. Remove non-alphabetic characters (keep spaces) - BEFORE tokenization
-    # This matches the preprocessing used during phraser training
+    # This matches the preprocessing used during phraser training, and is automatically done during tfidf vectorizaion with TFIDFVectorizer
     # Example: 'klimaschutz-maßnahmen 2024!' -> 'klimaschutz maßnahmen '
     text = re.sub(r'[^a-zäöüß\s]', ' ', text)
     
@@ -211,11 +194,9 @@ def _clean_advanced(text: str) -> str:
     # Example: ['soziale', 'gerechtigkeit'] -> ['soziale_gerechtigkeit']
     # Example: ['klimaschutz', 'maßnahmen'] -> ['klimaschutz_maßnahmen'] 
     # IMPORTANT: Text preprocessing here matches exactly the preprocessing used during training
-    phraser = _load_phraser()
-    if phraser is not None:
-        tokens = phraser[tokens]  # Apply phrase detection to token list
+    # done seperately during model training on dev data to prevent data leakage
     
-    # 8. Stopword removal and additional filtering
+    # 7. Stopword removal and additional filtering
     # Example: ['die', 'regierung_will', 'neue', 'gesetze'] -> ['regierung_will', 'neue', 'gesetze']
     # Removes German stopwords (der, die, das, und, etc.)
     tokens = [t for t in tokens if t not in _german_stop and len(t) > 1]
@@ -224,19 +205,7 @@ def _clean_advanced(text: str) -> str:
     # For single words: ['regierung', 'gesetze'] -> ['regier', 'gesetz']
     # For multiword phrases: ['soziale_gerechtigkeit'] -> ['sozial_gerecht']
     # Uses German Snowball stemmer while preserving phrase structure
-    stemmed_tokens = []
-    for token in tokens:
-        if '_' in token:
-            # Handle multiword phrases: stem each component separately
-            # Example: 'soziale_gerechtigkeit' -> ['soziale', 'gerechtigkeit'] -> ['sozial', 'gerecht'] -> 'sozial_gerecht'
-            parts = token.split('_')
-            stemmed_parts = [_stemmer.stem(part) for part in parts]
-            stemmed_tokens.append('_'.join(stemmed_parts))
-        else:
-            # Handle single words normally
-            # Example: 'regierung' -> 'regier'
-            stemmed_tokens.append(_stemmer.stem(token))
-    tokens = stemmed_tokens
+    tokens = [_stemmer.stem(t) for t in tokens]
     
     # 10. Final whitespace normalization
     # Ensure single spaces between tokens and trim
