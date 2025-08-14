@@ -1,0 +1,1477 @@
+2025-08-13 16:53:35,259 - INFO - ================================================================================
+2025-08-13 16:53:35,259 - INFO - NEW OPTIMIZATION SESSION - 2025-08-13 16:53:35
+2025-08-13 16:53:35,259 - INFO - Starting Optuna optimization for model: tfidf_logreg_basic
+2025-08-13 16:53:35,259 - INFO - Sampler: Grid
+2025-08-13 16:53:35,259 - INFO - Number of trials: 125
+2025-08-13 16:53:35,259 - INFO - Direction: maximize
+2025-08-13 16:53:35,259 - INFO - Random state: 42
+2025-08-13 16:53:35,259 - INFO - Parameter space: ['clf__C', 'select__k', 'clf__class_weight']
+2025-08-13 16:53:35,259 - INFO - --------------------------------------------------
+2025-08-13 16:53:35,261 - INFO - Trial 0: Testing parameters: {'clf__C': 2, 'select__k': 35, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 16:53:38,313 - INFO - Trial 0: CV F2 Score = 0.7425 (±0.0644)
+2025-08-13 16:53:38,315 - INFO - Trial 1: Testing parameters: {'clf__C': 4, 'select__k': 30, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 16:53:40,629 - INFO - Trial 1: CV F2 Score = 0.7323 (±0.0590)
+2025-08-13 16:53:40,631 - INFO - Trial 2: Testing parameters: {'clf__C': 4, 'select__k': 25, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:08:02,505 - INFO - ================================================================================
+2025-08-13 17:08:02,505 - INFO - NEW OPTIMIZATION SESSION - 2025-08-13 17:08:02
+2025-08-13 17:08:02,505 - INFO - Starting Optuna optimization for model: tfidf_logreg_basic
+2025-08-13 17:08:02,505 - INFO - Sampler: Grid
+2025-08-13 17:08:02,505 - INFO - Number of trials: 125
+2025-08-13 17:08:02,505 - INFO - Direction: maximize
+2025-08-13 17:08:02,505 - INFO - Random state: 42
+2025-08-13 17:08:02,505 - INFO - Parameter space: ['clf__C', 'select__k', 'clf__class_weight']
+2025-08-13 17:08:02,505 - INFO - --------------------------------------------------
+2025-08-13 17:08:02,506 - INFO - Trial 0: Testing parameters: {'clf__C': 2, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:05,234 - INFO - Trial 0: CV F2 Score = 0.7864 (±0.0360)
+2025-08-13 17:08:05,235 - INFO - Trial 1: Testing parameters: {'clf__C': 4, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:07,237 - INFO - Trial 1: CV F2 Score = 0.8082 (±0.0334)
+2025-08-13 17:08:07,237 - INFO - Trial 2: Testing parameters: {'clf__C': 4, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:08:09,320 - INFO - Trial 2: CV F2 Score = 0.8003 (±0.0261)
+2025-08-13 17:08:09,320 - INFO - Trial 3: Testing parameters: {'clf__C': 8, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:08:11,007 - INFO - Trial 3: CV F2 Score = 0.8289 (±0.0240)
+2025-08-13 17:08:11,007 - INFO - Trial 4: Testing parameters: {'clf__C': 6, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:08:11,447 - INFO - Trial 4: CV F2 Score = 0.8265 (±0.0252)
+2025-08-13 17:08:11,447 - INFO - Trial 5: Testing parameters: {'clf__C': 8, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:11,924 - INFO - Trial 5: CV F2 Score = 0.8206 (±0.0165)
+2025-08-13 17:08:11,925 - INFO - Trial 6: Testing parameters: {'clf__C': 6, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:12,376 - INFO - Trial 6: CV F2 Score = 0.8294 (±0.0251)
+2025-08-13 17:08:12,377 - INFO - Trial 7: Testing parameters: {'clf__C': 10, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:08:12,845 - INFO - Trial 7: CV F2 Score = 0.8173 (±0.0248)
+2025-08-13 17:08:12,845 - INFO - Trial 8: Testing parameters: {'clf__C': 8, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:13,275 - INFO - Trial 8: CV F2 Score = 0.8290 (±0.0356)
+2025-08-13 17:08:13,275 - INFO - Trial 9: Testing parameters: {'clf__C': 2, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:08:13,748 - INFO - Trial 9: CV F2 Score = 0.7943 (±0.0321)
+2025-08-13 17:08:13,749 - INFO - Trial 10: Testing parameters: {'clf__C': 4, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:08:14,227 - INFO - Trial 10: CV F2 Score = 0.8121 (±0.0305)
+2025-08-13 17:08:14,227 - INFO - Trial 11: Testing parameters: {'clf__C': 10, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:14,665 - INFO - Trial 11: CV F2 Score = 0.8218 (±0.0168)
+2025-08-13 17:08:14,665 - INFO - Trial 12: Testing parameters: {'clf__C': 4, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:15,140 - INFO - Trial 12: CV F2 Score = 0.8143 (±0.0296)
+2025-08-13 17:08:15,141 - INFO - Trial 13: Testing parameters: {'clf__C': 8, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:08:15,603 - INFO - Trial 13: CV F2 Score = 0.8157 (±0.0144)
+2025-08-13 17:08:15,603 - INFO - Trial 14: Testing parameters: {'clf__C': 2, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:16,075 - INFO - Trial 14: CV F2 Score = 0.7838 (±0.0348)
+2025-08-13 17:08:16,075 - INFO - Trial 15: Testing parameters: {'clf__C': 8, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:08:16,559 - INFO - Trial 15: CV F2 Score = 0.8236 (±0.0234)
+2025-08-13 17:08:16,560 - INFO - Trial 16: Testing parameters: {'clf__C': 2, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:08:17,048 - INFO - Trial 16: CV F2 Score = 0.7752 (±0.0287)
+2025-08-13 17:08:17,049 - INFO - Trial 17: Testing parameters: {'clf__C': 10, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:08:17,502 - INFO - Trial 17: CV F2 Score = 0.8285 (±0.0269)
+2025-08-13 17:08:17,502 - INFO - Trial 18: Testing parameters: {'clf__C': 2, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:08:17,963 - INFO - Trial 18: CV F2 Score = 0.7870 (±0.0280)
+2025-08-13 17:08:17,963 - INFO - Trial 19: Testing parameters: {'clf__C': 10, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:08:18,436 - INFO - Trial 19: CV F2 Score = 0.8256 (±0.0346)
+2025-08-13 17:08:18,436 - INFO - Trial 20: Testing parameters: {'clf__C': 4, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:08:18,913 - INFO - Trial 20: CV F2 Score = 0.8017 (±0.0336)
+2025-08-13 17:08:18,915 - INFO - Trial 21: Testing parameters: {'clf__C': 8, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:08:19,390 - INFO - Trial 21: CV F2 Score = 0.8279 (±0.0265)
+2025-08-13 17:08:19,390 - INFO - Trial 22: Testing parameters: {'clf__C': 2, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:08:19,855 - INFO - Trial 22: CV F2 Score = 0.7874 (±0.0244)
+2025-08-13 17:08:19,855 - INFO - Trial 23: Testing parameters: {'clf__C': 4, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:08:20,341 - INFO - Trial 23: CV F2 Score = 0.8142 (±0.0312)
+2025-08-13 17:08:20,343 - INFO - Trial 24: Testing parameters: {'clf__C': 4, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:20,828 - INFO - Trial 24: CV F2 Score = 0.8102 (±0.0237)
+2025-08-13 17:08:20,830 - INFO - Trial 25: Testing parameters: {'clf__C': 6, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:21,305 - INFO - Trial 25: CV F2 Score = 0.8224 (±0.0339)
+2025-08-13 17:08:21,306 - INFO - Trial 26: Testing parameters: {'clf__C': 2, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:08:21,766 - INFO - Trial 26: CV F2 Score = 0.7829 (±0.0385)
+2025-08-13 17:08:21,766 - INFO - Trial 27: Testing parameters: {'clf__C': 2, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:08:22,229 - INFO - Trial 27: CV F2 Score = 0.7820 (±0.0336)
+2025-08-13 17:08:22,231 - INFO - Trial 28: Testing parameters: {'clf__C': 4, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:08:22,692 - INFO - Trial 28: CV F2 Score = 0.8058 (±0.0182)
+2025-08-13 17:08:22,693 - INFO - Trial 29: Testing parameters: {'clf__C': 10, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:23,162 - INFO - Trial 29: CV F2 Score = 0.8136 (±0.0185)
+2025-08-13 17:08:23,162 - INFO - Trial 30: Testing parameters: {'clf__C': 8, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:08:23,634 - INFO - Trial 30: CV F2 Score = 0.8285 (±0.0323)
+2025-08-13 17:08:23,634 - INFO - Trial 31: Testing parameters: {'clf__C': 6, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:08:24,109 - INFO - Trial 31: CV F2 Score = 0.8250 (±0.0334)
+2025-08-13 17:08:24,111 - INFO - Trial 32: Testing parameters: {'clf__C': 6, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:08:24,584 - INFO - Trial 32: CV F2 Score = 0.8277 (±0.0321)
+2025-08-13 17:08:24,584 - INFO - Trial 33: Testing parameters: {'clf__C': 2, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:25,047 - INFO - Trial 33: CV F2 Score = 0.7723 (±0.0270)
+2025-08-13 17:08:25,049 - INFO - Trial 34: Testing parameters: {'clf__C': 10, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:08:25,544 - INFO - Trial 34: CV F2 Score = 0.8208 (±0.0237)
+2025-08-13 17:08:25,544 - INFO - Trial 35: Testing parameters: {'clf__C': 2, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:08:26,030 - INFO - Trial 35: CV F2 Score = 0.7815 (±0.0342)
+2025-08-13 17:08:26,033 - INFO - Trial 36: Testing parameters: {'clf__C': 4, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:26,486 - INFO - Trial 36: CV F2 Score = 0.8062 (±0.0189)
+2025-08-13 17:08:26,486 - INFO - Trial 37: Testing parameters: {'clf__C': 8, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:26,949 - INFO - Trial 37: CV F2 Score = 0.8303 (±0.0236)
+2025-08-13 17:08:26,950 - INFO - Trial 38: Testing parameters: {'clf__C': 8, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:08:27,423 - INFO - Trial 38: CV F2 Score = 0.8200 (±0.0221)
+2025-08-13 17:08:27,425 - INFO - Trial 39: Testing parameters: {'clf__C': 4, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:27,887 - INFO - Trial 39: CV F2 Score = 0.8133 (±0.0232)
+2025-08-13 17:08:27,889 - INFO - Trial 40: Testing parameters: {'clf__C': 8, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:28,393 - INFO - Trial 40: CV F2 Score = 0.8326 (±0.0426)
+2025-08-13 17:08:28,395 - INFO - Trial 41: Testing parameters: {'clf__C': 6, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:28,859 - INFO - Trial 41: CV F2 Score = 0.8228 (±0.0288)
+2025-08-13 17:08:28,861 - INFO - Trial 42: Testing parameters: {'clf__C': 2, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:29,319 - INFO - Trial 42: CV F2 Score = 0.7876 (±0.0357)
+2025-08-13 17:08:29,320 - INFO - Trial 43: Testing parameters: {'clf__C': 4, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:29,795 - INFO - Trial 43: CV F2 Score = 0.8086 (±0.0296)
+2025-08-13 17:08:29,797 - INFO - Trial 44: Testing parameters: {'clf__C': 6, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:08:30,280 - INFO - Trial 44: CV F2 Score = 0.8271 (±0.0354)
+2025-08-13 17:08:30,282 - INFO - Trial 45: Testing parameters: {'clf__C': 4, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:08:30,809 - INFO - Trial 45: CV F2 Score = 0.8065 (±0.0313)
+2025-08-13 17:08:30,811 - INFO - Trial 46: Testing parameters: {'clf__C': 10, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:31,286 - INFO - Trial 46: CV F2 Score = 0.8222 (±0.0284)
+2025-08-13 17:08:31,287 - INFO - Trial 47: Testing parameters: {'clf__C': 4, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:08:31,788 - INFO - Trial 47: CV F2 Score = 0.8148 (±0.0333)
+2025-08-13 17:08:31,790 - INFO - Trial 48: Testing parameters: {'clf__C': 6, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:32,270 - INFO - Trial 48: CV F2 Score = 0.8178 (±0.0217)
+2025-08-13 17:08:32,273 - INFO - Trial 49: Testing parameters: {'clf__C': 10, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:08:32,766 - INFO - Trial 49: CV F2 Score = 0.8222 (±0.0341)
+2025-08-13 17:08:32,769 - INFO - Trial 50: Testing parameters: {'clf__C': 2, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:33,252 - INFO - Trial 50: CV F2 Score = 0.7822 (±0.0280)
+2025-08-13 17:08:33,252 - INFO - Trial 51: Testing parameters: {'clf__C': 6, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:33,723 - INFO - Trial 51: CV F2 Score = 0.8162 (±0.0310)
+2025-08-13 17:08:33,725 - INFO - Trial 52: Testing parameters: {'clf__C': 6, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:08:34,222 - INFO - Trial 52: CV F2 Score = 0.8134 (±0.0283)
+2025-08-13 17:08:34,222 - INFO - Trial 53: Testing parameters: {'clf__C': 4, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:08:34,718 - INFO - Trial 53: CV F2 Score = 0.8157 (±0.0266)
+2025-08-13 17:08:34,721 - INFO - Trial 54: Testing parameters: {'clf__C': 4, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:08:35,184 - INFO - Trial 54: CV F2 Score = 0.8096 (±0.0294)
+2025-08-13 17:08:35,184 - INFO - Trial 55: Testing parameters: {'clf__C': 4, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:08:35,701 - INFO - Trial 55: CV F2 Score = 0.8060 (±0.0188)
+2025-08-13 17:08:35,701 - INFO - Trial 56: Testing parameters: {'clf__C': 2, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:36,185 - INFO - Trial 56: CV F2 Score = 0.7834 (±0.0262)
+2025-08-13 17:08:36,187 - INFO - Trial 57: Testing parameters: {'clf__C': 6, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:36,668 - INFO - Trial 57: CV F2 Score = 0.8256 (±0.0329)
+2025-08-13 17:08:36,670 - INFO - Trial 58: Testing parameters: {'clf__C': 4, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:37,164 - INFO - Trial 58: CV F2 Score = 0.8156 (±0.0256)
+2025-08-13 17:08:37,166 - INFO - Trial 59: Testing parameters: {'clf__C': 10, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:37,660 - INFO - Trial 59: CV F2 Score = 0.8182 (±0.0205)
+2025-08-13 17:08:37,662 - INFO - Trial 60: Testing parameters: {'clf__C': 2, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:38,188 - INFO - Trial 60: CV F2 Score = 0.7889 (±0.0377)
+2025-08-13 17:08:38,188 - INFO - Trial 61: Testing parameters: {'clf__C': 10, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:38,704 - INFO - Trial 61: CV F2 Score = 0.8194 (±0.0252)
+2025-08-13 17:08:38,706 - INFO - Trial 62: Testing parameters: {'clf__C': 4, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:39,205 - INFO - Trial 62: CV F2 Score = 0.8060 (±0.0355)
+2025-08-13 17:08:39,205 - INFO - Trial 63: Testing parameters: {'clf__C': 8, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:08:39,743 - INFO - Trial 63: CV F2 Score = 0.8161 (±0.0214)
+2025-08-13 17:08:39,743 - INFO - Trial 64: Testing parameters: {'clf__C': 6, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:40,340 - INFO - Trial 64: CV F2 Score = 0.8356 (±0.0321)
+2025-08-13 17:08:40,343 - INFO - Trial 65: Testing parameters: {'clf__C': 10, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:08:40,958 - INFO - Trial 65: CV F2 Score = 0.8233 (±0.0253)
+2025-08-13 17:08:40,960 - INFO - Trial 66: Testing parameters: {'clf__C': 10, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:41,545 - INFO - Trial 66: CV F2 Score = 0.8142 (±0.0183)
+2025-08-13 17:08:41,545 - INFO - Trial 67: Testing parameters: {'clf__C': 2, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:42,156 - INFO - Trial 67: CV F2 Score = 0.7920 (±0.0377)
+2025-08-13 17:08:42,159 - INFO - Trial 68: Testing parameters: {'clf__C': 2, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:08:42,732 - INFO - Trial 68: CV F2 Score = 0.7865 (±0.0389)
+2025-08-13 17:08:42,735 - INFO - Trial 69: Testing parameters: {'clf__C': 10, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:43,256 - INFO - Trial 69: CV F2 Score = 0.8242 (±0.0338)
+2025-08-13 17:08:43,259 - INFO - Trial 70: Testing parameters: {'clf__C': 2, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:08:43,790 - INFO - Trial 70: CV F2 Score = 0.7909 (±0.0339)
+2025-08-13 17:08:43,792 - INFO - Trial 71: Testing parameters: {'clf__C': 2, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:44,329 - INFO - Trial 71: CV F2 Score = 0.7825 (±0.0356)
+2025-08-13 17:08:44,329 - INFO - Trial 72: Testing parameters: {'clf__C': 4, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:08:44,880 - INFO - Trial 72: CV F2 Score = 0.8053 (±0.0326)
+2025-08-13 17:08:44,883 - INFO - Trial 73: Testing parameters: {'clf__C': 6, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:08:45,415 - INFO - Trial 73: CV F2 Score = 0.8239 (±0.0322)
+2025-08-13 17:08:45,418 - INFO - Trial 74: Testing parameters: {'clf__C': 8, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:08:45,913 - INFO - Trial 74: CV F2 Score = 0.8201 (±0.0359)
+2025-08-13 17:08:45,916 - INFO - Trial 75: Testing parameters: {'clf__C': 2, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:46,449 - INFO - Trial 75: CV F2 Score = 0.7867 (±0.0300)
+2025-08-13 17:08:46,451 - INFO - Trial 76: Testing parameters: {'clf__C': 8, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:46,948 - INFO - Trial 76: CV F2 Score = 0.8256 (±0.0237)
+2025-08-13 17:08:46,951 - INFO - Trial 77: Testing parameters: {'clf__C': 10, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:47,448 - INFO - Trial 77: CV F2 Score = 0.8258 (±0.0259)
+2025-08-13 17:08:47,451 - INFO - Trial 78: Testing parameters: {'clf__C': 10, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:08:48,005 - INFO - Trial 78: CV F2 Score = 0.8180 (±0.0157)
+2025-08-13 17:08:48,008 - INFO - Trial 79: Testing parameters: {'clf__C': 6, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:08:48,552 - INFO - Trial 79: CV F2 Score = 0.8200 (±0.0257)
+2025-08-13 17:08:48,553 - INFO - Trial 80: Testing parameters: {'clf__C': 6, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:08:49,077 - INFO - Trial 80: CV F2 Score = 0.8207 (±0.0366)
+2025-08-13 17:08:49,079 - INFO - Trial 81: Testing parameters: {'clf__C': 8, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:49,642 - INFO - Trial 81: CV F2 Score = 0.8263 (±0.0263)
+2025-08-13 17:08:49,642 - INFO - Trial 82: Testing parameters: {'clf__C': 4, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:08:50,141 - INFO - Trial 82: CV F2 Score = 0.7980 (±0.0181)
+2025-08-13 17:08:50,142 - INFO - Trial 83: Testing parameters: {'clf__C': 8, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:50,660 - INFO - Trial 83: CV F2 Score = 0.8293 (±0.0296)
+2025-08-13 17:08:50,660 - INFO - Trial 84: Testing parameters: {'clf__C': 6, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:08:51,167 - INFO - Trial 84: CV F2 Score = 0.8246 (±0.0229)
+2025-08-13 17:08:51,170 - INFO - Trial 85: Testing parameters: {'clf__C': 10, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:08:51,698 - INFO - Trial 85: CV F2 Score = 0.8204 (±0.0165)
+2025-08-13 17:08:51,698 - INFO - Trial 86: Testing parameters: {'clf__C': 8, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:08:52,234 - INFO - Trial 86: CV F2 Score = 0.8184 (±0.0225)
+2025-08-13 17:08:52,234 - INFO - Trial 87: Testing parameters: {'clf__C': 8, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:08:52,751 - INFO - Trial 87: CV F2 Score = 0.8277 (±0.0369)
+2025-08-13 17:08:52,753 - INFO - Trial 88: Testing parameters: {'clf__C': 4, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:53,288 - INFO - Trial 88: CV F2 Score = 0.8013 (±0.0204)
+2025-08-13 17:08:53,288 - INFO - Trial 89: Testing parameters: {'clf__C': 6, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:53,809 - INFO - Trial 89: CV F2 Score = 0.8299 (±0.0252)
+2025-08-13 17:08:53,812 - INFO - Trial 90: Testing parameters: {'clf__C': 8, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:54,316 - INFO - Trial 90: CV F2 Score = 0.8202 (±0.0233)
+2025-08-13 17:08:54,319 - INFO - Trial 91: Testing parameters: {'clf__C': 4, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:08:54,841 - INFO - Trial 91: CV F2 Score = 0.8024 (±0.0326)
+2025-08-13 17:08:54,841 - INFO - Trial 92: Testing parameters: {'clf__C': 8, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:08:55,354 - INFO - Trial 92: CV F2 Score = 0.8325 (±0.0362)
+2025-08-13 17:08:55,358 - INFO - Trial 93: Testing parameters: {'clf__C': 10, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:08:55,945 - INFO - Trial 93: CV F2 Score = 0.8154 (±0.0194)
+2025-08-13 17:08:55,949 - INFO - Trial 94: Testing parameters: {'clf__C': 6, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:56,566 - INFO - Trial 94: CV F2 Score = 0.8258 (±0.0256)
+2025-08-13 17:08:56,566 - INFO - Trial 95: Testing parameters: {'clf__C': 8, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:08:57,157 - INFO - Trial 95: CV F2 Score = 0.8199 (±0.0278)
+2025-08-13 17:08:57,158 - INFO - Trial 96: Testing parameters: {'clf__C': 4, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:57,727 - INFO - Trial 96: CV F2 Score = 0.8106 (±0.0302)
+2025-08-13 17:08:57,727 - INFO - Trial 97: Testing parameters: {'clf__C': 10, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:08:58,283 - INFO - Trial 97: CV F2 Score = 0.8201 (±0.0270)
+2025-08-13 17:08:58,286 - INFO - Trial 98: Testing parameters: {'clf__C': 6, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:08:58,868 - INFO - Trial 98: CV F2 Score = 0.8251 (±0.0250)
+2025-08-13 17:08:58,868 - INFO - Trial 99: Testing parameters: {'clf__C': 6, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:08:59,430 - INFO - Trial 99: CV F2 Score = 0.8319 (±0.0339)
+2025-08-13 17:08:59,433 - INFO - Trial 100: Testing parameters: {'clf__C': 10, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:09:00,019 - INFO - Trial 100: CV F2 Score = 0.8145 (±0.0397)
+2025-08-13 17:09:00,023 - INFO - Trial 101: Testing parameters: {'clf__C': 4, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:09:00,608 - INFO - Trial 101: CV F2 Score = 0.8129 (±0.0353)
+2025-08-13 17:09:00,608 - INFO - Trial 102: Testing parameters: {'clf__C': 4, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:09:01,184 - INFO - Trial 102: CV F2 Score = 0.8190 (±0.0269)
+2025-08-13 17:09:01,186 - INFO - Trial 103: Testing parameters: {'clf__C': 10, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:09:01,852 - INFO - Trial 103: CV F2 Score = 0.8259 (±0.0187)
+2025-08-13 17:09:01,856 - INFO - Trial 104: Testing parameters: {'clf__C': 2, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:09:02,430 - INFO - Trial 104: CV F2 Score = 0.7841 (±0.0353)
+2025-08-13 17:09:02,435 - INFO - Trial 105: Testing parameters: {'clf__C': 6, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:09:03,000 - INFO - Trial 105: CV F2 Score = 0.8260 (±0.0228)
+2025-08-13 17:09:03,004 - INFO - Trial 106: Testing parameters: {'clf__C': 2, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:09:03,552 - INFO - Trial 106: CV F2 Score = 0.7791 (±0.0238)
+2025-08-13 17:09:03,552 - INFO - Trial 107: Testing parameters: {'clf__C': 2, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:09:04,139 - INFO - Trial 107: CV F2 Score = 0.7936 (±0.0316)
+2025-08-13 17:09:04,141 - INFO - Trial 108: Testing parameters: {'clf__C': 2, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:09:04,717 - INFO - Trial 108: CV F2 Score = 0.7821 (±0.0342)
+2025-08-13 17:09:04,719 - INFO - Trial 109: Testing parameters: {'clf__C': 10, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:09:05,285 - INFO - Trial 109: CV F2 Score = 0.8222 (±0.0211)
+2025-08-13 17:09:05,287 - INFO - Trial 110: Testing parameters: {'clf__C': 8, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:09:05,903 - INFO - Trial 110: CV F2 Score = 0.8320 (±0.0456)
+2025-08-13 17:09:05,905 - INFO - Trial 111: Testing parameters: {'clf__C': 8, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:09:06,496 - INFO - Trial 111: CV F2 Score = 0.8271 (±0.0385)
+2025-08-13 17:09:06,501 - INFO - Trial 112: Testing parameters: {'clf__C': 10, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:09:07,114 - INFO - Trial 112: CV F2 Score = 0.8187 (±0.0239)
+2025-08-13 17:09:07,129 - INFO - Trial 113: Testing parameters: {'clf__C': 6, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:09:07,742 - INFO - Trial 113: CV F2 Score = 0.8335 (±0.0319)
+2025-08-13 17:09:07,747 - INFO - Trial 114: Testing parameters: {'clf__C': 8, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:09:08,342 - INFO - Trial 114: CV F2 Score = 0.8219 (±0.0176)
+2025-08-13 17:09:08,342 - INFO - Trial 115: Testing parameters: {'clf__C': 8, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:09:08,922 - INFO - Trial 115: CV F2 Score = 0.8342 (±0.0377)
+2025-08-13 17:09:08,926 - INFO - Trial 116: Testing parameters: {'clf__C': 10, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:09:09,447 - INFO - Trial 116: CV F2 Score = 0.8236 (±0.0317)
+2025-08-13 17:09:09,452 - INFO - Trial 117: Testing parameters: {'clf__C': 2, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:09:09,971 - INFO - Trial 117: CV F2 Score = 0.7637 (±0.0258)
+2025-08-13 17:09:09,974 - INFO - Trial 118: Testing parameters: {'clf__C': 6, 'select__k': 130, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:09:10,505 - INFO - Trial 118: CV F2 Score = 0.8167 (±0.0275)
+2025-08-13 17:09:10,510 - INFO - Trial 119: Testing parameters: {'clf__C': 6, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:09:11,041 - INFO - Trial 119: CV F2 Score = 0.8164 (±0.0226)
+2025-08-13 17:09:11,046 - INFO - Trial 120: Testing parameters: {'clf__C': 10, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:09:11,637 - INFO - Trial 120: CV F2 Score = 0.8250 (±0.0289)
+2025-08-13 17:09:11,641 - INFO - Trial 121: Testing parameters: {'clf__C': 2, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:09:12,169 - INFO - Trial 121: CV F2 Score = 0.7881 (±0.0358)
+2025-08-13 17:09:12,173 - INFO - Trial 122: Testing parameters: {'clf__C': 8, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:09:12,689 - INFO - Trial 122: CV F2 Score = 0.8243 (±0.0373)
+2025-08-13 17:09:12,695 - INFO - Trial 123: Testing parameters: {'clf__C': 6, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:09:13,246 - INFO - Trial 123: CV F2 Score = 0.8247 (±0.0193)
+2025-08-13 17:09:13,250 - INFO - Trial 124: Testing parameters: {'clf__C': 10, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:09:13,778 - INFO - Trial 124: CV F2 Score = 0.8236 (±0.0195)
+2025-08-13 17:09:14,125 - INFO - --------------------------------------------------
+2025-08-13 17:09:14,125 - INFO - Optimization completed after 125 trials
+2025-08-13 17:09:14,125 - INFO - Best F2 score: 0.8356
+2025-08-13 17:09:14,125 - INFO - Best parameters: {'clf__C': 6, 'select__k': 170, 'clf__class_weight': 35}
+2025-08-13 17:09:14,132 - INFO - Number of pruned trials: 0
+2025-08-13 17:09:14,142 - INFO - Number of failed trials: 0
+2025-08-13 17:09:14,142 - INFO - Model training completed with parameters: {'clf__C': 6, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:09:14,142 - INFO - SESSION COMPLETED - 2025-08-13 17:09:14
+2025-08-13 17:09:14,142 - INFO - ================================================================================
+2025-08-13 17:09:14,142 - INFO - 
+2025-08-13 17:16:40,309 - INFO - ================================================================================
+2025-08-13 17:16:40,309 - INFO - NEW OPTIMIZATION SESSION - 2025-08-13 17:16:40
+2025-08-13 17:16:40,309 - INFO - Starting Optuna optimization for model: tfidf_logreg_basic
+2025-08-13 17:16:40,309 - INFO - Sampler: Grid
+2025-08-13 17:16:40,309 - INFO - Number of trials: 216
+2025-08-13 17:16:40,309 - INFO - Direction: maximize
+2025-08-13 17:16:40,309 - INFO - Random state: 42
+2025-08-13 17:16:40,309 - INFO - Parameter space: ['clf__C', 'select__k', 'clf__class_weight']
+2025-08-13 17:16:40,309 - INFO - --------------------------------------------------
+2025-08-13 17:16:40,309 - INFO - Trial 0: Testing parameters: {'clf__C': 12, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:16:43,131 - INFO - Trial 0: CV F2 Score = 0.8189 (±0.0263)
+2025-08-13 17:16:43,131 - INFO - Trial 1: Testing parameters: {'clf__C': 12, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:16:45,093 - INFO - Trial 1: CV F2 Score = 0.8186 (±0.0270)
+2025-08-13 17:16:45,093 - INFO - Trial 2: Testing parameters: {'clf__C': 8, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:16:47,072 - INFO - Trial 2: CV F2 Score = 0.7241 (±0.0476)
+2025-08-13 17:16:47,072 - INFO - Trial 3: Testing parameters: {'clf__C': 10, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:16:48,736 - INFO - Trial 3: CV F2 Score = 0.8217 (±0.0279)
+2025-08-13 17:16:48,736 - INFO - Trial 4: Testing parameters: {'clf__C': 2, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:16:49,182 - INFO - Trial 4: CV F2 Score = 0.7854 (±0.0306)
+2025-08-13 17:16:49,182 - INFO - Trial 5: Testing parameters: {'clf__C': 8, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:16:49,667 - INFO - Trial 5: CV F2 Score = 0.7943 (±0.0280)
+2025-08-13 17:16:49,669 - INFO - Trial 6: Testing parameters: {'clf__C': 12, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:16:50,129 - INFO - Trial 6: CV F2 Score = 0.8131 (±0.0362)
+2025-08-13 17:16:50,129 - INFO - Trial 7: Testing parameters: {'clf__C': 6, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:16:50,583 - INFO - Trial 7: CV F2 Score = 0.8040 (±0.0380)
+2025-08-13 17:16:50,583 - INFO - Trial 8: Testing parameters: {'clf__C': 12, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:16:51,069 - INFO - Trial 8: CV F2 Score = 0.7932 (±0.0355)
+2025-08-13 17:16:51,069 - INFO - Trial 9: Testing parameters: {'clf__C': 8, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:16:51,524 - INFO - Trial 9: CV F2 Score = 0.7943 (±0.0393)
+2025-08-13 17:16:51,524 - INFO - Trial 10: Testing parameters: {'clf__C': 10, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:16:51,988 - INFO - Trial 10: CV F2 Score = 0.8164 (±0.0188)
+2025-08-13 17:16:51,988 - INFO - Trial 11: Testing parameters: {'clf__C': 2, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:16:52,456 - INFO - Trial 11: CV F2 Score = 0.6638 (±0.0037)
+2025-08-13 17:16:52,456 - INFO - Trial 12: Testing parameters: {'clf__C': 12, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:16:52,929 - INFO - Trial 12: CV F2 Score = 0.8154 (±0.0473)
+2025-08-13 17:16:52,929 - INFO - Trial 13: Testing parameters: {'clf__C': 2, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:16:53,415 - INFO - Trial 13: CV F2 Score = 0.7728 (±0.0308)
+2025-08-13 17:16:53,417 - INFO - Trial 14: Testing parameters: {'clf__C': 4, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:16:53,890 - INFO - Trial 14: CV F2 Score = 0.7558 (±0.0356)
+2025-08-13 17:16:53,892 - INFO - Trial 15: Testing parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:16:54,357 - INFO - Trial 15: CV F2 Score = 0.8245 (±0.0236)
+2025-08-13 17:16:54,358 - INFO - Trial 16: Testing parameters: {'clf__C': 10, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:16:54,823 - INFO - Trial 16: CV F2 Score = 0.8250 (±0.0289)
+2025-08-13 17:16:54,823 - INFO - Trial 17: Testing parameters: {'clf__C': 2, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:16:55,279 - INFO - Trial 17: CV F2 Score = 0.7028 (±0.0517)
+2025-08-13 17:16:55,280 - INFO - Trial 18: Testing parameters: {'clf__C': 10, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:16:55,750 - INFO - Trial 18: CV F2 Score = 0.8166 (±0.0294)
+2025-08-13 17:16:55,752 - INFO - Trial 19: Testing parameters: {'clf__C': 4, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:16:56,216 - INFO - Trial 19: CV F2 Score = 0.7159 (±0.0541)
+2025-08-13 17:16:56,217 - INFO - Trial 20: Testing parameters: {'clf__C': 12, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:16:56,680 - INFO - Trial 20: CV F2 Score = 0.8159 (±0.0413)
+2025-08-13 17:16:56,680 - INFO - Trial 21: Testing parameters: {'clf__C': 8, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:16:57,156 - INFO - Trial 21: CV F2 Score = 0.8219 (±0.0176)
+2025-08-13 17:16:57,156 - INFO - Trial 22: Testing parameters: {'clf__C': 6, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:16:57,622 - INFO - Trial 22: CV F2 Score = 0.8138 (±0.0411)
+2025-08-13 17:16:57,623 - INFO - Trial 23: Testing parameters: {'clf__C': 2, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:16:58,085 - INFO - Trial 23: CV F2 Score = 0.7200 (±0.0323)
+2025-08-13 17:16:58,085 - INFO - Trial 24: Testing parameters: {'clf__C': 6, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:16:58,563 - INFO - Trial 24: CV F2 Score = 0.8055 (±0.0285)
+2025-08-13 17:16:58,564 - INFO - Trial 25: Testing parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:16:59,043 - INFO - Trial 25: CV F2 Score = 0.8040 (±0.0305)
+2025-08-13 17:16:59,044 - INFO - Trial 26: Testing parameters: {'clf__C': 10, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:16:59,508 - INFO - Trial 26: CV F2 Score = 0.8252 (±0.0236)
+2025-08-13 17:16:59,509 - INFO - Trial 27: Testing parameters: {'clf__C': 2, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:16:59,972 - INFO - Trial 27: CV F2 Score = 0.7879 (±0.0333)
+2025-08-13 17:16:59,974 - INFO - Trial 28: Testing parameters: {'clf__C': 4, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:00,470 - INFO - Trial 28: CV F2 Score = 0.8013 (±0.0298)
+2025-08-13 17:17:00,472 - INFO - Trial 29: Testing parameters: {'clf__C': 12, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:17:00,949 - INFO - Trial 29: CV F2 Score = 0.7994 (±0.0300)
+2025-08-13 17:17:00,949 - INFO - Trial 30: Testing parameters: {'clf__C': 8, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:01,407 - INFO - Trial 30: CV F2 Score = 0.8150 (±0.0244)
+2025-08-13 17:17:01,409 - INFO - Trial 31: Testing parameters: {'clf__C': 4, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:17:01,863 - INFO - Trial 31: CV F2 Score = 0.7974 (±0.0403)
+2025-08-13 17:17:01,865 - INFO - Trial 32: Testing parameters: {'clf__C': 8, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:02,329 - INFO - Trial 32: CV F2 Score = 0.8158 (±0.0303)
+2025-08-13 17:17:02,329 - INFO - Trial 33: Testing parameters: {'clf__C': 12, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:17:02,787 - INFO - Trial 33: CV F2 Score = 0.8122 (±0.0387)
+2025-08-13 17:17:02,787 - INFO - Trial 34: Testing parameters: {'clf__C': 8, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:17:03,243 - INFO - Trial 34: CV F2 Score = 0.8361 (±0.0219)
+2025-08-13 17:17:03,245 - INFO - Trial 35: Testing parameters: {'clf__C': 8, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:17:03,738 - INFO - Trial 35: CV F2 Score = 0.8335 (±0.0232)
+2025-08-13 17:17:03,740 - INFO - Trial 36: Testing parameters: {'clf__C': 6, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:04,204 - INFO - Trial 36: CV F2 Score = 0.8106 (±0.0276)
+2025-08-13 17:17:04,204 - INFO - Trial 37: Testing parameters: {'clf__C': 8, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:04,673 - INFO - Trial 37: CV F2 Score = 0.8130 (±0.0301)
+2025-08-13 17:17:04,675 - INFO - Trial 38: Testing parameters: {'clf__C': 8, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:05,126 - INFO - Trial 38: CV F2 Score = 0.8346 (±0.0284)
+2025-08-13 17:17:05,126 - INFO - Trial 39: Testing parameters: {'clf__C': 6, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:05,615 - INFO - Trial 39: CV F2 Score = 0.8194 (±0.0293)
+2025-08-13 17:17:05,617 - INFO - Trial 40: Testing parameters: {'clf__C': 6, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:06,082 - INFO - Trial 40: CV F2 Score = 0.7516 (±0.0500)
+2025-08-13 17:17:06,085 - INFO - Trial 41: Testing parameters: {'clf__C': 12, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:06,543 - INFO - Trial 41: CV F2 Score = 0.8110 (±0.0358)
+2025-08-13 17:17:06,543 - INFO - Trial 42: Testing parameters: {'clf__C': 8, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:07,010 - INFO - Trial 42: CV F2 Score = 0.8076 (±0.0265)
+2025-08-13 17:17:07,010 - INFO - Trial 43: Testing parameters: {'clf__C': 6, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:17:07,467 - INFO - Trial 43: CV F2 Score = 0.8157 (±0.0263)
+2025-08-13 17:17:07,467 - INFO - Trial 44: Testing parameters: {'clf__C': 6, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:17:07,934 - INFO - Trial 44: CV F2 Score = 0.8172 (±0.0266)
+2025-08-13 17:17:07,934 - INFO - Trial 45: Testing parameters: {'clf__C': 6, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:17:08,402 - INFO - Trial 45: CV F2 Score = 0.8265 (±0.0252)
+2025-08-13 17:17:08,404 - INFO - Trial 46: Testing parameters: {'clf__C': 8, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:08,865 - INFO - Trial 46: CV F2 Score = 0.8263 (±0.0263)
+2025-08-13 17:17:08,865 - INFO - Trial 47: Testing parameters: {'clf__C': 12, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:17:09,331 - INFO - Trial 47: CV F2 Score = 0.7830 (±0.0377)
+2025-08-13 17:17:09,331 - INFO - Trial 48: Testing parameters: {'clf__C': 6, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:17:09,809 - INFO - Trial 48: CV F2 Score = 0.8322 (±0.0240)
+2025-08-13 17:17:09,809 - INFO - Trial 49: Testing parameters: {'clf__C': 10, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:17:10,269 - INFO - Trial 49: CV F2 Score = 0.8043 (±0.0341)
+2025-08-13 17:17:10,269 - INFO - Trial 50: Testing parameters: {'clf__C': 10, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:10,747 - INFO - Trial 50: CV F2 Score = 0.8087 (±0.0286)
+2025-08-13 17:17:10,747 - INFO - Trial 51: Testing parameters: {'clf__C': 4, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:11,213 - INFO - Trial 51: CV F2 Score = 0.7971 (±0.0306)
+2025-08-13 17:17:11,215 - INFO - Trial 52: Testing parameters: {'clf__C': 2, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:11,672 - INFO - Trial 52: CV F2 Score = 0.6915 (±0.0415)
+2025-08-13 17:17:11,675 - INFO - Trial 53: Testing parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:12,146 - INFO - Trial 53: CV F2 Score = 0.8287 (±0.0322)
+2025-08-13 17:17:12,148 - INFO - Trial 54: Testing parameters: {'clf__C': 8, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:17:12,605 - INFO - Trial 54: CV F2 Score = 0.8185 (±0.0347)
+2025-08-13 17:17:12,606 - INFO - Trial 55: Testing parameters: {'clf__C': 2, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:13,093 - INFO - Trial 55: CV F2 Score = 0.7920 (±0.0377)
+2025-08-13 17:17:13,093 - INFO - Trial 56: Testing parameters: {'clf__C': 2, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:17:13,564 - INFO - Trial 56: CV F2 Score = 0.7496 (±0.0200)
+2025-08-13 17:17:13,564 - INFO - Trial 57: Testing parameters: {'clf__C': 4, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:17:14,062 - INFO - Trial 57: CV F2 Score = 0.7998 (±0.0253)
+2025-08-13 17:17:14,064 - INFO - Trial 58: Testing parameters: {'clf__C': 6, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:14,541 - INFO - Trial 58: CV F2 Score = 0.7972 (±0.0431)
+2025-08-13 17:17:14,543 - INFO - Trial 59: Testing parameters: {'clf__C': 4, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:15,005 - INFO - Trial 59: CV F2 Score = 0.7252 (±0.0537)
+2025-08-13 17:17:15,008 - INFO - Trial 60: Testing parameters: {'clf__C': 4, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:17:15,473 - INFO - Trial 60: CV F2 Score = 0.7841 (±0.0271)
+2025-08-13 17:17:15,475 - INFO - Trial 61: Testing parameters: {'clf__C': 2, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:15,953 - INFO - Trial 61: CV F2 Score = 0.7825 (±0.0258)
+2025-08-13 17:17:15,953 - INFO - Trial 62: Testing parameters: {'clf__C': 8, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:16,443 - INFO - Trial 62: CV F2 Score = 0.8303 (±0.0236)
+2025-08-13 17:17:16,446 - INFO - Trial 63: Testing parameters: {'clf__C': 4, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:17:16,902 - INFO - Trial 63: CV F2 Score = 0.8136 (±0.0356)
+2025-08-13 17:17:16,904 - INFO - Trial 64: Testing parameters: {'clf__C': 6, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:17,374 - INFO - Trial 64: CV F2 Score = 0.8294 (±0.0251)
+2025-08-13 17:17:17,376 - INFO - Trial 65: Testing parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:17,852 - INFO - Trial 65: CV F2 Score = 0.8377 (±0.0166)
+2025-08-13 17:17:17,852 - INFO - Trial 66: Testing parameters: {'clf__C': 6, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:18,342 - INFO - Trial 66: CV F2 Score = 0.8282 (±0.0258)
+2025-08-13 17:17:18,345 - INFO - Trial 67: Testing parameters: {'clf__C': 4, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:18,822 - INFO - Trial 67: CV F2 Score = 0.8086 (±0.0296)
+2025-08-13 17:17:18,822 - INFO - Trial 68: Testing parameters: {'clf__C': 8, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:19,317 - INFO - Trial 68: CV F2 Score = 0.8077 (±0.0276)
+2025-08-13 17:17:19,319 - INFO - Trial 69: Testing parameters: {'clf__C': 12, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:19,791 - INFO - Trial 69: CV F2 Score = 0.7995 (±0.0287)
+2025-08-13 17:17:19,793 - INFO - Trial 70: Testing parameters: {'clf__C': 2, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:17:20,278 - INFO - Trial 70: CV F2 Score = 0.7111 (±0.0334)
+2025-08-13 17:17:20,279 - INFO - Trial 71: Testing parameters: {'clf__C': 2, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:17:20,745 - INFO - Trial 71: CV F2 Score = 0.7573 (±0.0542)
+2025-08-13 17:17:20,745 - INFO - Trial 72: Testing parameters: {'clf__C': 2, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:17:21,247 - INFO - Trial 72: CV F2 Score = 0.7865 (±0.0389)
+2025-08-13 17:17:21,247 - INFO - Trial 73: Testing parameters: {'clf__C': 2, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:21,740 - INFO - Trial 73: CV F2 Score = 0.7867 (±0.0300)
+2025-08-13 17:17:21,742 - INFO - Trial 74: Testing parameters: {'clf__C': 4, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:22,230 - INFO - Trial 74: CV F2 Score = 0.8324 (±0.0328)
+2025-08-13 17:17:22,230 - INFO - Trial 75: Testing parameters: {'clf__C': 12, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:22,712 - INFO - Trial 75: CV F2 Score = 0.8201 (±0.0224)
+2025-08-13 17:17:22,714 - INFO - Trial 76: Testing parameters: {'clf__C': 6, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:23,209 - INFO - Trial 76: CV F2 Score = 0.8299 (±0.0252)
+2025-08-13 17:17:23,213 - INFO - Trial 77: Testing parameters: {'clf__C': 10, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:23,680 - INFO - Trial 77: CV F2 Score = 0.7966 (±0.0284)
+2025-08-13 17:17:23,682 - INFO - Trial 78: Testing parameters: {'clf__C': 4, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:17:24,170 - INFO - Trial 78: CV F2 Score = 0.8102 (±0.0270)
+2025-08-13 17:17:24,170 - INFO - Trial 79: Testing parameters: {'clf__C': 12, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:24,659 - INFO - Trial 79: CV F2 Score = 0.8292 (±0.0206)
+2025-08-13 17:17:24,662 - INFO - Trial 80: Testing parameters: {'clf__C': 12, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:25,157 - INFO - Trial 80: CV F2 Score = 0.8199 (±0.0312)
+2025-08-13 17:17:25,157 - INFO - Trial 81: Testing parameters: {'clf__C': 6, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:25,645 - INFO - Trial 81: CV F2 Score = 0.8153 (±0.0250)
+2025-08-13 17:17:25,647 - INFO - Trial 82: Testing parameters: {'clf__C': 4, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:26,126 - INFO - Trial 82: CV F2 Score = 0.8200 (±0.0182)
+2025-08-13 17:17:26,126 - INFO - Trial 83: Testing parameters: {'clf__C': 8, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:26,615 - INFO - Trial 83: CV F2 Score = 0.7791 (±0.0385)
+2025-08-13 17:17:26,618 - INFO - Trial 84: Testing parameters: {'clf__C': 6, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:27,106 - INFO - Trial 84: CV F2 Score = 0.8323 (±0.0344)
+2025-08-13 17:17:27,106 - INFO - Trial 85: Testing parameters: {'clf__C': 8, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:17:27,595 - INFO - Trial 85: CV F2 Score = 0.8095 (±0.0345)
+2025-08-13 17:17:27,598 - INFO - Trial 86: Testing parameters: {'clf__C': 2, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:28,082 - INFO - Trial 86: CV F2 Score = 0.7326 (±0.0340)
+2025-08-13 17:17:28,085 - INFO - Trial 87: Testing parameters: {'clf__C': 8, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:17:28,563 - INFO - Trial 87: CV F2 Score = 0.8325 (±0.0362)
+2025-08-13 17:17:28,564 - INFO - Trial 88: Testing parameters: {'clf__C': 8, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:29,054 - INFO - Trial 88: CV F2 Score = 0.8330 (±0.0369)
+2025-08-13 17:17:29,058 - INFO - Trial 89: Testing parameters: {'clf__C': 8, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:17:29,542 - INFO - Trial 89: CV F2 Score = 0.8345 (±0.0271)
+2025-08-13 17:17:29,543 - INFO - Trial 90: Testing parameters: {'clf__C': 2, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:30,032 - INFO - Trial 90: CV F2 Score = 0.7668 (±0.0220)
+2025-08-13 17:17:30,036 - INFO - Trial 91: Testing parameters: {'clf__C': 6, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:30,532 - INFO - Trial 91: CV F2 Score = 0.8226 (±0.0332)
+2025-08-13 17:17:30,536 - INFO - Trial 92: Testing parameters: {'clf__C': 4, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:31,055 - INFO - Trial 92: CV F2 Score = 0.8277 (±0.0297)
+2025-08-13 17:17:31,058 - INFO - Trial 93: Testing parameters: {'clf__C': 10, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:17:31,554 - INFO - Trial 93: CV F2 Score = 0.7919 (±0.0290)
+2025-08-13 17:17:31,558 - INFO - Trial 94: Testing parameters: {'clf__C': 8, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:32,042 - INFO - Trial 94: CV F2 Score = 0.8181 (±0.0431)
+2025-08-13 17:17:32,043 - INFO - Trial 95: Testing parameters: {'clf__C': 6, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:17:32,544 - INFO - Trial 95: CV F2 Score = 0.7943 (±0.0300)
+2025-08-13 17:17:32,548 - INFO - Trial 96: Testing parameters: {'clf__C': 6, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:17:33,064 - INFO - Trial 96: CV F2 Score = 0.8086 (±0.0342)
+2025-08-13 17:17:33,068 - INFO - Trial 97: Testing parameters: {'clf__C': 10, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:33,596 - INFO - Trial 97: CV F2 Score = 0.8175 (±0.0358)
+2025-08-13 17:17:33,599 - INFO - Trial 98: Testing parameters: {'clf__C': 4, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:34,132 - INFO - Trial 98: CV F2 Score = 0.8106 (±0.0300)
+2025-08-13 17:17:34,135 - INFO - Trial 99: Testing parameters: {'clf__C': 8, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:17:34,635 - INFO - Trial 99: CV F2 Score = 0.8457 (±0.0279)
+2025-08-13 17:17:34,635 - INFO - Trial 100: Testing parameters: {'clf__C': 4, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:35,149 - INFO - Trial 100: CV F2 Score = 0.7780 (±0.0426)
+2025-08-13 17:17:35,153 - INFO - Trial 101: Testing parameters: {'clf__C': 2, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:17:35,683 - INFO - Trial 101: CV F2 Score = 0.7841 (±0.0353)
+2025-08-13 17:17:35,683 - INFO - Trial 102: Testing parameters: {'clf__C': 8, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:17:36,225 - INFO - Trial 102: CV F2 Score = 0.8183 (±0.0312)
+2025-08-13 17:17:36,225 - INFO - Trial 103: Testing parameters: {'clf__C': 8, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:36,768 - INFO - Trial 103: CV F2 Score = 0.8353 (±0.0397)
+2025-08-13 17:17:36,772 - INFO - Trial 104: Testing parameters: {'clf__C': 2, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:17:37,288 - INFO - Trial 104: CV F2 Score = 0.7580 (±0.0174)
+2025-08-13 17:17:37,293 - INFO - Trial 105: Testing parameters: {'clf__C': 2, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:37,809 - INFO - Trial 105: CV F2 Score = 0.7951 (±0.0374)
+2025-08-13 17:17:37,813 - INFO - Trial 106: Testing parameters: {'clf__C': 12, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:17:38,341 - INFO - Trial 106: CV F2 Score = 0.7503 (±0.0457)
+2025-08-13 17:17:38,346 - INFO - Trial 107: Testing parameters: {'clf__C': 10, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:38,855 - INFO - Trial 107: CV F2 Score = 0.8170 (±0.0229)
+2025-08-13 17:17:38,859 - INFO - Trial 108: Testing parameters: {'clf__C': 2, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:39,371 - INFO - Trial 108: CV F2 Score = 0.7989 (±0.0365)
+2025-08-13 17:17:39,375 - INFO - Trial 109: Testing parameters: {'clf__C': 2, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:39,911 - INFO - Trial 109: CV F2 Score = 0.7616 (±0.0174)
+2025-08-13 17:17:39,915 - INFO - Trial 110: Testing parameters: {'clf__C': 10, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:40,412 - INFO - Trial 110: CV F2 Score = 0.8209 (±0.0340)
+2025-08-13 17:17:40,415 - INFO - Trial 111: Testing parameters: {'clf__C': 12, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:40,913 - INFO - Trial 111: CV F2 Score = 0.8140 (±0.0247)
+2025-08-13 17:17:40,918 - INFO - Trial 112: Testing parameters: {'clf__C': 10, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:41,414 - INFO - Trial 112: CV F2 Score = 0.8096 (±0.0265)
+2025-08-13 17:17:41,419 - INFO - Trial 113: Testing parameters: {'clf__C': 2, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:41,945 - INFO - Trial 113: CV F2 Score = 0.7811 (±0.0283)
+2025-08-13 17:17:41,950 - INFO - Trial 114: Testing parameters: {'clf__C': 2, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:17:42,498 - INFO - Trial 114: CV F2 Score = 0.7275 (±0.0354)
+2025-08-13 17:17:42,501 - INFO - Trial 115: Testing parameters: {'clf__C': 12, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:43,041 - INFO - Trial 115: CV F2 Score = 0.7951 (±0.0314)
+2025-08-13 17:17:43,043 - INFO - Trial 116: Testing parameters: {'clf__C': 10, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:17:43,565 - INFO - Trial 116: CV F2 Score = 0.8177 (±0.0323)
+2025-08-13 17:17:43,565 - INFO - Trial 117: Testing parameters: {'clf__C': 10, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:44,119 - INFO - Trial 117: CV F2 Score = 0.8136 (±0.0185)
+2025-08-13 17:17:44,120 - INFO - Trial 118: Testing parameters: {'clf__C': 10, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:44,642 - INFO - Trial 118: CV F2 Score = 0.8204 (±0.0388)
+2025-08-13 17:17:44,648 - INFO - Trial 119: Testing parameters: {'clf__C': 8, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:45,155 - INFO - Trial 119: CV F2 Score = 0.8209 (±0.0333)
+2025-08-13 17:17:45,158 - INFO - Trial 120: Testing parameters: {'clf__C': 2, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:45,688 - INFO - Trial 120: CV F2 Score = 0.7979 (±0.0383)
+2025-08-13 17:17:45,689 - INFO - Trial 121: Testing parameters: {'clf__C': 4, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:46,236 - INFO - Trial 121: CV F2 Score = 0.7993 (±0.0319)
+2025-08-13 17:17:46,240 - INFO - Trial 122: Testing parameters: {'clf__C': 8, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:17:46,744 - INFO - Trial 122: CV F2 Score = 0.7946 (±0.0275)
+2025-08-13 17:17:46,744 - INFO - Trial 123: Testing parameters: {'clf__C': 12, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:17:47,256 - INFO - Trial 123: CV F2 Score = 0.8094 (±0.0381)
+2025-08-13 17:17:47,262 - INFO - Trial 124: Testing parameters: {'clf__C': 10, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:17:47,780 - INFO - Trial 124: CV F2 Score = 0.8259 (±0.0187)
+2025-08-13 17:17:47,784 - INFO - Trial 125: Testing parameters: {'clf__C': 2, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:48,301 - INFO - Trial 125: CV F2 Score = 0.7859 (±0.0356)
+2025-08-13 17:17:48,306 - INFO - Trial 126: Testing parameters: {'clf__C': 12, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:17:48,959 - INFO - Trial 126: CV F2 Score = 0.8421 (±0.0204)
+2025-08-13 17:17:48,964 - INFO - Trial 127: Testing parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:17:49,547 - INFO - Trial 127: CV F2 Score = 0.8342 (±0.0226)
+2025-08-13 17:17:49,550 - INFO - Trial 128: Testing parameters: {'clf__C': 4, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:17:50,177 - INFO - Trial 128: CV F2 Score = 0.8003 (±0.0261)
+2025-08-13 17:17:50,182 - INFO - Trial 129: Testing parameters: {'clf__C': 10, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:17:50,825 - INFO - Trial 129: CV F2 Score = 0.8222 (±0.0211)
+2025-08-13 17:17:50,828 - INFO - Trial 130: Testing parameters: {'clf__C': 4, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:17:51,466 - INFO - Trial 130: CV F2 Score = 0.8102 (±0.0237)
+2025-08-13 17:17:51,467 - INFO - Trial 131: Testing parameters: {'clf__C': 4, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:52,128 - INFO - Trial 131: CV F2 Score = 0.8196 (±0.0327)
+2025-08-13 17:17:52,133 - INFO - Trial 132: Testing parameters: {'clf__C': 8, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:17:52,807 - INFO - Trial 132: CV F2 Score = 0.8172 (±0.0281)
+2025-08-13 17:17:52,815 - INFO - Trial 133: Testing parameters: {'clf__C': 4, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:53,445 - INFO - Trial 133: CV F2 Score = 0.8215 (±0.0351)
+2025-08-13 17:17:53,446 - INFO - Trial 134: Testing parameters: {'clf__C': 8, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:17:54,014 - INFO - Trial 134: CV F2 Score = 0.8190 (±0.0231)
+2025-08-13 17:17:54,018 - INFO - Trial 135: Testing parameters: {'clf__C': 2, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:17:54,681 - INFO - Trial 135: CV F2 Score = 0.7909 (±0.0339)
+2025-08-13 17:17:54,681 - INFO - Trial 136: Testing parameters: {'clf__C': 10, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:17:55,316 - INFO - Trial 136: CV F2 Score = 0.8029 (±0.0278)
+2025-08-13 17:17:55,321 - INFO - Trial 137: Testing parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:17:55,875 - INFO - Trial 137: CV F2 Score = 0.8465 (±0.0258)
+2025-08-13 17:17:55,876 - INFO - Trial 138: Testing parameters: {'clf__C': 6, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:56,438 - INFO - Trial 138: CV F2 Score = 0.8103 (±0.0202)
+2025-08-13 17:17:56,444 - INFO - Trial 139: Testing parameters: {'clf__C': 4, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:56,971 - INFO - Trial 139: CV F2 Score = 0.7907 (±0.0223)
+2025-08-13 17:17:56,973 - INFO - Trial 140: Testing parameters: {'clf__C': 12, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:17:57,548 - INFO - Trial 140: CV F2 Score = 0.8095 (±0.0434)
+2025-08-13 17:17:57,552 - INFO - Trial 141: Testing parameters: {'clf__C': 4, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:58,093 - INFO - Trial 141: CV F2 Score = 0.8305 (±0.0327)
+2025-08-13 17:17:58,098 - INFO - Trial 142: Testing parameters: {'clf__C': 6, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:17:58,656 - INFO - Trial 142: CV F2 Score = 0.8247 (±0.0193)
+2025-08-13 17:17:58,662 - INFO - Trial 143: Testing parameters: {'clf__C': 10, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:17:59,190 - INFO - Trial 143: CV F2 Score = 0.8146 (±0.0228)
+2025-08-13 17:17:59,196 - INFO - Trial 144: Testing parameters: {'clf__C': 4, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:17:59,788 - INFO - Trial 144: CV F2 Score = 0.8148 (±0.0360)
+2025-08-13 17:17:59,792 - INFO - Trial 145: Testing parameters: {'clf__C': 10, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:18:00,371 - INFO - Trial 145: CV F2 Score = 0.8087 (±0.0427)
+2025-08-13 17:18:00,376 - INFO - Trial 146: Testing parameters: {'clf__C': 12, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:18:00,933 - INFO - Trial 146: CV F2 Score = 0.8164 (±0.0236)
+2025-08-13 17:18:00,938 - INFO - Trial 147: Testing parameters: {'clf__C': 2, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:18:01,437 - INFO - Trial 147: CV F2 Score = 0.7592 (±0.0206)
+2025-08-13 17:18:01,443 - INFO - Trial 148: Testing parameters: {'clf__C': 6, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:18:02,025 - INFO - Trial 148: CV F2 Score = 0.8109 (±0.0303)
+2025-08-13 17:18:02,029 - INFO - Trial 149: Testing parameters: {'clf__C': 4, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:18:02,603 - INFO - Trial 149: CV F2 Score = 0.8211 (±0.0364)
+2025-08-13 17:18:02,605 - INFO - Trial 150: Testing parameters: {'clf__C': 8, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:18:03,194 - INFO - Trial 150: CV F2 Score = 0.8037 (±0.0376)
+2025-08-13 17:18:03,201 - INFO - Trial 151: Testing parameters: {'clf__C': 12, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:18:03,833 - INFO - Trial 151: CV F2 Score = 0.8163 (±0.0248)
+2025-08-13 17:18:03,834 - INFO - Trial 152: Testing parameters: {'clf__C': 10, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:18:04,416 - INFO - Trial 152: CV F2 Score = 0.7892 (±0.0359)
+2025-08-13 17:18:04,421 - INFO - Trial 153: Testing parameters: {'clf__C': 12, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:18:04,994 - INFO - Trial 153: CV F2 Score = 0.8348 (±0.0166)
+2025-08-13 17:18:04,994 - INFO - Trial 154: Testing parameters: {'clf__C': 4, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:18:05,620 - INFO - Trial 154: CV F2 Score = 0.8032 (±0.0296)
+2025-08-13 17:18:05,626 - INFO - Trial 155: Testing parameters: {'clf__C': 6, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:18:06,186 - INFO - Trial 155: CV F2 Score = 0.8396 (±0.0281)
+2025-08-13 17:18:06,191 - INFO - Trial 156: Testing parameters: {'clf__C': 2, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:18:06,742 - INFO - Trial 156: CV F2 Score = 0.7870 (±0.0280)
+2025-08-13 17:18:06,747 - INFO - Trial 157: Testing parameters: {'clf__C': 2, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:18:07,266 - INFO - Trial 157: CV F2 Score = 0.7871 (±0.0385)
+2025-08-13 17:18:07,271 - INFO - Trial 158: Testing parameters: {'clf__C': 8, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:18:07,870 - INFO - Trial 158: CV F2 Score = 0.7962 (±0.0345)
+2025-08-13 17:18:07,876 - INFO - Trial 159: Testing parameters: {'clf__C': 6, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:18:08,419 - INFO - Trial 159: CV F2 Score = 0.8054 (±0.0389)
+2025-08-13 17:18:08,424 - INFO - Trial 160: Testing parameters: {'clf__C': 6, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:18:08,953 - INFO - Trial 160: CV F2 Score = 0.8464 (±0.0337)
+2025-08-13 17:18:08,959 - INFO - Trial 161: Testing parameters: {'clf__C': 12, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:18:09,486 - INFO - Trial 161: CV F2 Score = 0.8092 (±0.0338)
+2025-08-13 17:18:09,486 - INFO - Trial 162: Testing parameters: {'clf__C': 12, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:18:09,998 - INFO - Trial 162: CV F2 Score = 0.8128 (±0.0382)
+2025-08-13 17:18:10,000 - INFO - Trial 163: Testing parameters: {'clf__C': 6, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:18:10,502 - INFO - Trial 163: CV F2 Score = 0.8308 (±0.0242)
+2025-08-13 17:18:10,508 - INFO - Trial 164: Testing parameters: {'clf__C': 2, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:18:11,007 - INFO - Trial 164: CV F2 Score = 0.7801 (±0.0443)
+2025-08-13 17:18:11,008 - INFO - Trial 165: Testing parameters: {'clf__C': 2, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:18:11,517 - INFO - Trial 165: CV F2 Score = 0.7726 (±0.0344)
+2025-08-13 17:18:11,522 - INFO - Trial 166: Testing parameters: {'clf__C': 4, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:18:12,094 - INFO - Trial 166: CV F2 Score = 0.8148 (±0.0333)
+2025-08-13 17:18:12,098 - INFO - Trial 167: Testing parameters: {'clf__C': 12, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:18:12,599 - INFO - Trial 167: CV F2 Score = 0.8230 (±0.0534)
+2025-08-13 17:18:12,605 - INFO - Trial 168: Testing parameters: {'clf__C': 8, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:18:13,165 - INFO - Trial 168: CV F2 Score = 0.8279 (±0.0265)
+2025-08-13 17:18:13,168 - INFO - Trial 169: Testing parameters: {'clf__C': 2, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:18:13,771 - INFO - Trial 169: CV F2 Score = 0.7883 (±0.0312)
+2025-08-13 17:18:13,772 - INFO - Trial 170: Testing parameters: {'clf__C': 10, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:18:14,335 - INFO - Trial 170: CV F2 Score = 0.8285 (±0.0269)
+2025-08-13 17:18:14,343 - INFO - Trial 171: Testing parameters: {'clf__C': 6, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:18:14,906 - INFO - Trial 171: CV F2 Score = 0.8112 (±0.0294)
+2025-08-13 17:18:14,913 - INFO - Trial 172: Testing parameters: {'clf__C': 12, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:18:15,441 - INFO - Trial 172: CV F2 Score = 0.8145 (±0.0278)
+2025-08-13 17:18:15,445 - INFO - Trial 173: Testing parameters: {'clf__C': 8, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:18:15,986 - INFO - Trial 173: CV F2 Score = 0.8294 (±0.0267)
+2025-08-13 17:18:15,986 - INFO - Trial 174: Testing parameters: {'clf__C': 12, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:18:16,511 - INFO - Trial 174: CV F2 Score = 0.8233 (±0.0334)
+2025-08-13 17:18:16,517 - INFO - Trial 175: Testing parameters: {'clf__C': 12, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:18:17,025 - INFO - Trial 175: CV F2 Score = 0.8076 (±0.0284)
+2025-08-13 17:18:17,029 - INFO - Trial 176: Testing parameters: {'clf__C': 4, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:18:17,603 - INFO - Trial 176: CV F2 Score = 0.7998 (±0.0258)
+2025-08-13 17:18:17,607 - INFO - Trial 177: Testing parameters: {'clf__C': 4, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:18:18,192 - INFO - Trial 177: CV F2 Score = 0.7894 (±0.0193)
+2025-08-13 17:18:18,201 - INFO - Trial 178: Testing parameters: {'clf__C': 6, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:18:18,757 - INFO - Trial 178: CV F2 Score = 0.8319 (±0.0339)
+2025-08-13 17:18:18,764 - INFO - Trial 179: Testing parameters: {'clf__C': 4, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:18:19,334 - INFO - Trial 179: CV F2 Score = 0.8301 (±0.0277)
+2025-08-13 17:18:19,335 - INFO - Trial 180: Testing parameters: {'clf__C': 10, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:18:19,896 - INFO - Trial 180: CV F2 Score = 0.7265 (±0.0471)
+2025-08-13 17:18:19,896 - INFO - Trial 181: Testing parameters: {'clf__C': 12, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:18:20,417 - INFO - Trial 181: CV F2 Score = 0.8266 (±0.0291)
+2025-08-13 17:18:20,424 - INFO - Trial 182: Testing parameters: {'clf__C': 10, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:18:20,983 - INFO - Trial 182: CV F2 Score = 0.7968 (±0.0304)
+2025-08-13 17:18:20,987 - INFO - Trial 183: Testing parameters: {'clf__C': 4, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:18:21,508 - INFO - Trial 183: CV F2 Score = 0.8142 (±0.0312)
+2025-08-13 17:18:21,515 - INFO - Trial 184: Testing parameters: {'clf__C': 4, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:18:22,024 - INFO - Trial 184: CV F2 Score = 0.8069 (±0.0212)
+2025-08-13 17:18:22,029 - INFO - Trial 185: Testing parameters: {'clf__C': 6, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:18:22,571 - INFO - Trial 185: CV F2 Score = 0.8290 (±0.0197)
+2025-08-13 17:18:22,577 - INFO - Trial 186: Testing parameters: {'clf__C': 2, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:18:23,119 - INFO - Trial 186: CV F2 Score = 0.7732 (±0.0215)
+2025-08-13 17:18:23,125 - INFO - Trial 187: Testing parameters: {'clf__C': 4, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:18:23,665 - INFO - Trial 187: CV F2 Score = 0.8061 (±0.0245)
+2025-08-13 17:18:23,676 - INFO - Trial 188: Testing parameters: {'clf__C': 10, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:18:24,342 - INFO - Trial 188: CV F2 Score = 0.8249 (±0.0216)
+2025-08-13 17:18:24,350 - INFO - Trial 189: Testing parameters: {'clf__C': 12, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:18:24,976 - INFO - Trial 189: CV F2 Score = 0.8233 (±0.0360)
+2025-08-13 17:18:24,984 - INFO - Trial 190: Testing parameters: {'clf__C': 12, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:18:25,720 - INFO - Trial 190: CV F2 Score = 0.8069 (±0.0427)
+2025-08-13 17:18:25,730 - INFO - Trial 191: Testing parameters: {'clf__C': 8, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:18:26,343 - INFO - Trial 191: CV F2 Score = 0.8172 (±0.0226)
+2025-08-13 17:18:26,349 - INFO - Trial 192: Testing parameters: {'clf__C': 4, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:18:26,935 - INFO - Trial 192: CV F2 Score = 0.8092 (±0.0300)
+2025-08-13 17:18:26,938 - INFO - Trial 193: Testing parameters: {'clf__C': 10, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:18:27,514 - INFO - Trial 193: CV F2 Score = 0.8115 (±0.0406)
+2025-08-13 17:18:27,514 - INFO - Trial 194: Testing parameters: {'clf__C': 12, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:18:28,098 - INFO - Trial 194: CV F2 Score = 0.8207 (±0.0215)
+2025-08-13 17:18:28,098 - INFO - Trial 195: Testing parameters: {'clf__C': 2, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:18:28,683 - INFO - Trial 195: CV F2 Score = 0.7820 (±0.0266)
+2025-08-13 17:18:28,683 - INFO - Trial 196: Testing parameters: {'clf__C': 4, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:18:29,217 - INFO - Trial 196: CV F2 Score = 0.8218 (±0.0344)
+2025-08-13 17:18:29,225 - INFO - Trial 197: Testing parameters: {'clf__C': 10, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:18:29,758 - INFO - Trial 197: CV F2 Score = 0.8223 (±0.0450)
+2025-08-13 17:18:29,762 - INFO - Trial 198: Testing parameters: {'clf__C': 8, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:18:30,313 - INFO - Trial 198: CV F2 Score = 0.8289 (±0.0240)
+2025-08-13 17:18:30,323 - INFO - Trial 199: Testing parameters: {'clf__C': 10, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:18:30,900 - INFO - Trial 199: CV F2 Score = 0.8175 (±0.0468)
+2025-08-13 17:18:30,907 - INFO - Trial 200: Testing parameters: {'clf__C': 6, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:18:31,449 - INFO - Trial 200: CV F2 Score = 0.7782 (±0.0410)
+2025-08-13 17:18:31,457 - INFO - Trial 201: Testing parameters: {'clf__C': 6, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:18:32,004 - INFO - Trial 201: CV F2 Score = 0.8146 (±0.0243)
+2025-08-13 17:18:32,012 - INFO - Trial 202: Testing parameters: {'clf__C': 8, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:18:32,527 - INFO - Trial 202: CV F2 Score = 0.8335 (±0.0215)
+2025-08-13 17:18:32,535 - INFO - Trial 203: Testing parameters: {'clf__C': 6, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:18:33,067 - INFO - Trial 203: CV F2 Score = 0.8233 (±0.0247)
+2025-08-13 17:18:33,075 - INFO - Trial 204: Testing parameters: {'clf__C': 12, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:18:33,595 - INFO - Trial 204: CV F2 Score = 0.8269 (±0.0351)
+2025-08-13 17:18:33,600 - INFO - Trial 205: Testing parameters: {'clf__C': 6, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:18:34,130 - INFO - Trial 205: CV F2 Score = 0.8077 (±0.0450)
+2025-08-13 17:18:34,130 - INFO - Trial 206: Testing parameters: {'clf__C': 8, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:18:34,654 - INFO - Trial 206: CV F2 Score = 0.8147 (±0.0345)
+2025-08-13 17:18:34,656 - INFO - Trial 207: Testing parameters: {'clf__C': 12, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:18:35,176 - INFO - Trial 207: CV F2 Score = 0.8188 (±0.0243)
+2025-08-13 17:18:35,182 - INFO - Trial 208: Testing parameters: {'clf__C': 2, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:18:35,737 - INFO - Trial 208: CV F2 Score = 0.7731 (±0.0086)
+2025-08-13 17:18:35,740 - INFO - Trial 209: Testing parameters: {'clf__C': 12, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:18:36,295 - INFO - Trial 209: CV F2 Score = 0.8374 (±0.0261)
+2025-08-13 17:18:36,297 - INFO - Trial 210: Testing parameters: {'clf__C': 4, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:18:36,831 - INFO - Trial 210: CV F2 Score = 0.8053 (±0.0326)
+2025-08-13 17:18:36,837 - INFO - Trial 211: Testing parameters: {'clf__C': 6, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:18:37,354 - INFO - Trial 211: CV F2 Score = 0.8246 (±0.0229)
+2025-08-13 17:18:37,354 - INFO - Trial 212: Testing parameters: {'clf__C': 2, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:18:37,922 - INFO - Trial 212: CV F2 Score = 0.7739 (±0.0291)
+2025-08-13 17:18:37,928 - INFO - Trial 213: Testing parameters: {'clf__C': 6, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:18:38,442 - INFO - Trial 213: CV F2 Score = 0.8283 (±0.0290)
+2025-08-13 17:18:38,450 - INFO - Trial 214: Testing parameters: {'clf__C': 10, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:18:38,972 - INFO - Trial 214: CV F2 Score = 0.8187 (±0.0239)
+2025-08-13 17:18:38,972 - INFO - Trial 215: Testing parameters: {'clf__C': 6, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:18:39,501 - INFO - Trial 215: CV F2 Score = 0.7211 (±0.0512)
+2025-08-13 17:18:39,857 - INFO - --------------------------------------------------
+2025-08-13 17:18:39,867 - INFO - Optimization completed after 216 trials
+2025-08-13 17:18:39,867 - INFO - Best F2 score: 0.8465
+2025-08-13 17:18:39,867 - INFO - Best parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': 15}
+2025-08-13 17:18:39,878 - INFO - Number of pruned trials: 0
+2025-08-13 17:18:39,889 - INFO - Number of failed trials: 0
+2025-08-13 17:18:39,889 - INFO - Model training completed with parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:18:39,889 - INFO - SESSION COMPLETED - 2025-08-13 17:18:39
+2025-08-13 17:18:39,889 - INFO - ================================================================================
+2025-08-13 17:18:39,889 - INFO - 
+2025-08-13 17:28:16,790 - INFO - ================================================================================
+2025-08-13 17:28:16,790 - INFO - NEW OPTIMIZATION SESSION - 2025-08-13 17:28:16
+2025-08-13 17:28:16,790 - INFO - Starting Optuna optimization for model: tfidf_logreg_basic
+2025-08-13 17:28:16,790 - INFO - Sampler: Grid
+2025-08-13 17:28:16,790 - INFO - Number of trials: 216
+2025-08-13 17:28:16,790 - INFO - Direction: maximize
+2025-08-13 17:28:16,790 - INFO - Random state: 42
+2025-08-13 17:28:16,790 - INFO - Parameter space: ['clf__C', 'select__k', 'clf__class_weight']
+2025-08-13 17:28:16,790 - INFO - --------------------------------------------------
+2025-08-13 17:28:16,794 - INFO - Trial 0: Testing parameters: {'clf__C': 12, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:28:19,310 - INFO - Trial 0: CV F2 Score = 0.8189 (±0.0263)
+2025-08-13 17:28:19,311 - INFO - Trial 1: Testing parameters: {'clf__C': 12, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:28:21,222 - INFO - Trial 1: CV F2 Score = 0.8186 (±0.0270)
+2025-08-13 17:28:21,223 - INFO - Trial 2: Testing parameters: {'clf__C': 8, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:28:23,214 - INFO - Trial 2: CV F2 Score = 0.7241 (±0.0476)
+2025-08-13 17:28:23,214 - INFO - Trial 3: Testing parameters: {'clf__C': 10, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:28:24,842 - INFO - Trial 3: CV F2 Score = 0.8217 (±0.0279)
+2025-08-13 17:28:24,842 - INFO - Trial 4: Testing parameters: {'clf__C': 2, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:28:25,280 - INFO - Trial 4: CV F2 Score = 0.7854 (±0.0306)
+2025-08-13 17:28:25,280 - INFO - Trial 5: Testing parameters: {'clf__C': 8, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:28:25,709 - INFO - Trial 5: CV F2 Score = 0.7943 (±0.0280)
+2025-08-13 17:28:25,709 - INFO - Trial 6: Testing parameters: {'clf__C': 12, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:28:26,137 - INFO - Trial 6: CV F2 Score = 0.8131 (±0.0362)
+2025-08-13 17:28:26,137 - INFO - Trial 7: Testing parameters: {'clf__C': 6, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:28:26,564 - INFO - Trial 7: CV F2 Score = 0.8040 (±0.0380)
+2025-08-13 17:28:26,564 - INFO - Trial 8: Testing parameters: {'clf__C': 12, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:28:27,006 - INFO - Trial 8: CV F2 Score = 0.7932 (±0.0355)
+2025-08-13 17:28:27,006 - INFO - Trial 9: Testing parameters: {'clf__C': 8, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:28:27,440 - INFO - Trial 9: CV F2 Score = 0.7943 (±0.0393)
+2025-08-13 17:28:27,440 - INFO - Trial 10: Testing parameters: {'clf__C': 10, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:28:27,881 - INFO - Trial 10: CV F2 Score = 0.8164 (±0.0188)
+2025-08-13 17:28:27,881 - INFO - Trial 11: Testing parameters: {'clf__C': 2, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:28:28,334 - INFO - Trial 11: CV F2 Score = 0.6638 (±0.0037)
+2025-08-13 17:28:28,336 - INFO - Trial 12: Testing parameters: {'clf__C': 12, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:28:28,777 - INFO - Trial 12: CV F2 Score = 0.8154 (±0.0473)
+2025-08-13 17:28:28,777 - INFO - Trial 13: Testing parameters: {'clf__C': 2, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:28:29,230 - INFO - Trial 13: CV F2 Score = 0.7728 (±0.0308)
+2025-08-13 17:28:29,230 - INFO - Trial 14: Testing parameters: {'clf__C': 4, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:28:29,689 - INFO - Trial 14: CV F2 Score = 0.7558 (±0.0356)
+2025-08-13 17:28:29,689 - INFO - Trial 15: Testing parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:28:30,138 - INFO - Trial 15: CV F2 Score = 0.8245 (±0.0236)
+2025-08-13 17:28:30,139 - INFO - Trial 16: Testing parameters: {'clf__C': 10, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:28:30,600 - INFO - Trial 16: CV F2 Score = 0.8250 (±0.0289)
+2025-08-13 17:28:30,600 - INFO - Trial 17: Testing parameters: {'clf__C': 2, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:28:31,032 - INFO - Trial 17: CV F2 Score = 0.7028 (±0.0517)
+2025-08-13 17:28:31,032 - INFO - Trial 18: Testing parameters: {'clf__C': 10, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:28:31,489 - INFO - Trial 18: CV F2 Score = 0.8166 (±0.0294)
+2025-08-13 17:28:31,490 - INFO - Trial 19: Testing parameters: {'clf__C': 4, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:28:31,954 - INFO - Trial 19: CV F2 Score = 0.7159 (±0.0541)
+2025-08-13 17:28:31,954 - INFO - Trial 20: Testing parameters: {'clf__C': 12, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:28:32,421 - INFO - Trial 20: CV F2 Score = 0.8159 (±0.0413)
+2025-08-13 17:28:32,421 - INFO - Trial 21: Testing parameters: {'clf__C': 8, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:28:32,875 - INFO - Trial 21: CV F2 Score = 0.8219 (±0.0176)
+2025-08-13 17:28:32,877 - INFO - Trial 22: Testing parameters: {'clf__C': 6, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:28:33,318 - INFO - Trial 22: CV F2 Score = 0.8138 (±0.0411)
+2025-08-13 17:28:33,318 - INFO - Trial 23: Testing parameters: {'clf__C': 2, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:28:33,837 - INFO - Trial 23: CV F2 Score = 0.7200 (±0.0323)
+2025-08-13 17:28:33,839 - INFO - Trial 24: Testing parameters: {'clf__C': 6, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:28:34,292 - INFO - Trial 24: CV F2 Score = 0.8055 (±0.0285)
+2025-08-13 17:28:34,293 - INFO - Trial 25: Testing parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:28:34,767 - INFO - Trial 25: CV F2 Score = 0.8040 (±0.0305)
+2025-08-13 17:28:34,769 - INFO - Trial 26: Testing parameters: {'clf__C': 10, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:28:35,241 - INFO - Trial 26: CV F2 Score = 0.8252 (±0.0236)
+2025-08-13 17:28:35,243 - INFO - Trial 27: Testing parameters: {'clf__C': 2, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:28:35,748 - INFO - Trial 27: CV F2 Score = 0.7879 (±0.0333)
+2025-08-13 17:28:35,748 - INFO - Trial 28: Testing parameters: {'clf__C': 4, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:28:36,256 - INFO - Trial 28: CV F2 Score = 0.8013 (±0.0298)
+2025-08-13 17:28:36,259 - INFO - Trial 29: Testing parameters: {'clf__C': 12, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:28:36,703 - INFO - Trial 29: CV F2 Score = 0.7994 (±0.0300)
+2025-08-13 17:28:36,705 - INFO - Trial 30: Testing parameters: {'clf__C': 8, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:28:37,154 - INFO - Trial 30: CV F2 Score = 0.8150 (±0.0244)
+2025-08-13 17:28:37,154 - INFO - Trial 31: Testing parameters: {'clf__C': 4, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:28:37,614 - INFO - Trial 31: CV F2 Score = 0.7974 (±0.0403)
+2025-08-13 17:28:37,617 - INFO - Trial 32: Testing parameters: {'clf__C': 8, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:28:38,155 - INFO - Trial 32: CV F2 Score = 0.8158 (±0.0303)
+2025-08-13 17:28:38,155 - INFO - Trial 33: Testing parameters: {'clf__C': 12, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:28:38,665 - INFO - Trial 33: CV F2 Score = 0.8122 (±0.0387)
+2025-08-13 17:28:38,665 - INFO - Trial 34: Testing parameters: {'clf__C': 8, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:28:39,135 - INFO - Trial 34: CV F2 Score = 0.8361 (±0.0219)
+2025-08-13 17:28:39,137 - INFO - Trial 35: Testing parameters: {'clf__C': 8, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:28:39,642 - INFO - Trial 35: CV F2 Score = 0.8335 (±0.0232)
+2025-08-13 17:28:39,644 - INFO - Trial 36: Testing parameters: {'clf__C': 6, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:28:40,131 - INFO - Trial 36: CV F2 Score = 0.8106 (±0.0276)
+2025-08-13 17:28:40,133 - INFO - Trial 37: Testing parameters: {'clf__C': 8, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:28:40,609 - INFO - Trial 37: CV F2 Score = 0.8130 (±0.0301)
+2025-08-13 17:28:40,609 - INFO - Trial 38: Testing parameters: {'clf__C': 8, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:28:41,076 - INFO - Trial 38: CV F2 Score = 0.8346 (±0.0284)
+2025-08-13 17:28:41,078 - INFO - Trial 39: Testing parameters: {'clf__C': 6, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:28:41,549 - INFO - Trial 39: CV F2 Score = 0.8194 (±0.0293)
+2025-08-13 17:28:41,551 - INFO - Trial 40: Testing parameters: {'clf__C': 6, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:28:42,039 - INFO - Trial 40: CV F2 Score = 0.7516 (±0.0500)
+2025-08-13 17:28:42,039 - INFO - Trial 41: Testing parameters: {'clf__C': 12, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:28:42,534 - INFO - Trial 41: CV F2 Score = 0.8110 (±0.0358)
+2025-08-13 17:28:42,536 - INFO - Trial 42: Testing parameters: {'clf__C': 8, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:28:42,992 - INFO - Trial 42: CV F2 Score = 0.8076 (±0.0265)
+2025-08-13 17:28:42,992 - INFO - Trial 43: Testing parameters: {'clf__C': 6, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:28:43,471 - INFO - Trial 43: CV F2 Score = 0.8157 (±0.0263)
+2025-08-13 17:28:43,473 - INFO - Trial 44: Testing parameters: {'clf__C': 6, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:28:43,968 - INFO - Trial 44: CV F2 Score = 0.8172 (±0.0266)
+2025-08-13 17:28:43,970 - INFO - Trial 45: Testing parameters: {'clf__C': 6, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:28:44,446 - INFO - Trial 45: CV F2 Score = 0.8265 (±0.0252)
+2025-08-13 17:28:44,448 - INFO - Trial 46: Testing parameters: {'clf__C': 8, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:28:44,945 - INFO - Trial 46: CV F2 Score = 0.8263 (±0.0263)
+2025-08-13 17:28:44,947 - INFO - Trial 47: Testing parameters: {'clf__C': 12, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:28:45,423 - INFO - Trial 47: CV F2 Score = 0.7830 (±0.0377)
+2025-08-13 17:28:45,423 - INFO - Trial 48: Testing parameters: {'clf__C': 6, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:28:45,902 - INFO - Trial 48: CV F2 Score = 0.8322 (±0.0240)
+2025-08-13 17:28:45,904 - INFO - Trial 49: Testing parameters: {'clf__C': 10, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:28:46,383 - INFO - Trial 49: CV F2 Score = 0.8043 (±0.0341)
+2025-08-13 17:28:46,386 - INFO - Trial 50: Testing parameters: {'clf__C': 10, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:28:46,860 - INFO - Trial 50: CV F2 Score = 0.8087 (±0.0286)
+2025-08-13 17:28:46,860 - INFO - Trial 51: Testing parameters: {'clf__C': 4, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:28:47,330 - INFO - Trial 51: CV F2 Score = 0.7971 (±0.0306)
+2025-08-13 17:28:47,332 - INFO - Trial 52: Testing parameters: {'clf__C': 2, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:28:47,816 - INFO - Trial 52: CV F2 Score = 0.6915 (±0.0415)
+2025-08-13 17:28:47,818 - INFO - Trial 53: Testing parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:28:48,284 - INFO - Trial 53: CV F2 Score = 0.8287 (±0.0322)
+2025-08-13 17:28:48,286 - INFO - Trial 54: Testing parameters: {'clf__C': 8, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:28:48,773 - INFO - Trial 54: CV F2 Score = 0.8185 (±0.0347)
+2025-08-13 17:28:48,776 - INFO - Trial 55: Testing parameters: {'clf__C': 2, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:28:49,242 - INFO - Trial 55: CV F2 Score = 0.7920 (±0.0377)
+2025-08-13 17:28:49,242 - INFO - Trial 56: Testing parameters: {'clf__C': 2, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:28:49,732 - INFO - Trial 56: CV F2 Score = 0.7496 (±0.0200)
+2025-08-13 17:28:49,734 - INFO - Trial 57: Testing parameters: {'clf__C': 4, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:28:50,200 - INFO - Trial 57: CV F2 Score = 0.7998 (±0.0253)
+2025-08-13 17:28:50,202 - INFO - Trial 58: Testing parameters: {'clf__C': 6, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:28:50,678 - INFO - Trial 58: CV F2 Score = 0.7972 (±0.0431)
+2025-08-13 17:28:50,680 - INFO - Trial 59: Testing parameters: {'clf__C': 4, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:28:51,148 - INFO - Trial 59: CV F2 Score = 0.7252 (±0.0537)
+2025-08-13 17:28:51,150 - INFO - Trial 60: Testing parameters: {'clf__C': 4, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:28:51,639 - INFO - Trial 60: CV F2 Score = 0.7841 (±0.0271)
+2025-08-13 17:28:51,642 - INFO - Trial 61: Testing parameters: {'clf__C': 2, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:28:52,117 - INFO - Trial 61: CV F2 Score = 0.7825 (±0.0258)
+2025-08-13 17:28:52,120 - INFO - Trial 62: Testing parameters: {'clf__C': 8, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:28:52,574 - INFO - Trial 62: CV F2 Score = 0.8303 (±0.0236)
+2025-08-13 17:28:52,576 - INFO - Trial 63: Testing parameters: {'clf__C': 4, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:28:53,039 - INFO - Trial 63: CV F2 Score = 0.8136 (±0.0356)
+2025-08-13 17:28:53,039 - INFO - Trial 64: Testing parameters: {'clf__C': 6, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:28:53,513 - INFO - Trial 64: CV F2 Score = 0.8294 (±0.0251)
+2025-08-13 17:28:53,516 - INFO - Trial 65: Testing parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:28:53,991 - INFO - Trial 65: CV F2 Score = 0.8377 (±0.0166)
+2025-08-13 17:28:53,993 - INFO - Trial 66: Testing parameters: {'clf__C': 6, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:28:54,457 - INFO - Trial 66: CV F2 Score = 0.8282 (±0.0258)
+2025-08-13 17:28:54,459 - INFO - Trial 67: Testing parameters: {'clf__C': 4, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:28:54,952 - INFO - Trial 67: CV F2 Score = 0.8086 (±0.0296)
+2025-08-13 17:28:54,954 - INFO - Trial 68: Testing parameters: {'clf__C': 8, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:28:55,419 - INFO - Trial 68: CV F2 Score = 0.8077 (±0.0276)
+2025-08-13 17:28:55,421 - INFO - Trial 69: Testing parameters: {'clf__C': 12, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:28:55,875 - INFO - Trial 69: CV F2 Score = 0.7995 (±0.0287)
+2025-08-13 17:28:55,875 - INFO - Trial 70: Testing parameters: {'clf__C': 2, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:28:56,331 - INFO - Trial 70: CV F2 Score = 0.7111 (±0.0334)
+2025-08-13 17:28:56,334 - INFO - Trial 71: Testing parameters: {'clf__C': 2, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:28:56,810 - INFO - Trial 71: CV F2 Score = 0.7573 (±0.0542)
+2025-08-13 17:28:56,810 - INFO - Trial 72: Testing parameters: {'clf__C': 2, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:28:57,287 - INFO - Trial 72: CV F2 Score = 0.7865 (±0.0389)
+2025-08-13 17:28:57,289 - INFO - Trial 73: Testing parameters: {'clf__C': 2, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:28:57,755 - INFO - Trial 73: CV F2 Score = 0.7867 (±0.0300)
+2025-08-13 17:28:57,757 - INFO - Trial 74: Testing parameters: {'clf__C': 4, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:28:58,242 - INFO - Trial 74: CV F2 Score = 0.8324 (±0.0328)
+2025-08-13 17:28:58,244 - INFO - Trial 75: Testing parameters: {'clf__C': 12, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:28:58,698 - INFO - Trial 75: CV F2 Score = 0.8201 (±0.0224)
+2025-08-13 17:28:58,699 - INFO - Trial 76: Testing parameters: {'clf__C': 6, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:28:59,180 - INFO - Trial 76: CV F2 Score = 0.8299 (±0.0252)
+2025-08-13 17:28:59,183 - INFO - Trial 77: Testing parameters: {'clf__C': 10, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:28:59,659 - INFO - Trial 77: CV F2 Score = 0.7966 (±0.0284)
+2025-08-13 17:28:59,661 - INFO - Trial 78: Testing parameters: {'clf__C': 4, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:00,115 - INFO - Trial 78: CV F2 Score = 0.8102 (±0.0270)
+2025-08-13 17:29:00,118 - INFO - Trial 79: Testing parameters: {'clf__C': 12, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:29:00,589 - INFO - Trial 79: CV F2 Score = 0.8292 (±0.0206)
+2025-08-13 17:29:00,591 - INFO - Trial 80: Testing parameters: {'clf__C': 12, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:01,088 - INFO - Trial 80: CV F2 Score = 0.8199 (±0.0312)
+2025-08-13 17:29:01,090 - INFO - Trial 81: Testing parameters: {'clf__C': 6, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:01,534 - INFO - Trial 81: CV F2 Score = 0.8153 (±0.0250)
+2025-08-13 17:29:01,537 - INFO - Trial 82: Testing parameters: {'clf__C': 4, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:02,023 - INFO - Trial 82: CV F2 Score = 0.8200 (±0.0182)
+2025-08-13 17:29:02,030 - INFO - Trial 83: Testing parameters: {'clf__C': 8, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:29:02,502 - INFO - Trial 83: CV F2 Score = 0.7791 (±0.0385)
+2025-08-13 17:29:02,505 - INFO - Trial 84: Testing parameters: {'clf__C': 6, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:02,959 - INFO - Trial 84: CV F2 Score = 0.8323 (±0.0344)
+2025-08-13 17:29:02,963 - INFO - Trial 85: Testing parameters: {'clf__C': 8, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:03,409 - INFO - Trial 85: CV F2 Score = 0.8095 (±0.0345)
+2025-08-13 17:29:03,409 - INFO - Trial 86: Testing parameters: {'clf__C': 2, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:29:03,847 - INFO - Trial 86: CV F2 Score = 0.7326 (±0.0340)
+2025-08-13 17:29:03,847 - INFO - Trial 87: Testing parameters: {'clf__C': 8, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:29:04,295 - INFO - Trial 87: CV F2 Score = 0.8325 (±0.0362)
+2025-08-13 17:29:04,296 - INFO - Trial 88: Testing parameters: {'clf__C': 8, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:04,753 - INFO - Trial 88: CV F2 Score = 0.8330 (±0.0369)
+2025-08-13 17:29:04,754 - INFO - Trial 89: Testing parameters: {'clf__C': 8, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:05,198 - INFO - Trial 89: CV F2 Score = 0.8345 (±0.0271)
+2025-08-13 17:29:05,199 - INFO - Trial 90: Testing parameters: {'clf__C': 2, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:05,648 - INFO - Trial 90: CV F2 Score = 0.7668 (±0.0220)
+2025-08-13 17:29:05,650 - INFO - Trial 91: Testing parameters: {'clf__C': 6, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:06,119 - INFO - Trial 91: CV F2 Score = 0.8226 (±0.0332)
+2025-08-13 17:29:06,123 - INFO - Trial 92: Testing parameters: {'clf__C': 4, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:06,586 - INFO - Trial 92: CV F2 Score = 0.8277 (±0.0297)
+2025-08-13 17:29:06,588 - INFO - Trial 93: Testing parameters: {'clf__C': 10, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:29:07,044 - INFO - Trial 93: CV F2 Score = 0.7919 (±0.0290)
+2025-08-13 17:29:07,046 - INFO - Trial 94: Testing parameters: {'clf__C': 8, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:07,503 - INFO - Trial 94: CV F2 Score = 0.8181 (±0.0431)
+2025-08-13 17:29:07,507 - INFO - Trial 95: Testing parameters: {'clf__C': 6, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:07,949 - INFO - Trial 95: CV F2 Score = 0.7943 (±0.0300)
+2025-08-13 17:29:07,949 - INFO - Trial 96: Testing parameters: {'clf__C': 6, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:08,410 - INFO - Trial 96: CV F2 Score = 0.8086 (±0.0342)
+2025-08-13 17:29:08,414 - INFO - Trial 97: Testing parameters: {'clf__C': 10, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:08,859 - INFO - Trial 97: CV F2 Score = 0.8175 (±0.0358)
+2025-08-13 17:29:08,861 - INFO - Trial 98: Testing parameters: {'clf__C': 4, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:09,313 - INFO - Trial 98: CV F2 Score = 0.8106 (±0.0300)
+2025-08-13 17:29:09,317 - INFO - Trial 99: Testing parameters: {'clf__C': 8, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:09,798 - INFO - Trial 99: CV F2 Score = 0.8457 (±0.0279)
+2025-08-13 17:29:09,799 - INFO - Trial 100: Testing parameters: {'clf__C': 4, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:29:10,266 - INFO - Trial 100: CV F2 Score = 0.7780 (±0.0426)
+2025-08-13 17:29:10,268 - INFO - Trial 101: Testing parameters: {'clf__C': 2, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:10,727 - INFO - Trial 101: CV F2 Score = 0.7841 (±0.0353)
+2025-08-13 17:29:10,731 - INFO - Trial 102: Testing parameters: {'clf__C': 8, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:29:11,193 - INFO - Trial 102: CV F2 Score = 0.8183 (±0.0312)
+2025-08-13 17:29:11,193 - INFO - Trial 103: Testing parameters: {'clf__C': 8, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:11,651 - INFO - Trial 103: CV F2 Score = 0.8353 (±0.0397)
+2025-08-13 17:29:11,651 - INFO - Trial 104: Testing parameters: {'clf__C': 2, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:29:12,110 - INFO - Trial 104: CV F2 Score = 0.7580 (±0.0174)
+2025-08-13 17:29:12,112 - INFO - Trial 105: Testing parameters: {'clf__C': 2, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:12,559 - INFO - Trial 105: CV F2 Score = 0.7951 (±0.0374)
+2025-08-13 17:29:12,561 - INFO - Trial 106: Testing parameters: {'clf__C': 12, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:29:13,028 - INFO - Trial 106: CV F2 Score = 0.7503 (±0.0457)
+2025-08-13 17:29:13,031 - INFO - Trial 107: Testing parameters: {'clf__C': 10, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:29:13,489 - INFO - Trial 107: CV F2 Score = 0.8170 (±0.0229)
+2025-08-13 17:29:13,490 - INFO - Trial 108: Testing parameters: {'clf__C': 2, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:13,937 - INFO - Trial 108: CV F2 Score = 0.7989 (±0.0365)
+2025-08-13 17:29:13,941 - INFO - Trial 109: Testing parameters: {'clf__C': 2, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:29:14,398 - INFO - Trial 109: CV F2 Score = 0.7616 (±0.0174)
+2025-08-13 17:29:14,400 - INFO - Trial 110: Testing parameters: {'clf__C': 10, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:14,862 - INFO - Trial 110: CV F2 Score = 0.8209 (±0.0340)
+2025-08-13 17:29:14,865 - INFO - Trial 111: Testing parameters: {'clf__C': 12, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:29:15,322 - INFO - Trial 111: CV F2 Score = 0.8140 (±0.0247)
+2025-08-13 17:29:15,327 - INFO - Trial 112: Testing parameters: {'clf__C': 10, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:15,780 - INFO - Trial 112: CV F2 Score = 0.8096 (±0.0265)
+2025-08-13 17:29:15,784 - INFO - Trial 113: Testing parameters: {'clf__C': 2, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:16,240 - INFO - Trial 113: CV F2 Score = 0.7811 (±0.0283)
+2025-08-13 17:29:16,240 - INFO - Trial 114: Testing parameters: {'clf__C': 2, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:29:16,699 - INFO - Trial 114: CV F2 Score = 0.7275 (±0.0354)
+2025-08-13 17:29:16,699 - INFO - Trial 115: Testing parameters: {'clf__C': 12, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:29:17,179 - INFO - Trial 115: CV F2 Score = 0.7951 (±0.0314)
+2025-08-13 17:29:17,183 - INFO - Trial 116: Testing parameters: {'clf__C': 10, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:17,637 - INFO - Trial 116: CV F2 Score = 0.8177 (±0.0323)
+2025-08-13 17:29:17,641 - INFO - Trial 117: Testing parameters: {'clf__C': 10, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:29:18,107 - INFO - Trial 117: CV F2 Score = 0.8136 (±0.0185)
+2025-08-13 17:29:18,108 - INFO - Trial 118: Testing parameters: {'clf__C': 10, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:18,568 - INFO - Trial 118: CV F2 Score = 0.8204 (±0.0388)
+2025-08-13 17:29:18,571 - INFO - Trial 119: Testing parameters: {'clf__C': 8, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:19,037 - INFO - Trial 119: CV F2 Score = 0.8209 (±0.0333)
+2025-08-13 17:29:19,040 - INFO - Trial 120: Testing parameters: {'clf__C': 2, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:19,495 - INFO - Trial 120: CV F2 Score = 0.7979 (±0.0383)
+2025-08-13 17:29:19,497 - INFO - Trial 121: Testing parameters: {'clf__C': 4, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:29:19,963 - INFO - Trial 121: CV F2 Score = 0.7993 (±0.0319)
+2025-08-13 17:29:19,967 - INFO - Trial 122: Testing parameters: {'clf__C': 8, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:20,402 - INFO - Trial 122: CV F2 Score = 0.7946 (±0.0275)
+2025-08-13 17:29:20,407 - INFO - Trial 123: Testing parameters: {'clf__C': 12, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:20,860 - INFO - Trial 123: CV F2 Score = 0.8094 (±0.0381)
+2025-08-13 17:29:20,861 - INFO - Trial 124: Testing parameters: {'clf__C': 10, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:29:21,308 - INFO - Trial 124: CV F2 Score = 0.8259 (±0.0187)
+2025-08-13 17:29:21,310 - INFO - Trial 125: Testing parameters: {'clf__C': 2, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:21,777 - INFO - Trial 125: CV F2 Score = 0.7859 (±0.0356)
+2025-08-13 17:29:21,781 - INFO - Trial 126: Testing parameters: {'clf__C': 12, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:22,224 - INFO - Trial 126: CV F2 Score = 0.8421 (±0.0204)
+2025-08-13 17:29:22,230 - INFO - Trial 127: Testing parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:22,677 - INFO - Trial 127: CV F2 Score = 0.8342 (±0.0226)
+2025-08-13 17:29:22,681 - INFO - Trial 128: Testing parameters: {'clf__C': 4, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:29:23,139 - INFO - Trial 128: CV F2 Score = 0.8003 (±0.0261)
+2025-08-13 17:29:23,143 - INFO - Trial 129: Testing parameters: {'clf__C': 10, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:23,588 - INFO - Trial 129: CV F2 Score = 0.8222 (±0.0211)
+2025-08-13 17:29:23,588 - INFO - Trial 130: Testing parameters: {'clf__C': 4, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:29:24,048 - INFO - Trial 130: CV F2 Score = 0.8102 (±0.0237)
+2025-08-13 17:29:24,049 - INFO - Trial 131: Testing parameters: {'clf__C': 4, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:24,511 - INFO - Trial 131: CV F2 Score = 0.8196 (±0.0327)
+2025-08-13 17:29:24,514 - INFO - Trial 132: Testing parameters: {'clf__C': 8, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:29:24,961 - INFO - Trial 132: CV F2 Score = 0.8172 (±0.0281)
+2025-08-13 17:29:24,966 - INFO - Trial 133: Testing parameters: {'clf__C': 4, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:25,422 - INFO - Trial 133: CV F2 Score = 0.8215 (±0.0351)
+2025-08-13 17:29:25,422 - INFO - Trial 134: Testing parameters: {'clf__C': 8, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:25,872 - INFO - Trial 134: CV F2 Score = 0.8190 (±0.0231)
+2025-08-13 17:29:25,875 - INFO - Trial 135: Testing parameters: {'clf__C': 2, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:26,333 - INFO - Trial 135: CV F2 Score = 0.7909 (±0.0339)
+2025-08-13 17:29:26,337 - INFO - Trial 136: Testing parameters: {'clf__C': 10, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:26,790 - INFO - Trial 136: CV F2 Score = 0.8029 (±0.0278)
+2025-08-13 17:29:26,790 - INFO - Trial 137: Testing parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:27,270 - INFO - Trial 137: CV F2 Score = 0.8465 (±0.0258)
+2025-08-13 17:29:27,270 - INFO - Trial 138: Testing parameters: {'clf__C': 6, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:27,726 - INFO - Trial 138: CV F2 Score = 0.8103 (±0.0202)
+2025-08-13 17:29:27,732 - INFO - Trial 139: Testing parameters: {'clf__C': 4, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:28,197 - INFO - Trial 139: CV F2 Score = 0.7907 (±0.0223)
+2025-08-13 17:29:28,199 - INFO - Trial 140: Testing parameters: {'clf__C': 12, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:28,669 - INFO - Trial 140: CV F2 Score = 0.8095 (±0.0434)
+2025-08-13 17:29:28,671 - INFO - Trial 141: Testing parameters: {'clf__C': 4, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:29,131 - INFO - Trial 141: CV F2 Score = 0.8305 (±0.0327)
+2025-08-13 17:29:29,136 - INFO - Trial 142: Testing parameters: {'clf__C': 6, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:29,612 - INFO - Trial 142: CV F2 Score = 0.8247 (±0.0193)
+2025-08-13 17:29:29,617 - INFO - Trial 143: Testing parameters: {'clf__C': 10, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:30,086 - INFO - Trial 143: CV F2 Score = 0.8146 (±0.0228)
+2025-08-13 17:29:30,087 - INFO - Trial 144: Testing parameters: {'clf__C': 4, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:30,554 - INFO - Trial 144: CV F2 Score = 0.8148 (±0.0360)
+2025-08-13 17:29:30,558 - INFO - Trial 145: Testing parameters: {'clf__C': 10, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:31,003 - INFO - Trial 145: CV F2 Score = 0.8087 (±0.0427)
+2025-08-13 17:29:31,004 - INFO - Trial 146: Testing parameters: {'clf__C': 12, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:31,473 - INFO - Trial 146: CV F2 Score = 0.8164 (±0.0236)
+2025-08-13 17:29:31,478 - INFO - Trial 147: Testing parameters: {'clf__C': 2, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:31,927 - INFO - Trial 147: CV F2 Score = 0.7592 (±0.0206)
+2025-08-13 17:29:31,933 - INFO - Trial 148: Testing parameters: {'clf__C': 6, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:29:32,379 - INFO - Trial 148: CV F2 Score = 0.8109 (±0.0303)
+2025-08-13 17:29:32,383 - INFO - Trial 149: Testing parameters: {'clf__C': 4, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:32,839 - INFO - Trial 149: CV F2 Score = 0.8211 (±0.0364)
+2025-08-13 17:29:32,839 - INFO - Trial 150: Testing parameters: {'clf__C': 8, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:29:33,321 - INFO - Trial 150: CV F2 Score = 0.8037 (±0.0376)
+2025-08-13 17:29:33,327 - INFO - Trial 151: Testing parameters: {'clf__C': 12, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:33,791 - INFO - Trial 151: CV F2 Score = 0.8163 (±0.0248)
+2025-08-13 17:29:33,796 - INFO - Trial 152: Testing parameters: {'clf__C': 10, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:29:34,252 - INFO - Trial 152: CV F2 Score = 0.7892 (±0.0359)
+2025-08-13 17:29:34,254 - INFO - Trial 153: Testing parameters: {'clf__C': 12, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:34,716 - INFO - Trial 153: CV F2 Score = 0.8348 (±0.0166)
+2025-08-13 17:29:34,720 - INFO - Trial 154: Testing parameters: {'clf__C': 4, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:35,186 - INFO - Trial 154: CV F2 Score = 0.8032 (±0.0296)
+2025-08-13 17:29:35,191 - INFO - Trial 155: Testing parameters: {'clf__C': 6, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:35,643 - INFO - Trial 155: CV F2 Score = 0.8396 (±0.0281)
+2025-08-13 17:29:35,647 - INFO - Trial 156: Testing parameters: {'clf__C': 2, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:29:36,092 - INFO - Trial 156: CV F2 Score = 0.7870 (±0.0280)
+2025-08-13 17:29:36,094 - INFO - Trial 157: Testing parameters: {'clf__C': 2, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:36,553 - INFO - Trial 157: CV F2 Score = 0.7871 (±0.0385)
+2025-08-13 17:29:36,558 - INFO - Trial 158: Testing parameters: {'clf__C': 8, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:36,995 - INFO - Trial 158: CV F2 Score = 0.7962 (±0.0345)
+2025-08-13 17:29:36,997 - INFO - Trial 159: Testing parameters: {'clf__C': 6, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:37,455 - INFO - Trial 159: CV F2 Score = 0.8054 (±0.0389)
+2025-08-13 17:29:37,456 - INFO - Trial 160: Testing parameters: {'clf__C': 6, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:37,944 - INFO - Trial 160: CV F2 Score = 0.8464 (±0.0337)
+2025-08-13 17:29:37,950 - INFO - Trial 161: Testing parameters: {'clf__C': 12, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:38,428 - INFO - Trial 161: CV F2 Score = 0.8092 (±0.0338)
+2025-08-13 17:29:38,434 - INFO - Trial 162: Testing parameters: {'clf__C': 12, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:38,888 - INFO - Trial 162: CV F2 Score = 0.8128 (±0.0382)
+2025-08-13 17:29:38,894 - INFO - Trial 163: Testing parameters: {'clf__C': 6, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:39,338 - INFO - Trial 163: CV F2 Score = 0.8308 (±0.0242)
+2025-08-13 17:29:39,338 - INFO - Trial 164: Testing parameters: {'clf__C': 2, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:39,784 - INFO - Trial 164: CV F2 Score = 0.7801 (±0.0443)
+2025-08-13 17:29:39,789 - INFO - Trial 165: Testing parameters: {'clf__C': 2, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:40,234 - INFO - Trial 165: CV F2 Score = 0.7726 (±0.0344)
+2025-08-13 17:29:40,239 - INFO - Trial 166: Testing parameters: {'clf__C': 4, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:40,695 - INFO - Trial 166: CV F2 Score = 0.8148 (±0.0333)
+2025-08-13 17:29:40,699 - INFO - Trial 167: Testing parameters: {'clf__C': 12, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:41,148 - INFO - Trial 167: CV F2 Score = 0.8230 (±0.0534)
+2025-08-13 17:29:41,150 - INFO - Trial 168: Testing parameters: {'clf__C': 8, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:41,606 - INFO - Trial 168: CV F2 Score = 0.8279 (±0.0265)
+2025-08-13 17:29:41,611 - INFO - Trial 169: Testing parameters: {'clf__C': 2, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:42,066 - INFO - Trial 169: CV F2 Score = 0.7883 (±0.0312)
+2025-08-13 17:29:42,066 - INFO - Trial 170: Testing parameters: {'clf__C': 10, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:42,505 - INFO - Trial 170: CV F2 Score = 0.8285 (±0.0269)
+2025-08-13 17:29:42,511 - INFO - Trial 171: Testing parameters: {'clf__C': 6, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:42,976 - INFO - Trial 171: CV F2 Score = 0.8112 (±0.0294)
+2025-08-13 17:29:42,981 - INFO - Trial 172: Testing parameters: {'clf__C': 12, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:43,424 - INFO - Trial 172: CV F2 Score = 0.8145 (±0.0278)
+2025-08-13 17:29:43,430 - INFO - Trial 173: Testing parameters: {'clf__C': 8, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:29:43,907 - INFO - Trial 173: CV F2 Score = 0.8294 (±0.0267)
+2025-08-13 17:29:43,907 - INFO - Trial 174: Testing parameters: {'clf__C': 12, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:29:44,356 - INFO - Trial 174: CV F2 Score = 0.8233 (±0.0334)
+2025-08-13 17:29:44,358 - INFO - Trial 175: Testing parameters: {'clf__C': 12, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:44,804 - INFO - Trial 175: CV F2 Score = 0.8076 (±0.0284)
+2025-08-13 17:29:44,810 - INFO - Trial 176: Testing parameters: {'clf__C': 4, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:29:45,253 - INFO - Trial 176: CV F2 Score = 0.7998 (±0.0258)
+2025-08-13 17:29:45,256 - INFO - Trial 177: Testing parameters: {'clf__C': 4, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:45,713 - INFO - Trial 177: CV F2 Score = 0.7894 (±0.0193)
+2025-08-13 17:29:45,719 - INFO - Trial 178: Testing parameters: {'clf__C': 6, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:29:46,172 - INFO - Trial 178: CV F2 Score = 0.8319 (±0.0339)
+2025-08-13 17:29:46,178 - INFO - Trial 179: Testing parameters: {'clf__C': 4, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:46,631 - INFO - Trial 179: CV F2 Score = 0.8301 (±0.0277)
+2025-08-13 17:29:46,637 - INFO - Trial 180: Testing parameters: {'clf__C': 10, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:29:47,080 - INFO - Trial 180: CV F2 Score = 0.7265 (±0.0471)
+2025-08-13 17:29:47,087 - INFO - Trial 181: Testing parameters: {'clf__C': 12, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:29:47,530 - INFO - Trial 181: CV F2 Score = 0.8266 (±0.0291)
+2025-08-13 17:29:47,536 - INFO - Trial 182: Testing parameters: {'clf__C': 10, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:29:47,994 - INFO - Trial 182: CV F2 Score = 0.7968 (±0.0304)
+2025-08-13 17:29:47,997 - INFO - Trial 183: Testing parameters: {'clf__C': 4, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:48,443 - INFO - Trial 183: CV F2 Score = 0.8142 (±0.0312)
+2025-08-13 17:29:48,449 - INFO - Trial 184: Testing parameters: {'clf__C': 4, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:48,902 - INFO - Trial 184: CV F2 Score = 0.8069 (±0.0212)
+2025-08-13 17:29:48,909 - INFO - Trial 185: Testing parameters: {'clf__C': 6, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:49,352 - INFO - Trial 185: CV F2 Score = 0.8290 (±0.0197)
+2025-08-13 17:29:49,358 - INFO - Trial 186: Testing parameters: {'clf__C': 2, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:49,803 - INFO - Trial 186: CV F2 Score = 0.7732 (±0.0215)
+2025-08-13 17:29:49,810 - INFO - Trial 187: Testing parameters: {'clf__C': 4, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:50,293 - INFO - Trial 187: CV F2 Score = 0.8061 (±0.0245)
+2025-08-13 17:29:50,295 - INFO - Trial 188: Testing parameters: {'clf__C': 10, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:50,774 - INFO - Trial 188: CV F2 Score = 0.8249 (±0.0216)
+2025-08-13 17:29:50,778 - INFO - Trial 189: Testing parameters: {'clf__C': 12, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:29:51,268 - INFO - Trial 189: CV F2 Score = 0.8233 (±0.0360)
+2025-08-13 17:29:51,275 - INFO - Trial 190: Testing parameters: {'clf__C': 12, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:51,748 - INFO - Trial 190: CV F2 Score = 0.8069 (±0.0427)
+2025-08-13 17:29:51,755 - INFO - Trial 191: Testing parameters: {'clf__C': 8, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:52,210 - INFO - Trial 191: CV F2 Score = 0.8172 (±0.0226)
+2025-08-13 17:29:52,216 - INFO - Trial 192: Testing parameters: {'clf__C': 4, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:52,680 - INFO - Trial 192: CV F2 Score = 0.8092 (±0.0300)
+2025-08-13 17:29:52,687 - INFO - Trial 193: Testing parameters: {'clf__C': 10, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:53,154 - INFO - Trial 193: CV F2 Score = 0.8115 (±0.0406)
+2025-08-13 17:29:53,157 - INFO - Trial 194: Testing parameters: {'clf__C': 12, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:53,629 - INFO - Trial 194: CV F2 Score = 0.8207 (±0.0215)
+2025-08-13 17:29:53,636 - INFO - Trial 195: Testing parameters: {'clf__C': 2, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:54,107 - INFO - Trial 195: CV F2 Score = 0.7820 (±0.0266)
+2025-08-13 17:29:54,111 - INFO - Trial 196: Testing parameters: {'clf__C': 4, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:54,578 - INFO - Trial 196: CV F2 Score = 0.8218 (±0.0344)
+2025-08-13 17:29:54,585 - INFO - Trial 197: Testing parameters: {'clf__C': 10, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:55,071 - INFO - Trial 197: CV F2 Score = 0.8223 (±0.0450)
+2025-08-13 17:29:55,073 - INFO - Trial 198: Testing parameters: {'clf__C': 8, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:55,557 - INFO - Trial 198: CV F2 Score = 0.8289 (±0.0240)
+2025-08-13 17:29:55,559 - INFO - Trial 199: Testing parameters: {'clf__C': 10, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:56,040 - INFO - Trial 199: CV F2 Score = 0.8175 (±0.0468)
+2025-08-13 17:29:56,045 - INFO - Trial 200: Testing parameters: {'clf__C': 6, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:29:56,531 - INFO - Trial 200: CV F2 Score = 0.7782 (±0.0410)
+2025-08-13 17:29:56,538 - INFO - Trial 201: Testing parameters: {'clf__C': 6, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:29:57,027 - INFO - Trial 201: CV F2 Score = 0.8146 (±0.0243)
+2025-08-13 17:29:57,035 - INFO - Trial 202: Testing parameters: {'clf__C': 8, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:29:57,510 - INFO - Trial 202: CV F2 Score = 0.8335 (±0.0215)
+2025-08-13 17:29:57,518 - INFO - Trial 203: Testing parameters: {'clf__C': 6, 'select__k': 120, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:57,984 - INFO - Trial 203: CV F2 Score = 0.8233 (±0.0247)
+2025-08-13 17:29:57,990 - INFO - Trial 204: Testing parameters: {'clf__C': 12, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:29:58,461 - INFO - Trial 204: CV F2 Score = 0.8269 (±0.0351)
+2025-08-13 17:29:58,469 - INFO - Trial 205: Testing parameters: {'clf__C': 6, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:29:58,953 - INFO - Trial 205: CV F2 Score = 0.8077 (±0.0450)
+2025-08-13 17:29:58,955 - INFO - Trial 206: Testing parameters: {'clf__C': 8, 'select__k': 80, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:29:59,448 - INFO - Trial 206: CV F2 Score = 0.8147 (±0.0345)
+2025-08-13 17:29:59,448 - INFO - Trial 207: Testing parameters: {'clf__C': 12, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:29:59,930 - INFO - Trial 207: CV F2 Score = 0.8188 (±0.0243)
+2025-08-13 17:29:59,936 - INFO - Trial 208: Testing parameters: {'clf__C': 2, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:30:00,413 - INFO - Trial 208: CV F2 Score = 0.7731 (±0.0086)
+2025-08-13 17:30:00,420 - INFO - Trial 209: Testing parameters: {'clf__C': 12, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:30:00,912 - INFO - Trial 209: CV F2 Score = 0.8374 (±0.0261)
+2025-08-13 17:30:00,919 - INFO - Trial 210: Testing parameters: {'clf__C': 4, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:30:01,394 - INFO - Trial 210: CV F2 Score = 0.8053 (±0.0326)
+2025-08-13 17:30:01,399 - INFO - Trial 211: Testing parameters: {'clf__C': 6, 'select__k': 140, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:30:01,889 - INFO - Trial 211: CV F2 Score = 0.8246 (±0.0229)
+2025-08-13 17:30:01,892 - INFO - Trial 212: Testing parameters: {'clf__C': 2, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:30:02,366 - INFO - Trial 212: CV F2 Score = 0.7739 (±0.0291)
+2025-08-13 17:30:02,372 - INFO - Trial 213: Testing parameters: {'clf__C': 6, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:30:02,826 - INFO - Trial 213: CV F2 Score = 0.8283 (±0.0290)
+2025-08-13 17:30:02,834 - INFO - Trial 214: Testing parameters: {'clf__C': 10, 'select__k': 160, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:30:03,299 - INFO - Trial 214: CV F2 Score = 0.8187 (±0.0239)
+2025-08-13 17:30:03,306 - INFO - Trial 215: Testing parameters: {'clf__C': 6, 'select__k': 60, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:30:03,761 - INFO - Trial 215: CV F2 Score = 0.7211 (±0.0512)
+2025-08-13 17:30:04,101 - INFO - --------------------------------------------------
+2025-08-13 17:30:04,114 - INFO - Optimization completed after 216 trials
+2025-08-13 17:30:04,114 - INFO - Best F2 score: 0.8465
+2025-08-13 17:30:04,115 - INFO - Best parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': 15}
+2025-08-13 17:30:04,122 - INFO - Number of pruned trials: 0
+2025-08-13 17:30:04,130 - INFO - Number of failed trials: 0
+2025-08-13 17:30:04,130 - INFO - Model training completed with parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:30:04,130 - INFO - SESSION COMPLETED - 2025-08-13 17:30:04
+2025-08-13 17:30:04,130 - INFO - ================================================================================
+2025-08-13 17:30:04,130 - INFO - 
+2025-08-13 17:38:34,594 - INFO - ================================================================================
+2025-08-13 17:38:34,594 - INFO - NEW OPTIMIZATION SESSION - 2025-08-13 17:38:34
+2025-08-13 17:38:34,594 - INFO - Starting Optuna optimization for model: tfidf_logreg_basic
+2025-08-13 17:38:34,594 - INFO - Sampler: TPE
+2025-08-13 17:38:34,594 - INFO - Number of trials: 100
+2025-08-13 17:38:34,594 - INFO - Direction: maximize
+2025-08-13 17:38:34,594 - INFO - Random state: 42
+2025-08-13 17:38:34,594 - INFO - Parameter space: ['clf__C', 'select__k', 'clf__class_weight']
+2025-08-13 17:38:34,594 - INFO - --------------------------------------------------
+2025-08-13 17:38:34,599 - INFO - Trial 0: Testing parameters: {'clf__C': 0.1767016940294795, 'select__k': 476, 'clf__class_weight': {0: 1, 1: 37}}
+2025-08-13 17:38:36,190 - INFO - Trial 0: CV F2 Score = 0.6473 (±0.0038)
+2025-08-13 17:38:36,190 - INFO - Trial 1: Testing parameters: {'clf__C': 3.907967156822881, 'select__k': 79, 'clf__class_weight': {0: 1, 1: 8}}
+2025-08-13 17:38:37,735 - INFO - Trial 1: CV F2 Score = 0.8226 (±0.0381)
+2025-08-13 17:38:37,737 - INFO - Trial 2: Testing parameters: {'clf__C': 0.002231010801867922, 'select__k': 434, 'clf__class_weight': {0: 1, 1: 31}}
+2025-08-13 17:38:39,323 - INFO - Trial 2: CV F2 Score = 0.6461 (±0.0029)
+2025-08-13 17:38:39,323 - INFO - Trial 3: Testing parameters: {'clf__C': 17.71884735480682, 'select__k': 11, 'clf__class_weight': {0: 1, 1: 49}}
+2025-08-13 17:38:40,892 - INFO - Trial 3: CV F2 Score = 0.6465 (±0.0032)
+2025-08-13 17:38:40,897 - INFO - Trial 4: Testing parameters: {'clf__C': 98.77700294007911, 'select__k': 107, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:38:42,426 - INFO - Trial 4: CV F2 Score = 0.7773 (±0.0305)
+2025-08-13 17:38:42,428 - INFO - Trial 5: Testing parameters: {'clf__C': 0.012601639723276799, 'select__k': 153, 'clf__class_weight': {0: 1, 1: 27}}
+2025-08-13 17:38:43,934 - INFO - Trial 5: CV F2 Score = 0.6461 (±0.0029)
+2025-08-13 17:38:43,934 - INFO - Trial 6: Testing parameters: {'clf__C': 0.3905441275210791, 'select__k': 146, 'clf__class_weight': {0: 1, 1: 31}}
+2025-08-13 17:38:45,448 - INFO - Trial 6: CV F2 Score = 0.6605 (±0.0019)
+2025-08-13 17:38:45,463 - INFO - Trial 7: Testing parameters: {'clf__C': 0.006870101665590026, 'select__k': 147, 'clf__class_weight': {0: 1, 1: 19}}
+2025-08-13 17:38:46,993 - INFO - Trial 7: CV F2 Score = 0.6461 (±0.0029)
+2025-08-13 17:38:46,996 - INFO - Trial 8: Testing parameters: {'clf__C': 0.5450293694558254, 'select__k': 393, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-13 17:38:48,552 - INFO - Trial 8: CV F2 Score = 0.7182 (±0.0160)
+2025-08-13 17:38:48,552 - INFO - Trial 9: Testing parameters: {'clf__C': 1.2173252504194043, 'select__k': 297, 'clf__class_weight': {0: 1, 1: 3}}
+2025-08-13 17:38:50,114 - INFO - Trial 9: CV F2 Score = 0.7470 (±0.0350)
+2025-08-13 17:38:50,114 - INFO - Trial 10: Testing parameters: {'clf__C': 4.418441521199722, 'select__k': 86, 'clf__class_weight': {0: 1, 1: 4}}
+2025-08-13 17:38:51,637 - INFO - Trial 10: CV F2 Score = 0.7842 (±0.0341)
+2025-08-13 17:38:51,637 - INFO - Trial 11: Testing parameters: {'clf__C': 493.52962094021007, 'select__k': 483, 'clf__class_weight': {0: 1, 1: 41}}
+2025-08-13 17:38:53,218 - INFO - Trial 11: CV F2 Score = 0.7102 (±0.0756)
+2025-08-13 17:38:53,220 - INFO - Trial 12: Testing parameters: {'clf__C': 0.06724850206557247, 'select__k': 49, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:38:54,832 - INFO - Trial 12: CV F2 Score = 0.6461 (±0.0029)
+2025-08-13 17:38:54,848 - INFO - Trial 13: Testing parameters: {'clf__C': 0.4374364439939078, 'select__k': 62, 'clf__class_weight': {0: 1, 1: 25}}
+2025-08-13 17:38:56,472 - INFO - Trial 13: CV F2 Score = 0.6589 (±0.0020)
+2025-08-13 17:38:56,476 - INFO - Trial 14: Testing parameters: {'clf__C': 0.001608166928363465, 'select__k': 455, 'clf__class_weight': {0: 1, 1: 13}}
+2025-08-13 17:38:58,052 - INFO - Trial 14: CV F2 Score = 0.6461 (±0.0029)
+2025-08-13 17:38:58,056 - INFO - Trial 15: Testing parameters: {'clf__C': 9.443515687962675, 'select__k': 156, 'clf__class_weight': {0: 1, 1: 27}}
+2025-08-13 17:38:59,718 - INFO - Trial 15: CV F2 Score = 0.8215 (±0.0263)
+2025-08-13 17:38:59,725 - INFO - Trial 16: Testing parameters: {'clf__C': 1.9066091638188458, 'select__k': 93, 'clf__class_weight': {0: 1, 1: 49}}
+2025-08-13 17:39:01,302 - INFO - Trial 16: CV F2 Score = 0.6973 (±0.0408)
+2025-08-13 17:39:01,302 - INFO - Trial 17: Testing parameters: {'clf__C': 44.750401913509016, 'select__k': 470, 'clf__class_weight': {0: 1, 1: 45}}
+2025-08-13 17:39:02,878 - INFO - Trial 17: CV F2 Score = 0.7884 (±0.0284)
+2025-08-13 17:39:02,878 - INFO - Trial 18: Testing parameters: {'clf__C': 3.8672288491177444, 'select__k': 461, 'clf__class_weight': {0: 1, 1: 5}}
+2025-08-13 17:39:04,489 - INFO - Trial 18: CV F2 Score = 0.7982 (±0.0214)
+2025-08-13 17:39:04,491 - INFO - Trial 19: Testing parameters: {'clf__C': 0.014993298055091558, 'select__k': 23, 'clf__class_weight': {0: 1, 1: 17}}
+2025-08-13 17:39:06,058 - INFO - Trial 19: CV F2 Score = 0.6461 (±0.0029)
+2025-08-13 17:39:06,064 - INFO - Trial 20: Testing parameters: {'clf__C': 14.757042016109786, 'select__k': 185, 'clf__class_weight': {0: 1, 1: 22}}
+2025-08-13 17:39:07,714 - INFO - Trial 20: CV F2 Score = 0.7921 (±0.0548)
+2025-08-13 17:39:07,720 - INFO - Trial 21: Testing parameters: {'clf__C': 0.873813299480701, 'select__k': 483, 'clf__class_weight': {0: 1, 1: 4}}
+2025-08-13 17:39:09,322 - INFO - Trial 21: CV F2 Score = 0.7499 (±0.0340)
+2025-08-13 17:39:09,336 - INFO - Trial 22: Testing parameters: {'clf__C': 89.69996580877398, 'select__k': 466, 'clf__class_weight': {0: 1, 1: 18}}
+2025-08-13 17:39:10,961 - INFO - Trial 22: CV F2 Score = 0.7574 (±0.0407)
+2025-08-13 17:39:10,969 - INFO - Trial 23: Testing parameters: {'clf__C': 48.55726465261286, 'select__k': 111, 'clf__class_weight': {0: 1, 1: 31}}
+2025-08-13 17:39:12,572 - INFO - Trial 23: CV F2 Score = 0.7767 (±0.0209)
+2025-08-13 17:39:12,573 - INFO - Trial 24: Testing parameters: {'clf__C': 0.005527112182795395, 'select__k': 276, 'clf__class_weight': {0: 1, 1: 46}}
+2025-08-13 17:39:13,205 - INFO - Trial 24: Pruned at fold 1
+2025-08-13 17:39:13,211 - INFO - Trial 25: Testing parameters: {'clf__C': 210.24649294237548, 'select__k': 275, 'clf__class_weight': {0: 1, 1: 36}}
+2025-08-13 17:39:14,774 - INFO - Trial 25: CV F2 Score = 0.7445 (±0.0837)
+2025-08-13 17:39:14,787 - INFO - Trial 26: Testing parameters: {'clf__C': 134.59446824420982, 'select__k': 359, 'clf__class_weight': {0: 1, 1: 7}}
+2025-08-13 17:39:16,392 - INFO - Trial 26: CV F2 Score = 0.7527 (±0.0700)
+2025-08-13 17:39:16,400 - INFO - Trial 27: Testing parameters: {'clf__C': 0.5241541348199695, 'select__k': 136, 'clf__class_weight': {0: 1, 1: 12}}
+2025-08-13 17:39:17,018 - INFO - Trial 27: Pruned at fold 1
+2025-08-13 17:39:17,024 - INFO - Trial 28: Testing parameters: {'clf__C': 4.396485490329051, 'select__k': 329, 'clf__class_weight': {0: 1, 1: 21}}
+2025-08-13 17:39:18,621 - INFO - Trial 28: CV F2 Score = 0.8112 (±0.0300)
+2025-08-13 17:39:18,635 - INFO - Trial 29: Testing parameters: {'clf__C': 0.9280551243333419, 'select__k': 244, 'clf__class_weight': {0: 1, 1: 32}}
+2025-08-13 17:39:19,295 - INFO - Trial 29: Pruned at fold 1
+2025-08-13 17:39:19,301 - INFO - Trial 30: Testing parameters: {'clf__C': 72.56347365144613, 'select__k': 314, 'clf__class_weight': {0: 1, 1: 22}}
+2025-08-13 17:39:20,864 - INFO - Trial 30: CV F2 Score = 0.7790 (±0.0586)
+2025-08-13 17:39:20,864 - INFO - Trial 31: Testing parameters: {'clf__C': 0.7999711983710807, 'select__k': 326, 'clf__class_weight': {0: 1, 1: 22}}
+2025-08-13 17:39:21,489 - INFO - Trial 31: Pruned at fold 1
+2025-08-13 17:39:21,503 - INFO - Trial 32: Testing parameters: {'clf__C': 5.424071082727691, 'select__k': 278, 'clf__class_weight': {0: 1, 1: 17}}
+2025-08-13 17:39:23,040 - INFO - Trial 32: CV F2 Score = 0.8185 (±0.0169)
+2025-08-13 17:39:23,045 - INFO - Trial 33: Testing parameters: {'clf__C': 7.7202306359861135, 'select__k': 224, 'clf__class_weight': {0: 1, 1: 18}}
+2025-08-13 17:39:24,642 - INFO - Trial 33: CV F2 Score = 0.8036 (±0.0333)
+2025-08-13 17:39:24,650 - INFO - Trial 34: Testing parameters: {'clf__C': 2.2773066089144782, 'select__k': 416, 'clf__class_weight': {0: 1, 1: 21}}
+2025-08-13 17:39:26,248 - INFO - Trial 34: CV F2 Score = 0.8137 (±0.0200)
+2025-08-13 17:39:26,262 - INFO - Trial 35: Testing parameters: {'clf__C': 1.291481662118796, 'select__k': 483, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:39:27,829 - INFO - Trial 35: CV F2 Score = 0.7799 (±0.0216)
+2025-08-13 17:39:27,836 - INFO - Trial 36: Testing parameters: {'clf__C': 2.4613296054175673, 'select__k': 67, 'clf__class_weight': {0: 1, 1: 14}}
+2025-08-13 17:39:29,371 - INFO - Trial 36: CV F2 Score = 0.7970 (±0.0142)
+2025-08-13 17:39:29,379 - INFO - Trial 37: Testing parameters: {'clf__C': 0.24806523548202616, 'select__k': 15, 'clf__class_weight': {0: 1, 1: 8}}
+2025-08-13 17:39:29,984 - INFO - Trial 37: Pruned at fold 1
+2025-08-13 17:39:29,989 - INFO - Trial 38: Testing parameters: {'clf__C': 163.95522751262058, 'select__k': 29, 'clf__class_weight': {0: 1, 1: 2}}
+2025-08-13 17:39:31,503 - INFO - Trial 38: CV F2 Score = 0.7445 (±0.0506)
+2025-08-13 17:39:31,503 - INFO - Trial 39: Testing parameters: {'clf__C': 0.012928806520955242, 'select__k': 157, 'clf__class_weight': {0: 1, 1: 1}}
+2025-08-13 17:39:32,121 - INFO - Trial 39: Pruned at fold 1
+2025-08-13 17:39:32,134 - INFO - Trial 40: Testing parameters: {'clf__C': 0.28664137659995714, 'select__k': 405, 'clf__class_weight': {0: 1, 1: 27}}
+2025-08-13 17:39:32,760 - INFO - Trial 40: Pruned at fold 1
+2025-08-13 17:39:32,774 - INFO - Trial 41: Testing parameters: {'clf__C': 5.478562857597839, 'select__k': 343, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:39:34,398 - INFO - Trial 41: CV F2 Score = 0.8124 (±0.0253)
+2025-08-13 17:39:34,409 - INFO - Trial 42: Testing parameters: {'clf__C': 4.56821922016023, 'select__k': 375, 'clf__class_weight': {0: 1, 1: 19}}
+2025-08-13 17:39:36,023 - INFO - Trial 42: CV F2 Score = 0.8192 (±0.0286)
+2025-08-13 17:39:36,030 - INFO - Trial 43: Testing parameters: {'clf__C': 2.543706747108354, 'select__k': 404, 'clf__class_weight': {0: 1, 1: 21}}
+2025-08-13 17:39:37,599 - INFO - Trial 43: CV F2 Score = 0.8157 (±0.0209)
+2025-08-13 17:39:37,609 - INFO - Trial 44: Testing parameters: {'clf__C': 6.134897085469354, 'select__k': 157, 'clf__class_weight': {0: 1, 1: 31}}
+2025-08-13 17:39:39,190 - INFO - Trial 44: CV F2 Score = 0.8278 (±0.0352)
+2025-08-13 17:39:39,211 - INFO - Trial 45: Testing parameters: {'clf__C': 42.710357482948, 'select__k': 212, 'clf__class_weight': {0: 1, 1: 4}}
+2025-08-13 17:39:40,814 - INFO - Trial 45: CV F2 Score = 0.7886 (±0.0528)
+2025-08-13 17:39:40,824 - INFO - Trial 46: Testing parameters: {'clf__C': 778.6342674730853, 'select__k': 113, 'clf__class_weight': {0: 1, 1: 22}}
+2025-08-13 17:39:57,967 - INFO - Trial 46: CV F2 Score = 0.7443 (±0.0398)
+2025-08-13 17:39:57,974 - INFO - Trial 47: Testing parameters: {'clf__C': 6.287691838151103, 'select__k': 187, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:39:59,558 - INFO - Trial 47: CV F2 Score = 0.8062 (±0.0216)
+2025-08-13 17:39:59,569 - INFO - Trial 48: Testing parameters: {'clf__C': 5.470220471337131, 'select__k': 86, 'clf__class_weight': {0: 1, 1: 28}}
+2025-08-13 17:40:00,203 - INFO - Trial 48: Pruned at fold 1
+2025-08-13 17:40:00,211 - INFO - Trial 49: Testing parameters: {'clf__C': 0.0015448861722868821, 'select__k': 107, 'clf__class_weight': {0: 1, 1: 46}}
+2025-08-13 17:40:00,828 - INFO - Trial 49: Pruned at fold 1
+2025-08-13 17:40:00,842 - INFO - Trial 50: Testing parameters: {'clf__C': 10.18386804512585, 'select__k': 203, 'clf__class_weight': {0: 1, 1: 32}}
+2025-08-13 17:40:02,405 - INFO - Trial 50: CV F2 Score = 0.7926 (±0.0416)
+2025-08-13 17:40:02,425 - INFO - Trial 51: Testing parameters: {'clf__C': 11.711220605775852, 'select__k': 389, 'clf__class_weight': {0: 1, 1: 24}}
+2025-08-13 17:40:04,016 - INFO - Trial 51: CV F2 Score = 0.8009 (±0.0565)
+2025-08-13 17:40:04,030 - INFO - Trial 52: Testing parameters: {'clf__C': 15.977789244262175, 'select__k': 87, 'clf__class_weight': {0: 1, 1: 11}}
+2025-08-13 17:40:05,558 - INFO - Trial 52: CV F2 Score = 0.8135 (±0.0464)
+2025-08-13 17:40:05,565 - INFO - Trial 53: Testing parameters: {'clf__C': 0.6418658278176481, 'select__k': 257, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-13 17:40:06,210 - INFO - Trial 53: Pruned at fold 1
+2025-08-13 17:40:06,219 - INFO - Trial 54: Testing parameters: {'clf__C': 2.234453927352121, 'select__k': 145, 'clf__class_weight': {0: 1, 1: 31}}
+2025-08-13 17:40:07,747 - INFO - Trial 54: CV F2 Score = 0.7953 (±0.0362)
+2025-08-13 17:40:07,756 - INFO - Trial 55: Testing parameters: {'clf__C': 881.3047663706503, 'select__k': 87, 'clf__class_weight': {0: 1, 1: 45}}
+2025-08-13 17:40:13,704 - INFO - Trial 55: Pruned at fold 1
+2025-08-13 17:40:13,711 - INFO - Trial 56: Testing parameters: {'clf__C': 22.915135072064334, 'select__k': 156, 'clf__class_weight': {0: 1, 1: 21}}
+2025-08-13 17:40:15,266 - INFO - Trial 56: CV F2 Score = 0.7917 (±0.0475)
+2025-08-13 17:40:15,276 - INFO - Trial 57: Testing parameters: {'clf__C': 35.20811046730325, 'select__k': 1, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-13 17:40:15,884 - INFO - Trial 57: Pruned at fold 1
+2025-08-13 17:40:15,884 - INFO - Trial 58: Testing parameters: {'clf__C': 9.005456344791094, 'select__k': 365, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:40:17,457 - INFO - Trial 58: CV F2 Score = 0.8242 (±0.0426)
+2025-08-13 17:40:17,457 - INFO - Trial 59: Testing parameters: {'clf__C': 61.337909072794055, 'select__k': 424, 'clf__class_weight': {0: 1, 1: 32}}
+2025-08-13 17:40:19,052 - INFO - Trial 59: CV F2 Score = 0.7745 (±0.0607)
+2025-08-13 17:40:19,063 - INFO - Trial 60: Testing parameters: {'clf__C': 0.24875274958536098, 'select__k': 333, 'clf__class_weight': {0: 1, 1: 37}}
+2025-08-13 17:40:19,689 - INFO - Trial 60: Pruned at fold 1
+2025-08-13 17:40:19,705 - INFO - Trial 61: Testing parameters: {'clf__C': 1.345853578978878, 'select__k': 118, 'clf__class_weight': {0: 1, 1: 2}}
+2025-08-13 17:40:20,329 - INFO - Trial 61: Pruned at fold 1
+2025-08-13 17:40:20,342 - INFO - Trial 62: Testing parameters: {'clf__C': 6.024667216507853, 'select__k': 419, 'clf__class_weight': {0: 1, 1: 37}}
+2025-08-13 17:40:21,910 - INFO - Trial 62: CV F2 Score = 0.8188 (±0.0336)
+2025-08-13 17:40:21,922 - INFO - Trial 63: Testing parameters: {'clf__C': 0.3846643622207742, 'select__k': 460, 'clf__class_weight': {0: 1, 1: 45}}
+2025-08-13 17:40:22,536 - INFO - Trial 63: Pruned at fold 1
+2025-08-13 17:40:22,543 - INFO - Trial 64: Testing parameters: {'clf__C': 5.587039229325787, 'select__k': 318, 'clf__class_weight': {0: 1, 1: 43}}
+2025-08-13 17:40:24,103 - INFO - Trial 64: CV F2 Score = 0.8268 (±0.0245)
+2025-08-13 17:40:24,113 - INFO - Trial 65: Testing parameters: {'clf__C': 4.05067741563237, 'select__k': 315, 'clf__class_weight': {0: 1, 1: 42}}
+2025-08-13 17:40:25,648 - INFO - Trial 65: CV F2 Score = 0.8151 (±0.0264)
+2025-08-13 17:40:25,655 - INFO - Trial 66: Testing parameters: {'clf__C': 32.23761460968692, 'select__k': 320, 'clf__class_weight': {0: 1, 1: 39}}
+2025-08-13 17:40:27,189 - INFO - Trial 66: CV F2 Score = 0.7992 (±0.0428)
+2025-08-13 17:40:27,203 - INFO - Trial 67: Testing parameters: {'clf__C': 3.6295819549211448, 'select__k': 459, 'clf__class_weight': {0: 1, 1: 34}}
+2025-08-13 17:40:28,731 - INFO - Trial 67: CV F2 Score = 0.8146 (±0.0304)
+2025-08-13 17:40:28,738 - INFO - Trial 68: Testing parameters: {'clf__C': 0.5335009794776115, 'select__k': 290, 'clf__class_weight': {0: 1, 1: 47}}
+2025-08-13 17:40:29,351 - INFO - Trial 68: Pruned at fold 1
+2025-08-13 17:40:29,356 - INFO - Trial 69: Testing parameters: {'clf__C': 4.5034662387466255, 'select__k': 441, 'clf__class_weight': {0: 1, 1: 40}}
+2025-08-13 17:40:30,893 - INFO - Trial 69: CV F2 Score = 0.8131 (±0.0433)
+2025-08-13 17:40:30,905 - INFO - Trial 70: Testing parameters: {'clf__C': 165.6181218880358, 'select__k': 354, 'clf__class_weight': {0: 1, 1: 44}}
+2025-08-13 17:40:32,449 - INFO - Trial 70: CV F2 Score = 0.7639 (±0.0790)
+2025-08-13 17:40:32,460 - INFO - Trial 71: Testing parameters: {'clf__C': 5.205028507797264, 'select__k': 348, 'clf__class_weight': {0: 1, 1: 36}}
+2025-08-13 17:40:34,002 - INFO - Trial 71: CV F2 Score = 0.8186 (±0.0374)
+2025-08-13 17:40:34,012 - INFO - Trial 72: Testing parameters: {'clf__C': 6.0654583817544445, 'select__k': 333, 'clf__class_weight': {0: 1, 1: 39}}
+2025-08-13 17:40:35,533 - INFO - Trial 72: CV F2 Score = 0.8191 (±0.0296)
+2025-08-13 17:40:35,544 - INFO - Trial 73: Testing parameters: {'clf__C': 7.517016050818966, 'select__k': 397, 'clf__class_weight': {0: 1, 1: 33}}
+2025-08-13 17:40:37,078 - INFO - Trial 73: CV F2 Score = 0.8207 (±0.0336)
+2025-08-13 17:40:37,085 - INFO - Trial 74: Testing parameters: {'clf__C': 66.75079196981284, 'select__k': 277, 'clf__class_weight': {0: 1, 1: 49}}
+2025-08-13 17:40:38,613 - INFO - Trial 74: CV F2 Score = 0.7544 (±0.0627)
+2025-08-13 17:40:38,622 - INFO - Trial 75: Testing parameters: {'clf__C': 10.494752194157229, 'select__k': 369, 'clf__class_weight': {0: 1, 1: 35}}
+2025-08-13 17:40:40,150 - INFO - Trial 75: CV F2 Score = 0.8066 (±0.0441)
+2025-08-13 17:40:40,160 - INFO - Trial 76: Testing parameters: {'clf__C': 2.0640724136059143, 'select__k': 318, 'clf__class_weight': {0: 1, 1: 36}}
+2025-08-13 17:40:41,703 - INFO - Trial 76: CV F2 Score = 0.8114 (±0.0246)
+2025-08-13 17:40:41,718 - INFO - Trial 77: Testing parameters: {'clf__C': 52.63977082788726, 'select__k': 287, 'clf__class_weight': {0: 1, 1: 34}}
+2025-08-13 17:40:43,240 - INFO - Trial 77: CV F2 Score = 0.7759 (±0.0622)
+2025-08-13 17:40:43,251 - INFO - Trial 78: Testing parameters: {'clf__C': 13.623852924847313, 'select__k': 192, 'clf__class_weight': {0: 1, 1: 28}}
+2025-08-13 17:40:44,772 - INFO - Trial 78: CV F2 Score = 0.7903 (±0.0557)
+2025-08-13 17:40:44,782 - INFO - Trial 79: Testing parameters: {'clf__C': 15.722919238556505, 'select__k': 346, 'clf__class_weight': {0: 1, 1: 44}}
+2025-08-13 17:40:46,313 - INFO - Trial 79: CV F2 Score = 0.8092 (±0.0735)
+2025-08-13 17:40:46,320 - INFO - Trial 80: Testing parameters: {'clf__C': 0.672057382573912, 'select__k': 159, 'clf__class_weight': {0: 1, 1: 24}}
+2025-08-13 17:40:46,922 - INFO - Trial 80: Pruned at fold 1
+2025-08-13 17:40:46,933 - INFO - Trial 81: Testing parameters: {'clf__C': 3.1419143165430787, 'select__k': 362, 'clf__class_weight': {0: 1, 1: 46}}
+2025-08-13 17:40:48,450 - INFO - Trial 81: CV F2 Score = 0.8157 (±0.0279)
+2025-08-13 17:40:48,462 - INFO - Trial 82: Testing parameters: {'clf__C': 7.492170234537094, 'select__k': 424, 'clf__class_weight': {0: 1, 1: 31}}
+2025-08-13 17:40:50,014 - INFO - Trial 82: CV F2 Score = 0.8168 (±0.0319)
+2025-08-13 17:40:50,024 - INFO - Trial 83: Testing parameters: {'clf__C': 0.0016878525922179358, 'select__k': 500, 'clf__class_weight': {0: 1, 1: 44}}
+2025-08-13 17:40:50,632 - INFO - Trial 83: Pruned at fold 1
+2025-08-13 17:40:50,642 - INFO - Trial 84: Testing parameters: {'clf__C': 6.306734554196643, 'select__k': 348, 'clf__class_weight': {0: 1, 1: 31}}
+2025-08-13 17:40:52,161 - INFO - Trial 84: CV F2 Score = 0.8156 (±0.0364)
+2025-08-13 17:40:52,171 - INFO - Trial 85: Testing parameters: {'clf__C': 1.614231936752251, 'select__k': 62, 'clf__class_weight': {0: 1, 1: 37}}
+2025-08-13 17:40:52,776 - INFO - Trial 85: Pruned at fold 1
+2025-08-13 17:40:52,786 - INFO - Trial 86: Testing parameters: {'clf__C': 10.591051809522837, 'select__k': 420, 'clf__class_weight': {0: 1, 1: 36}}
+2025-08-13 17:40:54,303 - INFO - Trial 86: CV F2 Score = 0.8011 (±0.0303)
+2025-08-13 17:40:54,315 - INFO - Trial 87: Testing parameters: {'clf__C': 8.30473841328761, 'select__k': 48, 'clf__class_weight': {0: 1, 1: 7}}
+2025-08-13 17:40:55,820 - INFO - Trial 87: CV F2 Score = 0.8166 (±0.0288)
+2025-08-13 17:40:55,835 - INFO - Trial 88: Testing parameters: {'clf__C': 3.5187253118526898, 'select__k': 263, 'clf__class_weight': {0: 1, 1: 39}}
+2025-08-13 17:40:57,357 - INFO - Trial 88: CV F2 Score = 0.8107 (±0.0167)
+2025-08-13 17:40:57,366 - INFO - Trial 89: Testing parameters: {'clf__C': 0.8630629105044053, 'select__k': 365, 'clf__class_weight': {0: 1, 1: 37}}
+2025-08-13 17:40:57,978 - INFO - Trial 89: Pruned at fold 1
+2025-08-13 17:40:57,987 - INFO - Trial 90: Testing parameters: {'clf__C': 0.05322454214623986, 'select__k': 170, 'clf__class_weight': {0: 1, 1: 37}}
+2025-08-13 17:40:58,591 - INFO - Trial 90: Pruned at fold 1
+2025-08-13 17:40:58,600 - INFO - Trial 91: Testing parameters: {'clf__C': 11.339714607176596, 'select__k': 366, 'clf__class_weight': {0: 1, 1: 42}}
+2025-08-13 17:41:00,123 - INFO - Trial 91: CV F2 Score = 0.8080 (±0.0516)
+2025-08-13 17:41:00,135 - INFO - Trial 92: Testing parameters: {'clf__C': 10.774778021710171, 'select__k': 335, 'clf__class_weight': {0: 1, 1: 29}}
+2025-08-13 17:41:01,661 - INFO - Trial 92: CV F2 Score = 0.8056 (±0.0507)
+2025-08-13 17:41:01,671 - INFO - Trial 93: Testing parameters: {'clf__C': 16.979312659859175, 'select__k': 410, 'clf__class_weight': {0: 1, 1: 38}}
+2025-08-13 17:41:03,189 - INFO - Trial 93: CV F2 Score = 0.7991 (±0.0403)
+2025-08-13 17:41:03,205 - INFO - Trial 94: Testing parameters: {'clf__C': 1.2539531083713578, 'select__k': 346, 'clf__class_weight': {0: 1, 1: 34}}
+2025-08-13 17:41:03,808 - INFO - Trial 94: Pruned at fold 1
+2025-08-13 17:41:03,817 - INFO - Trial 95: Testing parameters: {'clf__C': 20.941033744921622, 'select__k': 165, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:41:05,315 - INFO - Trial 95: CV F2 Score = 0.8096 (±0.0400)
+2025-08-13 17:41:05,320 - INFO - Trial 96: Testing parameters: {'clf__C': 51.25777071938045, 'select__k': 66, 'clf__class_weight': {0: 1, 1: 36}}
+2025-08-13 17:41:05,922 - INFO - Trial 96: Pruned at fold 1
+2025-08-13 17:41:05,932 - INFO - Trial 97: Testing parameters: {'clf__C': 101.85781452004792, 'select__k': 362, 'clf__class_weight': {0: 1, 1: 30}}
+2025-08-13 17:41:07,454 - INFO - Trial 97: CV F2 Score = 0.7602 (±0.0766)
+2025-08-13 17:41:07,464 - INFO - Trial 98: Testing parameters: {'clf__C': 1.355170763357921, 'select__k': 406, 'clf__class_weight': {0: 1, 1: 31}}
+2025-08-13 17:41:08,068 - INFO - Trial 98: Pruned at fold 1
+2025-08-13 17:41:08,077 - INFO - Trial 99: Testing parameters: {'clf__C': 0.009748936020282923, 'select__k': 381, 'clf__class_weight': {0: 1, 1: 26}}
+2025-08-13 17:41:08,683 - INFO - Trial 99: Pruned at fold 1
+2025-08-13 17:41:08,995 - INFO - --------------------------------------------------
+2025-08-13 17:41:08,999 - INFO - Optimization completed after 100 trials
+2025-08-13 17:41:08,999 - INFO - Best F2 score: 0.8278
+2025-08-13 17:41:08,999 - INFO - Best parameters: {'clf__C': 6.134897085469354, 'select__k': 157, 'positive_class_weight': 31}
+2025-08-13 17:41:09,003 - INFO - Number of pruned trials: 25
+2025-08-13 17:41:09,007 - INFO - Number of failed trials: 0
+2025-08-13 17:41:09,007 - INFO - Model training completed with parameters: {'clf__C': 6.134897085469354, 'select__k': 157}
+2025-08-13 17:41:09,008 - INFO - SESSION COMPLETED - 2025-08-13 17:41:09
+2025-08-13 17:41:09,008 - INFO - ================================================================================
+2025-08-13 17:41:09,008 - INFO - 
+2025-08-15 00:11:24,107 - INFO - ================================================================================
+2025-08-15 00:11:24,107 - INFO - NEW OPTIMIZATION SESSION - 2025-08-15 00:11:24
+2025-08-15 00:11:24,107 - INFO - Starting Optuna optimization for model: tfidf_logreg_basic
+2025-08-15 00:11:24,107 - INFO - Sampler: Grid
+2025-08-15 00:11:24,107 - INFO - Number of trials: 27
+2025-08-15 00:11:24,107 - INFO - Direction: maximize
+2025-08-15 00:11:24,107 - INFO - Random state: 42
+2025-08-15 00:11:24,107 - INFO - Parameter space: ['clf__C', 'select__k', 'clf__class_weight']
+2025-08-15 00:11:24,107 - INFO - --------------------------------------------------
+2025-08-15 00:11:24,108 - INFO - Trial 0: Testing parameters: {'clf__C': 1, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-15 00:11:26,402 - INFO - Trial 0: CV F2 Score = 0.7419 (±0.0164)
+2025-08-15 00:11:26,403 - INFO - Trial 1: Testing parameters: {'clf__C': 5, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-15 00:11:28,117 - INFO - Trial 1: CV F2 Score = 0.8302 (±0.0241)
+2025-08-15 00:11:28,117 - INFO - Trial 2: Testing parameters: {'clf__C': 5, 'select__k': 50, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-15 00:11:29,841 - INFO - Trial 2: CV F2 Score = 0.8180 (±0.0397)
+2025-08-15 00:11:29,841 - INFO - Trial 3: Testing parameters: {'clf__C': 10, 'select__k': 50, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-15 00:11:31,285 - INFO - Trial 3: CV F2 Score = 0.8144 (±0.0282)
+2025-08-15 00:11:31,285 - INFO - Trial 4: Testing parameters: {'clf__C': 1, 'select__k': 50, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-15 00:11:31,712 - INFO - Trial 4: CV F2 Score = 0.6893 (±0.0457)
+2025-08-15 00:11:31,713 - INFO - Trial 5: Testing parameters: {'clf__C': 5, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-15 00:11:32,138 - INFO - Trial 5: CV F2 Score = 0.8377 (±0.0317)
+2025-08-15 00:11:32,138 - INFO - Trial 6: Testing parameters: {'clf__C': 5, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-15 00:11:32,566 - INFO - Trial 6: CV F2 Score = 0.8235 (±0.0303)
+2025-08-15 00:11:32,567 - INFO - Trial 7: Testing parameters: {'clf__C': 5, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-15 00:11:33,002 - INFO - Trial 7: CV F2 Score = 0.8168 (±0.0321)
+2025-08-15 00:11:33,002 - INFO - Trial 8: Testing parameters: {'clf__C': 5, 'select__k': 50, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-15 00:11:33,464 - INFO - Trial 8: CV F2 Score = 0.8081 (±0.0270)
+2025-08-15 00:11:33,464 - INFO - Trial 9: Testing parameters: {'clf__C': 10, 'select__k': 50, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-15 00:11:33,888 - INFO - Trial 9: CV F2 Score = 0.7938 (±0.0294)
+2025-08-15 00:11:33,888 - INFO - Trial 10: Testing parameters: {'clf__C': 1, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-15 00:11:34,325 - INFO - Trial 10: CV F2 Score = 0.7532 (±0.0158)
+2025-08-15 00:11:34,325 - INFO - Trial 11: Testing parameters: {'clf__C': 1, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-15 00:11:34,760 - INFO - Trial 11: CV F2 Score = 0.7206 (±0.0307)
+2025-08-15 00:11:34,760 - INFO - Trial 12: Testing parameters: {'clf__C': 1, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-15 00:11:35,202 - INFO - Trial 12: CV F2 Score = 0.7546 (±0.0155)
+2025-08-15 00:11:35,203 - INFO - Trial 13: Testing parameters: {'clf__C': 1, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-15 00:11:35,629 - INFO - Trial 13: CV F2 Score = 0.7692 (±0.0189)
+2025-08-15 00:11:35,630 - INFO - Trial 14: Testing parameters: {'clf__C': 5, 'select__k': 50, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-15 00:11:36,089 - INFO - Trial 14: CV F2 Score = 0.7627 (±0.0542)
+2025-08-15 00:11:36,089 - INFO - Trial 15: Testing parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-15 00:11:36,512 - INFO - Trial 15: CV F2 Score = 0.8465 (±0.0258)
+2025-08-15 00:11:36,512 - INFO - Trial 16: Testing parameters: {'clf__C': 1, 'select__k': 50, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-15 00:11:36,962 - INFO - Trial 16: CV F2 Score = 0.6630 (±0.0030)
+2025-08-15 00:11:36,962 - INFO - Trial 17: Testing parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-15 00:11:37,402 - INFO - Trial 17: CV F2 Score = 0.8342 (±0.0226)
+2025-08-15 00:11:37,403 - INFO - Trial 18: Testing parameters: {'clf__C': 10, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-15 00:11:37,848 - INFO - Trial 18: CV F2 Score = 0.8229 (±0.0210)
+2025-08-15 00:11:37,849 - INFO - Trial 19: Testing parameters: {'clf__C': 10, 'select__k': 50, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-15 00:11:38,276 - INFO - Trial 19: CV F2 Score = 0.8195 (±0.0388)
+2025-08-15 00:11:38,276 - INFO - Trial 20: Testing parameters: {'clf__C': 10, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-15 00:11:38,713 - INFO - Trial 20: CV F2 Score = 0.8236 (±0.0195)
+2025-08-15 00:11:38,713 - INFO - Trial 21: Testing parameters: {'clf__C': 10, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-15 00:11:39,149 - INFO - Trial 21: CV F2 Score = 0.8187 (±0.0394)
+2025-08-15 00:11:39,149 - INFO - Trial 22: Testing parameters: {'clf__C': 1, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-15 00:11:39,572 - INFO - Trial 22: CV F2 Score = 0.7118 (±0.0342)
+2025-08-15 00:11:39,572 - INFO - Trial 23: Testing parameters: {'clf__C': 5, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-15 00:11:39,996 - INFO - Trial 23: CV F2 Score = 0.8259 (±0.0310)
+2025-08-15 00:11:39,997 - INFO - Trial 24: Testing parameters: {'clf__C': 5, 'select__k': 150, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-15 00:11:40,417 - INFO - Trial 24: CV F2 Score = 0.8267 (±0.0310)
+2025-08-15 00:11:40,417 - INFO - Trial 25: Testing parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 10}}
+2025-08-15 00:11:40,852 - INFO - Trial 25: CV F2 Score = 0.8377 (±0.0166)
+2025-08-15 00:11:40,852 - INFO - Trial 26: Testing parameters: {'clf__C': 1, 'select__k': 50, 'clf__class_weight': {0: 1, 1: 20}}
+2025-08-15 00:11:41,293 - INFO - Trial 26: CV F2 Score = 0.6613 (±0.0029)
+2025-08-15 00:11:41,617 - INFO - --------------------------------------------------
+2025-08-15 00:11:41,619 - INFO - Optimization completed after 27 trials
+2025-08-15 00:11:41,619 - INFO - Best F2 score: 0.8465
+2025-08-15 00:11:41,619 - INFO - Best parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': 15}
+2025-08-15 00:11:41,621 - INFO - Number of pruned trials: 0
+2025-08-15 00:11:41,621 - INFO - Number of failed trials: 0
+2025-08-15 00:11:41,621 - INFO - Model training completed with parameters: {'clf__C': 10, 'select__k': 100, 'clf__class_weight': {0: 1, 1: 15}}
+2025-08-15 00:11:41,621 - INFO - SESSION COMPLETED - 2025-08-15 00:11:41
+2025-08-15 00:11:41,621 - INFO - ================================================================================
+2025-08-15 00:11:41,621 - INFO - 

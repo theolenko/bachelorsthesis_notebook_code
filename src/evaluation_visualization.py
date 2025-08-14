@@ -362,3 +362,25 @@ def plot_threshold_curves(threshold_results, metrics=DEFAULT_METRICS):
     plt.grid(True)
     
     return plt.gca()
+
+
+def quick_f2_score_default_threshold(y_true, y_prob, threshold=0.5):
+    """
+    Quick calculation of F2-score with default threshold for comparison purposes.
+    
+    Parameters:
+    -----------
+    y_true : array-like
+        True labels
+    y_prob : array-like
+        Predicted probabilities for the positive class
+    threshold : float, default=0.5
+        Classification threshold
+        
+    Returns:
+    --------
+    float
+        F2-score with the specified threshold
+    """
+    y_pred_default = (y_prob >= threshold).astype(int)
+    return fbeta_score(y_true, y_pred_default, beta=2)
