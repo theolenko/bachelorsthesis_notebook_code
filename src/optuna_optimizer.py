@@ -29,19 +29,26 @@ USAGE:
 ...     n_trials=100
 ... )
 """
+import os
+from datetime import datetime
+import numpy as np
+import logging
 
 import optuna
 from optuna.pruners import MedianPruner, NopPruner
 from optuna.samplers import TPESampler, GridSampler
 from optuna.logging import set_verbosity, INFO, WARNING
+from optuna.integration import XGBoostPruningCallback
+
 from sklearn.model_selection import cross_val_score
 from sklearn.base import clone
 from sklearn.metrics import make_scorer, fbeta_score
-import logging
-import os
-from datetime import datetime
-import numpy as np
 from sklearn.model_selection import StratifiedKFold
+from sklearn.pipeline import Pipeline
+
+import xgboost as xgb
+from xgboost.callback import EarlyStopping
+
 
 
 def sample_class_weight_value(
@@ -160,12 +167,134 @@ def naive_bayes_objective(trial, estimator, param_space, X, y, cv, random_state,
     return manual_cv_objective(trial, estimator, param_space, X, y, cv, random_state, logger)
 
 
-#def xgboost_objective(trial, estimator, param_space, X, y, cv, random_state, logger=None):
+def xgboost_objective(trial, estimator, param_space, X, y, cv, random_state, logger=None):
     """
-    XGBoost specific objective with built-in CV and early stopping.
-    TODO: Implement XGBoost-specific CV with xgb.cv() for optimal performance.
+    Optuna objective for XGBoost inside an sklearn Pipeline (fold-level pruning).
+
+    Why this design:
+    - Keep F2 as the monitored metric (consistency with your other models).
+    - Use XGBoost EarlyStopping (per fold) for speed.
+    - Do *fold-level* Optuna pruning to avoid duplicate step IDs and to restore clear logs
+      like "Trial N: Pruned at fold k".
     """
-    return simple_cv_objective(trial, estimator, param_space, X, y, cv, random_state, logger)
+
+    # 1) Clone estimator and sample all params just like in your manual objective
+    model = clone(estimator)
+    trial_params = {}
+    for name, sampler in param_space.items():
+        val = sampler(trial)
+        model.set_params(**{name: val})
+        trial_params[name] = val
+    if logger:
+        logger.info(f"Trial {trial.number}: Testing parameters: {trial_params}")
+
+    # 2) Ensure ndarray for splitter
+    X_arr = np.asarray(X)
+    y_arr = np.asarray(y)
+
+    # 3) CV splitter (deterministic)
+    splitter = cv if hasattr(cv, "split") else StratifiedKFold(
+        n_splits=int(cv), shuffle=True, random_state=random_state
+    )
+
+    # 4) Split pipeline into preprocessor and classifier
+    if hasattr(model, "steps") and len(model.steps) > 0:
+        preprocessor = model[:-1]
+        clf_template = model.steps[-1][1]
+    else:
+        preprocessor = None
+        clf_template = model
+
+    # 5) Separate xgb vs. preprocessing params
+    xgb_params, other_params = {}, {}
+    for k, v in trial_params.items():
+        if k.startswith("clf__"):
+            xgb_params[k[5:]] = v            # drop 'clf__'
+        else:
+            other_params[k] = v
+    if preprocessor is not None and other_params:
+        preprocessor.set_params(**other_params)
+
+    # 6) Map class_weight -> scale_pos_weight if present
+    if "class_weight" in xgb_params:
+        cw = xgb_params.pop("class_weight")
+        if isinstance(cw, dict):
+            xgb_params["scale_pos_weight"] = float(cw.get(1, 1.0))
+        elif isinstance(cw, (int, float)):
+            xgb_params["scale_pos_weight"] = float(cw)
+
+    # 7) Fit-time defaults (don’t override trial choices)
+    early_stopping_rounds = int(xgb_params.pop("early_stopping_rounds", 50))
+    xgb_defaults = dict(
+        objective="binary:logistic",
+        tree_method=xgb_params.get("tree_method", "hist"),
+        random_state=random_state,
+        n_jobs=-1,
+        verbosity=0,
+    )
+    xgb_params = {**xgb_defaults, **xgb_params}
+
+    # 8) sklearn-style F2 metric (used by EarlyStopping)
+    def f2(y_true, y_pred, sample_weight=None):
+        y_hat = (y_pred >= 0.5).astype(int)
+        return fbeta_score(y_true, y_hat, beta=2, zero_division=0,
+                           sample_weight=sample_weight)
+
+    # IMPORTANT CHANGE 
+    # We do NOT use XGBoostPruningCallback here. Instead we prune after each fold
+    # (unique step == fold index) to avoid duplicate-step warnings and to get
+    # clean "Trial X: Pruned at fold Y" logs.
+
+    fold_scores = []
+    for fold_idx, (tr_idx, va_idx) in enumerate(splitter.split(X_arr, y_arr)):
+        X_tr, y_tr = X_arr[tr_idx], y_arr[tr_idx]
+        X_va, y_va = X_arr[va_idx], y_arr[va_idx]
+
+        # Fit/transform per fold to avoid leakage
+        if preprocessor is not None:
+            P = clone(preprocessor)
+            X_tr_proc = P.fit_transform(X_tr, y_tr)
+            X_va_proc = P.transform(X_va)
+        else:
+            X_tr_proc, X_va_proc = X_tr, X_va
+
+        # Early stopping callback: maximize F2 on the validation set
+        es_cb = EarlyStopping(
+            rounds=early_stopping_rounds,
+            maximize=True,          # F2 is to be maximized
+            save_best=True,
+            data_name="validation_0",
+            metric_name="f2",
+        )
+
+        # Set eval_metric + EarlyStopping on the estimator (XGBoost >= 2.1 expects this)
+        clf = clone(clf_template).set_params(
+            **xgb_params,
+            eval_metric=f2,
+            callbacks=[es_cb],
+        )
+
+        # Fit with eval_set; do NOT pass eval_metric/callbacks to fit()
+        clf.fit(X_tr_proc, y_tr, eval_set=[(X_va_proc, y_va)], verbose=False)
+
+        # Score this fold with F2 at threshold 0.5
+        y_proba = clf.predict_proba(X_va_proc)[:, 1]
+        y_hat = (y_proba >= 0.5).astype(int)
+        s = fbeta_score(y_va, y_hat, beta=2, zero_division=0)
+        fold_scores.append(float(s))
+
+        # Fold-level pruning & logging (unique steps => no warnings) 
+        trial.report(float(np.mean(fold_scores)), step=fold_idx)
+        if trial.should_prune():
+            if logger:
+                logger.info(f"Trial {trial.number}: Pruned at fold {fold_idx} (mean F2={np.mean(fold_scores):.4f})")
+            raise optuna.TrialPruned()
+
+    mean_score = float(np.mean(fold_scores))
+    if logger:
+        logger.info(f"Trial {trial.number}: CV F2 Score = {mean_score:.4f} (±{np.std(fold_scores):.4f})")
+    return mean_score
+
 
 
 #def mlp_objective(trial, estimator, param_space, X, y, cv, random_state, logger=None):
@@ -176,7 +305,7 @@ def naive_bayes_objective(trial, estimator, param_space, X, y, cv, random_state,
     return simple_cv_objective(trial, estimator, param_space, X, y, cv, random_state, logger)
 
 
-# GENERIC OBJECTIVE FUNCTIONS (FALLBACK)
+# GENERIC OBJECTIVE FUNCTIONS (FALLBACK, default for logreg, svm, nb)
 
 def manual_cv_objective(trial, estimator, param_space, X, y, cv, random_state, logger=None):
     """
@@ -249,7 +378,7 @@ def get_objective_function(model_type: str):
         "logistic_regression": logistic_regression_objective,
         "svm": svm_objective,
         "naive_bayes": naive_bayes_objective,
-        #"xgboost": xgboost_objective,
+        "xgboost": xgboost_objective,
         #"mlp": mlp_objective,
         #tbd
         
@@ -499,52 +628,3 @@ def grid_search_with_optuna(
     cleanup_logger(logger)
 
     return best_model, best_params, study
-
-
-
-# USAGE EXAMPLES
-#
-#
-#def example_usage():
-#    """Examples showing how to use the extended functions"""
-#    
-#    # Your existing param_space works exactly the same
-#    param_space = {
-#        "clf__C": lambda tr: tr.suggest_float("clf__C", 1e-3, 1e3, log=True),
-#        "select__k": lambda tr: tr.suggest_int("select__k", 50, 500),
-#        "clf__class_weight": lambda tr: sample_class_weight_value(tr)
-#    }
-#
-#    # Example 1: Classical ML (NB, LogReg, SVM) - your existing approach
-#    best_model, best_params, study = optimize_with_optuna(
-#        estimator=pipeline,
-#        param_space=param_space,
-#        X=X, y=y, cv=cv,
-#        model_type="manual_cv",  # NEW: specify manual CV
-#        n_trials=100
-#    )
-#
-#    # Example 2: XGBoost/MLP - more efficient approach
-#    best_model, best_params, study = optimize_with_optuna(
-#        estimator=xgb_pipeline,
-#        param_space=xgb_param_space,
-#        X=X, y=y, cv=cv,
-#        model_type="simple_cv",  # NEW: use simple CV for tree models
-#        n_trials=100
-#    )
-#
-#    # Example 3: Grid Search
-#    param_grid = {
-#        "clf__C": [0.1, 1, 10, 100],
-#        "select__k": [100, 200, 300],
-#        "clf__class_weight": [None, "balanced"]
-#    }
-#    
-#    best_model, best_params, study = grid_search_with_optuna(
-#        estimator=pipeline,
-#        param_grid=param_grid,
-#        X=X, y=y, cv=cv,
-#        model_type="manual_cv"  # Can use manual_cv for classical ML
-#    )
-
-
