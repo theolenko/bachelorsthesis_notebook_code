@@ -16,7 +16,7 @@ OPTIMIZATION STRATEGIES:
 - "svm": Manual CV optimized for SVM characteristics  
 - "naive_bayes": Manual CV for NB models
 - "xgboost": XGBoost-specific optimization with built-in CV
-- "mlp": Neural network optimization with per-epoch pruning
+- "mlp": Neural network optimization 
 - "manual_cv": Generic manual CV (fallback)
 
 USAGE:
@@ -33,12 +33,15 @@ import os
 from datetime import datetime
 import numpy as np
 import logging
+import torch
 
 import optuna
 from optuna.pruners import MedianPruner, NopPruner
 from optuna.samplers import TPESampler, GridSampler
 from optuna.logging import set_verbosity, INFO, WARNING
 from optuna.integration import XGBoostPruningCallback
+
+from src.widemlp_skorch import OptunaPruningCallbackSkorch
 
 from sklearn.model_selection import cross_val_score
 from sklearn.base import clone
@@ -292,17 +295,109 @@ def xgboost_objective(trial, estimator, param_space, X, y, cv, random_state, log
 
     mean_score = float(np.mean(fold_scores))
     if logger:
-        logger.info(f"Trial {trial.number}: CV F2 Score = {mean_score:.4f} (±{np.std(fold_scores):.4f})")
+        logger.info(f"Trial {trial.number}: CV F2 Final Score = {mean_score:.4f} (±{np.std(fold_scores):.4f})")
     return mean_score
 
 
 
-#def mlp_objective(trial, estimator, param_space, X, y, cv, random_state, logger=None):
+def mlp_skorch_objective_epoch(trial, estimator, param_space, X, y, cv, random_state, logger=None):
     """
-    MLP/Neural Network specific objective with per-epoch pruning capabilities.
-    TODO: Implement per-epoch reporting with MLPClassifier partial_fit or validation curves.
+    skorch WideMLP objective with per-epoch pruning:
+    - per-fold preprocessing (no leakage)
+    - set module__in_features after TF-IDF+chi2
+    - cast to dense float32 for PyTorch
+    - attach OptunaPruningCallbackSkorch (reports 'valid_f2' each epoch)
+    - NO fold-level trial.report(...) to avoid double reporting
+    - final return: mean F2@0.5 across folds (threshold tuning comes later)
     """
-    return simple_cv_objective(trial, estimator, param_space, X, y, cv, random_state, logger)
+    model = clone(estimator)
+
+    # Trial hyperparams into pipeline (tfidf/select/clf)
+    for name, sampler in param_space.items():
+        model.set_params(**{name: sampler(trial)})
+
+    if logger:
+        # finale, am Modell gesetzte Werte für diesen Trial aufschreiben
+        logger.info(f"Trial {trial.number}: Testing parameters: "
+                    f"{ {k: model.get_params().get(k, None) for k in param_space.keys()} }")
+        
+    #use existing cv strategy or use default
+    X_arr, y_arr = np.asarray(X), np.asarray(y)
+    splitter = cv if hasattr(cv, "split") else StratifiedKFold(
+        n_splits=int(cv), shuffle=True, random_state=random_state
+    )
+
+    #preproc contains every pipeline step (preprocess, tfidf...) excluding the last one: clf
+    preproc = model[:-1] if hasattr(model, "steps") else None
+    # clf_template is the last step (classifier)
+    clf_template = model.steps[-1][1] if hasattr(model, "steps") else model
+
+    #cv loop over all folds
+    fold_scores = []
+    for fold_idx, (tr_idx, va_idx) in enumerate(splitter.split(X_arr, y_arr)):
+        X_tr, y_tr = X_arr[tr_idx], y_arr[tr_idx]
+        X_va, y_va = X_arr[va_idx], y_arr[va_idx]
+
+        # Fit/transform per fold (no leakage)
+        if preproc is not None:
+            P = clone(preproc)
+            X_tr_m = P.fit_transform(X_tr, y_tr)
+            X_va_m = P.transform(X_va)
+        else:
+            X_tr_m, X_va_m = X_tr, X_va
+
+        # skorch expects dense float32
+        if hasattr(X_tr_m, "toarray"):
+            X_tr_m = X_tr_m.toarray(); X_va_m = X_va_m.toarray()
+        X_tr_m = X_tr_m.astype(np.float32, copy=False)
+        X_va_m = X_va_m.astype(np.float32, copy=False)
+
+        # set input width, after chi2 selects features
+        in_features = int(X_tr_m.shape[1])
+        clf = clone(clf_template).set_params(module__in_features=in_features)
+
+        #special handling of "pos_weight"-->cost swensitive learning
+        #pos_w = float(trial.params.get("clf__crtiterion__weight", 1.0))  # aus Notebook-Range
+        #dev = clf.get_params().get("device", "cpu")
+        #w = torch.tensor([1.0, pos_w], dtype=torch.float32, device=dev)
+        #clf.set_params(criterion__weight=w)
+
+        # set skorch params
+        max_epochs = clf.get_params().get("max_epochs", 100)
+        step_base = fold_idx * max_epochs  # verschiebt die Epochen dieses Folds
+
+        existing = [cb for cb in clf.get_params().get("callbacks", [])
+                    if cb.__class__.__name__ != "OptunaPruningCallbackSkorch"]
+
+        clf.set_params(callbacks=existing + [
+            OptunaPruningCallbackSkorch(trial, 
+                                        monitor="valid_f2", 
+                                        mode="max", 
+                                        step_base=step_base,
+                                        logger=logger
+                                        )
+        ])
+
+        # train (callback may prune inside fit)
+        clf.fit(X_tr_m, y_tr)
+
+        # fold score: F2 on the outer CV validation split, threshold=0.5
+        # threshold tuning is done later separately
+        y_proba = clf.predict_proba(X_va_m)[:, 1]
+        y_pred = (y_proba >= 0.5).astype(int)
+        s = fbeta_score(y_va, y_pred, beta=2, zero_division=0)
+        fold_scores.append(s)
+
+        if logger:
+            logger.info(f"Trial {trial.number}: fold {fold_idx} F2={s:.4f} (mean so far={np.mean(fold_scores):.4f})")
+
+
+    # report mean F2 for this fold (per-epoch pruning already handled)
+    mean_score = float(np.mean(fold_scores))
+    if logger:
+        logger.info(f"Trial {trial.number}: CV F2 Score = {mean_score:.4f} (±{np.std(fold_scores):.4f})")
+    return mean_score
+
 
 
 # GENERIC OBJECTIVE FUNCTIONS (FALLBACK, default for logreg, svm, nb)
@@ -379,16 +474,12 @@ def get_objective_function(model_type: str):
         "svm": svm_objective,
         "naive_bayes": naive_bayes_objective,
         "xgboost": xgboost_objective,
-        #"mlp": mlp_objective,
-        #tbd
-        
+        "mlp": mlp_skorch_objective_epoch,
+        #TODO: Add more model-specific objectives
+
         # Generic fallback objectives
         "manual_cv": manual_cv_objective,
         
-        # TODO: Add more model-specific objectives
-        # "lightgbm": lightgbm_objective,
-        # "random_forest": random_forest_objective,
-        # "gradient_boosting": gradient_boosting_objective,
     }
     
     if model_type not in objective_map:
@@ -436,6 +527,8 @@ def optimize_with_optuna_tpe(
     random_state: int = 42,
     # Pruner parameters
     n_warmup_steps: int = 1,
+    n_startup_trials: int = 20,
+    intervall_steps: int = 1,
     # Logging
     verbose: bool = False,
     log_to_file: bool = True,
@@ -467,7 +560,7 @@ def optimize_with_optuna_tpe(
         - study: Complete Optuna study object with all trial results
     """
     #set pruner parameter dynamically, trials with no prunning and no tpe(instead random search)
-    n_startup_trials = max(20, int(0.1 * n_trials))
+    n_startup_trials = n_startup_trials
 
     # Configure Optuna logging verbosity
     if verbose:
@@ -496,7 +589,8 @@ def optimize_with_optuna_tpe(
     # Configure pruner for early termination of unpromising trials
     pruner = MedianPruner(
         n_startup_trials=n_startup_trials,
-        n_warmup_steps=n_warmup_steps
+        n_warmup_steps=n_warmup_steps,
+        interval_steps=intervall_steps
     )
     
     # Create and configure study
@@ -512,9 +606,22 @@ def optimize_with_optuna_tpe(
     # Process and validate results
     best_params = study.best_params
     valid_pipeline_params = validate_and_filter_params(estimator, best_params)
-    
+
     # Train final model with optimal parameters
     best_model = clone(estimator).set_params(**valid_pipeline_params)
+
+    # Only adjust input dimension if the classifier has 'in_features' (MLP case)
+    all_params = best_model.get_params(deep=True)
+    if "clf__module__in_features" in all_params:
+        # Fit preprocessing steps (everything except clf) on the full training data
+        preproc_full = best_model[:-1]
+        X_full = preproc_full.fit_transform(X, y)
+        # Number of features after vectorization + feature selection
+        n_features = int(X_full.shape[1])
+        best_model.set_params(clf__module__in_features=n_features)
+        if "logger" in locals() and logger:
+            logger.info(f"Final model: setting in_features={n_features}")
+
     best_model.fit(X, y)
 
     # Complete logging and cleanup
@@ -566,31 +673,41 @@ def grid_search_with_optuna(
     # Simple objective function - no model-specific optimizations needed for grid search
     def objective(trial):
         model = clone(estimator)
-        
-        # Set parameters from grid
+
+        # 1) Collect all trial params (no set_params yet)
         trial_params = {}
-        for param_name in param_grid.keys():
-            val = trial.suggest_categorical(param_name, param_grid[param_name])
+        for pname, values in param_grid.items():
+            val = trial.suggest_categorical(pname, values)
+            trial_params[pname] = val
 
-            if param_name.endswith("class_weight") and isinstance(val, (int, float)):
-                val = {0: 1, 1: int(val)}
+        # 2) Special handling: mlp_pos_weight -> clf__criterion__weight (torch tensor)
+        if "mlp_pos_weight" in trial_params:
+            w = float(trial_params.pop("mlp_pos_weight"))
+            trial_params["clf__criterion__weight"] = torch.tensor(
+                [1.0, w], dtype=torch.float32, device="cuda"
+            )
 
-            model.set_params(**{param_name: val})
-            trial_params[param_name] = val
-            
-        #to surpress warnings with dicts and clf__class_weight
+        # (Optional) generic sklearn-style class_weight ints -> dict
+        for k, v in list(trial_params.items()):
+            if k.endswith("class_weight") and isinstance(v, (int, float)):
+                trial_params[k] = {0: 1, 1: int(v)}
+
+        # 3) Now set all params once
+        model.set_params(**trial_params)
+
         if logger:
             logger.info(f"Trial {trial.number}: Testing parameters: {trial_params}")
-        
-        # Simple cross-validation evaluation, maximize f2 score ! 
+
+        # 4) CV evaluation (F2)
         scorer = make_scorer(fbeta_score, beta=2, zero_division=0)
         scores = cross_val_score(model, X, y, cv=cv, scoring=scorer, n_jobs=-1)
         mean_score = float(np.mean(scores))
-        
+
         if logger:
             logger.info(f"Trial {trial.number}: CV F2 Score = {mean_score:.4f} (±{np.std(scores):.4f})")
-        
+
         return mean_score
+
 
     # Configure GridSampler for exhaustive search
     sampler = GridSampler(param_grid,
@@ -621,7 +738,16 @@ def grid_search_with_optuna(
     
     # Train final model with optimal parameters
     best_model = clone(estimator).set_params(**valid_pipeline_params)
+
+    #-only MLP relevant when we need explit select_k value before fit--- 
+    all_params = best_model.get_params(deep=True)
+    if "clf__module__in_features" in all_params:
+        preproc_full = best_model[:-1]          # everything except the classifier
+        X_full = preproc_full.fit_transform(X, y)
+        n_features = int(X_full.shape[1])
+        best_model.set_params(clf__module__in_features=n_features)
     best_model.fit(X, y)
+    #------------------------------------------------------------------
 
     # Complete logging and cleanup
     log_optimization_completion(logger, study, valid_pipeline_params)

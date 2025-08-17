@@ -12,6 +12,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from typing import Optional, List, Dict, Any
+from optuna.trial import TrialState
 
 
 def plot_optuna_study_analysis(study, figsize_large=(18, 5), figsize_medium=(15, 5), figsize_small=(12, 5)):
@@ -81,9 +82,10 @@ def plot_optimization_history_and_importance(study, figsize=(15, 5)):
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=figsize)
     
     # Optimization history
-    trial_numbers = [trial.number for trial in study.trials]
-    trial_values = [trial.value for trial in study.trials if trial.value is not None]
-    ax1.plot(trial_numbers[:len(trial_values)], trial_values, alpha=0.7)
+    complete_trials = [t for t in study.trials if t.value is not None and t.state == TrialState.COMPLETE]
+    trial_numbers = [t.number for t in complete_trials]
+    trial_values  = [t.value  for t in complete_trials]
+    ax1.plot(trial_numbers, trial_values, alpha=0.7)
     ax1.set_xlabel('Trial Number')
     ax1.set_ylabel('Objective Value')
     ax1.set_title('Optuna Optimization History')
@@ -126,7 +128,7 @@ def plot_parameter_distributions(study, figsize=(18, 5)):
     print("\n2. Parameter Value Distributions:")
     
     # Extract all parameter names from successful trials
-    successful_trials = [trial for trial in study.trials if trial.value is not None]
+    successful_trials = [trial for trial in study.trials if trial.value is not None and trial.state == TrialState.COMPLETE]
     if not successful_trials:
         print("No successful trials found for parameter distribution analysis.")
         return
@@ -197,7 +199,8 @@ def plot_parameter_distributions(study, figsize=(18, 5)):
                 if len(numeric_values) == len(param_values):
                     # Numeric parameter - histogram
                     # Use log scale for specific parameters that need it
-                    log_scale_params = ['clf__alpha', 'clf__C', 'alpha', 'C', 'clf__learning_rate', 'clf__reg_alpha', 'clf__reg_lambda']
+                    log_scale_params = ['clf__alpha', 'clf__C', 'alpha', 'C', 'clf__learning_rate', 
+                                        'clf__reg_alpha', 'clf__reg_lambda', 'clf__lr', 'clf__optimizer__weight_decay']
                     if param_name in log_scale_params:
                        axes[i].set_xscale('log')
                        # Distribute bins evenly in log space
@@ -248,8 +251,8 @@ def plot_performance_correlations(study, figsize=(18, 5)):
         Figure size
     """
     print("\n3. Performance vs Individual Parameters:")
-    
-    successful_trials = [trial for trial in study.trials if trial.value is not None]
+
+    successful_trials = [trial for trial in study.trials if trial.value is not None and trial.state == TrialState.COMPLETE]
     if not successful_trials:
         print("No successful trials found for correlation analysis.")
         return
@@ -305,7 +308,8 @@ def plot_performance_correlations(study, figsize=(18, 5)):
                 axes[i].scatter(numeric_values, param_scores, alpha=0.6)
                 
                 # Use log scale for specific parameters that need it
-                log_scale_params = ['clf__alpha', 'clf__C', 'alpha', 'C', 'clf__learning_rate']
+                log_scale_params = ['clf__alpha', 'clf__C', 'alpha', 'C', 'clf__learning_rate', 
+                                    'clf__reg_alpha', 'clf__reg_lambda', 'clf__lr', 'clf__optimizer__weight_decay']
                 if param_name in log_scale_params:
                     axes[i].set_xscale('log')
                     
@@ -365,7 +369,7 @@ def plot_convergence_analysis(study, figsize=(15, 5)):
     print("\n4. Convergence Analysis:")
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=figsize)
     
-    successful_trials = [trial for trial in study.trials if trial.value is not None]
+    successful_trials = [trial for trial in study.trials if trial.value is not None and trial.state == TrialState.COMPLETE]
     scores = [trial.value for trial in successful_trials]
     
     # Running best score
@@ -373,7 +377,7 @@ def plot_convergence_analysis(study, figsize=(15, 5)):
     current_best = -np.inf if study.direction.name == 'MAXIMIZE' else np.inf
     
     for trial in study.trials:
-        if trial.value is not None:
+        if trial.value is not None and trial.state == TrialState.COMPLETE:
             if study.direction.name == 'MAXIMIZE':
                 if trial.value > current_best:
                     current_best = trial.value
@@ -469,7 +473,7 @@ def print_best_trials_summary(study, top_n=10):
     """
     print(f"\n6. Top {top_n} Best Trials:")
     
-    valid_trials = [trial for trial in study.trials if trial.value is not None]
+    valid_trials = [trial for trial in study.trials if trial.state == TrialState.COMPLETE and trial.value is not None]
     if not valid_trials:
         print("No successful trials found.")
         return
@@ -531,7 +535,7 @@ def print_study_statistics(study):
     print(f"{'='*40}")
     
     total_trials = len(study.trials)
-    successful_trials = len([t for t in study.trials if t.value is not None])
+    successful_trials = len([t for t in study.trials if t.value is not None and t.state == TrialState.COMPLETE])
     failed_trials = len([t for t in study.trials if t.value is None])
     
     print(f"• Total trials: {total_trials}")
