@@ -1,0 +1,6 @@
+# Ignore ML models
+*.joblib
+*.pkl
+*.pyc
+models/
+checkpoints/
