@@ -2,5 +2,6 @@
 *.joblib
 *.pkl
 *.pyc
+*.bin
 models/
 checkpoints/
