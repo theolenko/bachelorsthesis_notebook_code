@@ -490,6 +490,75 @@ def bilstm_skorch_objective_epoch(trial, estimator, param_space, X, y, cv, rando
         logger.info(f"Trial {trial.number}: CV F2 Score = {mean_score:.4f} (±{np.std(fold_scores):.4f})")
     return mean_score
 
+def eurobert_skorch_objective_epoch(trial, estimator, param_space, X, y, cv, random_state, logger=None):
+    """
+    EuroBERT objective with per-epoch pruning (Skorch):
+    - identical to BiLSTM objective structure
+    - attaches OptunaPruningCallbackSkorch to report 'valid_f2' per epoch
+    - performs per-fold CV without leakage
+    - final return: mean F2@0.5 across folds
+    """
+    model = clone(estimator)
+
+    # Set trial params
+    for name, sampler in param_space.items():
+        model.set_params(**{name: sampler(trial)})
+
+    if logger:
+        logger.info(f"Trial {trial.number}: Testing parameters: "
+                    f"{ {k: model.get_params().get(k, None) for k in param_space.keys()} }")
+
+    X_arr, y_arr = np.asarray(X), np.asarray(y)
+    splitter = cv if hasattr(cv, "split") else StratifiedKFold(
+        n_splits=int(cv), shuffle=True, random_state=random_state
+    )
+
+    preproc = None  # EuroBERT has no preprocessing step
+    clf_template = model.steps[-1][1] if hasattr(model, "steps") else model
+
+    fold_scores = []
+    for fold_idx, (tr_idx, va_idx) in enumerate(splitter.split(X_arr, y_arr)):
+        X_tr, y_tr = X_arr[tr_idx], y_arr[tr_idx]
+        X_va, y_va = X_arr[va_idx], y_arr[va_idx]
+
+        # No preprocessing needed for EuroBERT (tokenization is inside the model)
+        X_tr_m, X_va_m = X_tr, X_va
+
+        clf = clone(clf_template)
+        max_epochs = clf.get_params().get("max_epochs", 5)
+        step_base = fold_idx * max_epochs
+
+        # Add pruning callback
+        existing = [cb for cb in clf.get_params().get("callbacks", [])
+                    if cb.__class__.__name__ != "OptunaPruningCallbackSkorch"]
+        clf.set_params(callbacks=existing + [
+            OptunaPruningCallbackSkorch(
+                trial,
+                monitor="valid_f2",
+                mode="max",
+                step_base=step_base,
+                logger=logger
+            )
+        ])
+
+        # Train (HF model inside Skorch)
+        clf.fit(X_tr_m, y_tr)
+
+        # Evaluate at threshold 0.5
+        y_proba = clf.predict_proba(X_va_m)[:, 1]
+        y_pred = (y_proba >= 0.5).astype(int)
+        s = fbeta_score(y_va, y_pred, beta=2, zero_division=0)
+        fold_scores.append(s)
+
+        if logger:
+            logger.info(f"Trial {trial.number}: fold {fold_idx} F2={s:.4f} (mean so far={np.mean(fold_scores):.4f})")
+
+    mean_score = float(np.mean(fold_scores))
+    if logger:
+        logger.info(f"Trial {trial.number}: CV F2 Score = {mean_score:.4f} (±{np.std(fold_scores):.4f})")
+    return mean_score
+
+
 
 # generic objective function (FALLBACK, default for logreg, svm, mnb, fasttext)
 
@@ -569,6 +638,7 @@ def get_objective_function(model_type: str):
         "fasttext": fasttext_objective,
         "bilstm": bilstm_skorch_objective_epoch,
         "centroid": centroid_objective,
+        "eurobert": eurobert_skorch_objective_epoch,
         #TODO: Add more model-specific objectives
 
         # Generic fallback objectives
