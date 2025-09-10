@@ -25,7 +25,7 @@ Usage Examples:
 import numpy as np
 from sklearn.model_selection import TunedThresholdClassifierCV, StratifiedKFold
 from sklearn.metrics import make_scorer, fbeta_score
-from sklearn.base import clone
+from sklearn.base import clone, is_classifier
 
 
 def optimize_threshold_with_cv(base_estimator, X, y, scoring='f2', cv=None, 
@@ -128,7 +128,7 @@ def optimize_threshold_with_cv(base_estimator, X, y, scoring='f2', cv=None,
     
     # Clone the base estimator to avoid modifying the original
     base_estimator_copy = clone(base_estimator)
-    
+
     # Determine threshold strategy
     if coarse_to_fine and isinstance(thresholds, int):
         # Two-stage coarse-to-fine optimization

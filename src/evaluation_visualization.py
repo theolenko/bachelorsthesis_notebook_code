@@ -1,4 +1,3 @@
-# evaluation_visualization.py
 """
 Pure visualization functions for machine learning model evaluation.
 
@@ -124,7 +123,7 @@ def get_metrics_dict(y_true, y_pred, y_prob=None):
 def plot_learning_curves(estimator, X, y, cv, 
                         metrics=DEFAULT_METRICS,
                         train_sizes=np.linspace(0.1, 1.0, 5), 
-                        figsize=(20, 15)):
+                        figsize=(20, 15), n_jobs=-1):
     """
     Displays multiple learning curves for different metrics to analyze model performance.
     
@@ -182,7 +181,7 @@ def plot_learning_curves(estimator, X, y, cv,
         scorer = scorers.get(metric, metric)  # fallback to metric name if not in scorers
         train_sizes_abs, train_scores, val_scores = learning_curve(
             estimator, X, y, cv=cv, scoring=scorer,
-            train_sizes=train_sizes, n_jobs=-1
+            train_sizes=train_sizes, n_jobs=n_jobs
         )
         
         # Calculate mean and std
@@ -384,3 +383,28 @@ def quick_f2_score_default_threshold(y_true, y_prob, threshold=0.5):
     """
     y_pred_default = (y_prob >= threshold).astype(int)
     return fbeta_score(y_true, y_pred_default, beta=2)
+
+# for neural nets loss curves
+def plot_skorch_history(net, keys=('train_loss', 'valid_loss', 'valid_f2'), figsize=(10, 6)):
+    """
+    Plot loss from skorch net.history_ for given keys.
+    Example keys (common in skorch): 'train_loss', 'valid_loss', 'valid_acc', 'valid_f2'.
+    """
+
+    # history is a list of dicts, one dict per epoch
+    hist = net.history
+    epochs = list(range(1, len(hist) + 1))
+
+    plt.figure(figsize=figsize)
+    for k in keys:
+        vals = [row[k] for row in hist if k in row]
+        if len(vals) == len(epochs):
+            plt.plot(epochs, vals, label=k)
+
+    plt.xlabel("Epoch")
+    plt.ylabel("Score / Loss")
+    plt.title("Training History (skorch)")
+    plt.grid(True)
+    plt.legend()
+    plt.tight_layout()
+    return plt.gca()

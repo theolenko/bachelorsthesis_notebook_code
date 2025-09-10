@@ -4,10 +4,22 @@ import torch.nn as nn
 from skorch import NeuralNetClassifier
 from skorch.dataset import ValidSplit
 import optuna
-from skorch.callbacks import Callback, LRScheduler, EpochScoring
+from skorch.callbacks import Callback, LRScheduler, EpochScoring, EarlyStopping
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.metrics import fbeta_score, make_scorer
 import numpy as np
+import random
+
+#try to make everything reproducible
+class SeedEverything(Callback):
+    def __init__(self, seed: int = 42):
+        self.seed = int(seed)
+
+    def on_train_begin(self, net, **kwargs):
+        random.seed(self.seed)
+        np.random.seed(self.seed)
+        torch.manual_seed(self.seed)
+        torch.cuda.manual_seed_all(self.seed)
 
 # WideMLP architecture based on Galke et al.
 # Single hidden layer with 1024 ReLU units, dropout p=0.5
@@ -50,7 +62,14 @@ def make_widemlp_skorch(
     criterion_fn=nn.CrossEntropyLoss,   
     random_state=42,
     force_cuda=True,
-    trial=None
+    trial=None,
+    # params for early stopping
+    use_early_stopping=True,
+    es_monitor="valid_f2",
+    es_patience=5, #how many epochs to wait before stopping
+    es_threshold=1e-4, #has to improve f.e 0.01 to not stop
+    es_threshold_mode="rel", #independant of scales
+    es_lower_is_better=False #maximize our f2 business metric
 ):
     """Create WideMLP wrapped by skorch.NeuralNetClassifier.
 
@@ -76,6 +95,9 @@ def make_widemlp_skorch(
                                                      monitor="valid_f2", 
                                                      mode="max"))
 
+    # try to make everything reproducible
+    callbacks.append(SeedEverything(random_state))
+
     # linear decay: linearly decaying learning rate schedule over train time
     callbacks.append(
         LRScheduler(
@@ -93,6 +115,17 @@ def make_widemlp_skorch(
         name="valid_f2",
         )
     )
+    #employ early stopping due to overfitting on small dataset
+    if use_early_stopping:
+        callbacks.append(
+            EarlyStopping(
+                monitor=es_monitor,
+                patience=es_patience,
+                threshold=es_threshold,
+                threshold_mode=es_threshold_mode,
+                lower_is_better=es_lower_is_better,
+            )
+        )
 
     net = NeuralNetClassifier(
         module=WideMLP,
@@ -108,7 +141,10 @@ def make_widemlp_skorch(
         lr=lr,
         batch_size=batch_size,
         max_epochs=max_epochs,
-
+        iterator_train__num_workers=0,
+        iterator_valid__num_workers=0,
+        iterator_train__shuffle=True,
+        iterator_train__generator=torch.Generator(device='cpu').manual_seed(random_state),
         train_split=ValidSplit(0.2, stratified=True, random_state=random_state),
         device=device,
         callbacks=callbacks,
@@ -116,6 +152,7 @@ def make_widemlp_skorch(
     )
     return net
 
+# TODO Maybe need adoption here: as it stands - mlp_obkjective AND biLSTM_objective both access this class
 class OptunaPruningCallbackSkorch(Callback):
     """
     Reports a monitored metric to Optuna at the end of each epoch and

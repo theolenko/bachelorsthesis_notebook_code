@@ -62,7 +62,7 @@ def sample_class_weight_value(
 
 
 
-# LOGGING FUNCTIONS 
+# LOGGING FUNCTIONS --------------------------------------------------------------
 
 
 def setup_logging(model_name: str, verbose: bool = False, log_to_file: bool = True):
@@ -141,7 +141,7 @@ def cleanup_logger(logger):
 
 
 
-# OBJECTIVE FUNCTIONS
+# OBJECTIVE FUNCTIONS --------------------------------------------------------------
 
 
 # MODEL-SPECIFIC OBJECTIVE FUNCTIONS
@@ -157,7 +157,6 @@ def logistic_regression_objective(trial, estimator, param_space, X, y, cv, rando
 def svm_objective(trial, estimator, param_space, X, y, cv, random_state, logger=None):
     """
     SVM specific objective with manual CV optimized for SVM training patterns.
-    TODO: Add SVM-specific optimizations (kernel caching, etc.)
     """
     return manual_cv_objective(trial, estimator, param_space, X, y, cv, random_state, logger)
 
@@ -165,7 +164,18 @@ def svm_objective(trial, estimator, param_space, X, y, cv, random_state, logger=
 def naive_bayes_objective(trial, estimator, param_space, X, y, cv, random_state, logger=None):
     """
     Naive Bayes specific objective with manual CV.
-    TODO: Add NB-specific optimizations (feature independence assumptions, etc.)
+    """
+    return manual_cv_objective(trial, estimator, param_space, X, y, cv, random_state, logger)
+
+def fasttext_objective(trial, estimator, param_space, X, y, cv, random_state, logger=None):
+    """
+    FastText specific objective with manual CV.
+    """
+    return manual_cv_objective(trial, estimator, param_space, X, y, cv, random_state, logger)
+
+def centroid_objective(trial, estimator, param_space, X, y, cv, random_state, logger=None):
+    """
+    FastText specific objective with manual CV.
     """
     return manual_cv_objective(trial, estimator, param_space, X, y, cv, random_state, logger)
 
@@ -298,8 +308,6 @@ def xgboost_objective(trial, estimator, param_space, X, y, cv, random_state, log
         logger.info(f"Trial {trial.number}: CV F2 Final Score = {mean_score:.4f} (±{np.std(fold_scores):.4f})")
     return mean_score
 
-
-
 def mlp_skorch_objective_epoch(trial, estimator, param_space, X, y, cv, random_state, logger=None):
     """
     skorch WideMLP objective with per-epoch pruning:
@@ -399,8 +407,91 @@ def mlp_skorch_objective_epoch(trial, estimator, param_space, X, y, cv, random_s
     return mean_score
 
 
+def bilstm_skorch_objective_epoch(trial, estimator, param_space, X, y, cv, random_state, logger=None):
+    """
+    skorch biLSTM objective with per-epoch pruning:
+    - similar to WideMLP objective mlp_skorch_objective_epoch
+    - per-fold preprocessing (no leakage)
+    - attach OptunaPruningCallbackSkorch (reports 'valid_f2' each epoch)
+    - NO fold-level trial.report(...) to avoid double reporting
+    - final return: mean F2@0.5 across folds (threshold tuning comes later)
+    """
+    model = clone(estimator)
 
-# GENERIC OBJECTIVE FUNCTIONS (FALLBACK, default for logreg, svm, nb)
+    # Trial hyperparams into pipeline (tfidf/select/clf)
+    for name, sampler in param_space.items():
+        model.set_params(**{name: sampler(trial)})
+
+    if logger:
+        # finale, am Modell gesetzte Werte für diesen Trial aufschreiben
+        logger.info(f"Trial {trial.number}: Testing parameters: "
+                    f"{ {k: model.get_params().get(k, None) for k in param_space.keys()} }")
+        
+    #use existing cv strategy or use default
+    X_arr, y_arr = np.asarray(X), np.asarray(y)
+    splitter = cv if hasattr(cv, "split") else StratifiedKFold(
+        n_splits=int(cv), shuffle=True, random_state=random_state
+    )
+
+    #preproc contains every pipeline step (preprocess, tfidf...) excluding the last one: clf
+    preproc = model[:-1] if hasattr(model, "steps") else None
+    # clf_template is the last step (classifier)
+    clf_template = model.steps[-1][1] if hasattr(model, "steps") else model
+
+    #cv loop over all folds
+    fold_scores = []
+    for fold_idx, (tr_idx, va_idx) in enumerate(splitter.split(X_arr, y_arr)):
+        X_tr, y_tr = X_arr[tr_idx], y_arr[tr_idx]
+        X_va, y_va = X_arr[va_idx], y_arr[va_idx]
+
+        # Fit/transform per fold (no leakage)
+        if preproc is not None:
+            P = clone(preproc)
+            X_tr_m = P.fit_transform(X_tr, y_tr)
+            X_va_m = P.transform(X_va)
+        else:
+            X_tr_m, X_va_m = X_tr, X_va
+
+        clf = clone(clf_template)
+
+        # set skorch params
+        max_epochs = clf.get_params().get("max_epochs", 100)
+        step_base = fold_idx * max_epochs  
+
+        existing = [cb for cb in clf.get_params().get("callbacks", [])
+                    if cb.__class__.__name__ != "OptunaPruningCallbackSkorch"]
+
+        clf.set_params(callbacks=existing + [
+            OptunaPruningCallbackSkorch(trial, 
+                                        monitor="valid_f2", 
+                                        mode="max", 
+                                        step_base=step_base,
+                                        logger=logger
+                                        )
+        ])
+
+        # train (callback may prune inside fit)
+        clf.fit(X_tr_m, y_tr)
+
+        # fold score: F2 on the outer CV validation split, threshold=0.5
+        # threshold tuning is done later separately
+        y_proba = clf.predict_proba(X_va_m)[:, 1]
+        y_pred = (y_proba >= 0.5).astype(int)
+        s = fbeta_score(y_va, y_pred, beta=2, zero_division=0)
+        fold_scores.append(s)
+
+        if logger:
+            logger.info(f"Trial {trial.number}: fold {fold_idx} F2={s:.4f} (mean so far={np.mean(fold_scores):.4f})")
+
+
+    # report mean F2 for this fold (per-epoch pruning already handled)
+    mean_score = float(np.mean(fold_scores))
+    if logger:
+        logger.info(f"Trial {trial.number}: CV F2 Score = {mean_score:.4f} (±{np.std(fold_scores):.4f})")
+    return mean_score
+
+
+# generic objective function (FALLBACK, default for logreg, svm, mnb, fasttext)
 
 def manual_cv_objective(trial, estimator, param_space, X, y, cv, random_state, logger=None):
     """
@@ -475,6 +566,9 @@ def get_objective_function(model_type: str):
         "naive_bayes": naive_bayes_objective,
         "xgboost": xgboost_objective,
         "mlp": mlp_skorch_objective_epoch,
+        "fasttext": fasttext_objective,
+        "bilstm": bilstm_skorch_objective_epoch,
+        "centroid": centroid_objective,
         #TODO: Add more model-specific objectives
 
         # Generic fallback objectives
@@ -513,7 +607,7 @@ def validate_and_filter_params(estimator, best_params):
 
 
 
-# MAIN OPTIMIZATION FUNCTIONS
+# MAIN OPTIMIZATION FUNCTIONS --------------------------------------------------------------
 
 
 def optimize_with_optuna_tpe(
@@ -640,7 +734,8 @@ def grid_search_with_optuna(
     # Logging
     verbose: bool = False,
     log_to_file: bool = True,
-    model_name: str = "grid_model"
+    model_name: str = "grid_model",
+    n_jobs: int = -1
 ):
     """
     Exhaustive grid search using Optuna's GridSampler.
@@ -674,13 +769,13 @@ def grid_search_with_optuna(
     def objective(trial):
         model = clone(estimator)
 
-        # 1) Collect all trial params (no set_params yet)
+        #  Collect all trial params (no set_params yet)
         trial_params = {}
         for pname, values in param_grid.items():
             val = trial.suggest_categorical(pname, values)
             trial_params[pname] = val
 
-        # 2) Special handling: mlp_pos_weight -> clf__criterion__weight (torch tensor)
+        #  Special handling: mlp_pos_weight -> clf__criterion__weight (torch tensor)
         if "mlp_pos_weight" in trial_params:
             w = float(trial_params.pop("mlp_pos_weight"))
             trial_params["clf__criterion__weight"] = torch.tensor(
@@ -692,15 +787,21 @@ def grid_search_with_optuna(
             if k.endswith("class_weight") and isinstance(v, (int, float)):
                 trial_params[k] = {0: 1, 1: int(v)}
 
-        # 3) Now set all params once
+        # Special handling if subword_combo was selected for fastText
+        if "subword_combo" in trial_params:
+            minn, maxn = trial_params.pop("subword_combo")
+            trial_params["clf__minn"] = minn
+            trial_params["clf__maxn"] = maxn
+
+        #  Now set all params once
         model.set_params(**trial_params)
 
         if logger:
             logger.info(f"Trial {trial.number}: Testing parameters: {trial_params}")
 
-        # 4) CV evaluation (F2)
+        #  CV evaluation (F2)
         scorer = make_scorer(fbeta_score, beta=2, zero_division=0)
-        scores = cross_val_score(model, X, y, cv=cv, scoring=scorer, n_jobs=-1)
+        scores = cross_val_score(model, X, y, cv=cv, scoring=scorer, n_jobs=n_jobs)
         mean_score = float(np.mean(scores))
 
         if logger:
@@ -747,7 +848,6 @@ def grid_search_with_optuna(
         n_features = int(X_full.shape[1])
         best_model.set_params(clf__module__in_features=n_features)
     best_model.fit(X, y)
-    #------------------------------------------------------------------
 
     # Complete logging and cleanup
     log_optimization_completion(logger, study, valid_pipeline_params)
