@@ -77,6 +77,20 @@ def _clean_basic(text: str) -> str:
     # Example: 'Hello WORLD' -> 'hello world'
     text = text.lower()
 
+    # 3b. Remove emojis
+    emoji_pattern = re.compile(
+        "[" 
+        u"\U0001F600-\U0001F64F"  # Emoticons
+        u"\U0001F300-\U0001F5FF"  # Symbols & Pictographs
+        u"\U0001F680-\U0001F6FF"  # Transport & Map
+        u"\U0001F1E0-\U0001F1FF"  # Flags
+        u"\U00002700-\U000027BF"  # Dingbats
+        u"\U0001F900-\U0001F9FF"  # Supplemental Symbols and Pictographs
+        "]+", 
+        flags=re.UNICODE
+    )
+    text = emoji_pattern.sub(" ", text)
+
     # 4. Reconstruct separated letter sequences
     # Example: 's t r u c t u r e' -> 'structure'
     #          'b a s i c   t e x t' -> 'basic text'

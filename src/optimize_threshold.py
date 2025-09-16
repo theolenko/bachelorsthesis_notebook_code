@@ -27,10 +27,34 @@ from sklearn.model_selection import TunedThresholdClassifierCV, StratifiedKFold
 from sklearn.metrics import make_scorer, fbeta_score
 from sklearn.base import clone, is_classifier
 
+class DummyTuned:
+    """A lightweight drop-in replacement for TunedThresholdClassifierCV.
+    Stores only threshold + score + estimator and mimics predict/predict_proba.
+    """
+    def __init__(self, best_threshold, best_score, estimator):
+        self.best_threshold_ = best_threshold
+        self.best_score_ = best_score
+        self.estimator_ = estimator
 
-def optimize_threshold_with_cv(base_estimator, X, y, scoring='f2', cv=None, 
-                              thresholds=50, coarse_to_fine=True, fine_range_factor=0.15,
-                              n_jobs=-1, random_state=42):
+    def predict_proba(self, X):
+        return self.estimator_.predict_proba(X)
+
+    def predict(self, X):
+        probas = self.predict_proba(X)[:, 1]
+        return (probas >= self.best_threshold_).astype(int)
+
+
+
+def optimize_threshold_with_cv(base_estimator, 
+                               X, y, 
+                               scoring='f2', 
+                               cv=None, 
+                               thresholds=50, 
+                               coarse_to_fine=True, 
+                               fine_range_factor=0.15,
+                               n_jobs=-1, 
+                               random_state=42,
+                               retrain=True):
     """
     Optimizes classification threshold using TunedThresholdClassifierCV with proper nested CV.
     
@@ -126,15 +150,15 @@ def optimize_threshold_with_cv(base_estimator, X, y, scoring='f2', cv=None,
     else:
         scorer = scoring  # Assume it's already a valid scorer
     
-    # Clone the base estimator to avoid modifying the original
-    base_estimator_copy = clone(base_estimator)
+    # Only clone if retrain=True, otherwise reuse the fitted estimator (important for heavy models like EuroBERT)
+    base_estimator_copy = clone(base_estimator) if retrain else base_estimator
 
     # Determine threshold strategy
     if coarse_to_fine and isinstance(thresholds, int):
         # Two-stage coarse-to-fine optimization
         tuned_estimator = _optimize_coarse_to_fine(
             base_estimator_copy, X, y, scorer, cv, thresholds, 
-            fine_range_factor, n_jobs, random_state
+            fine_range_factor, n_jobs, random_state, retrain=retrain
         )
     else:
         # Standard single-stage optimization
@@ -299,8 +323,16 @@ def _evaluate_thresholds_for_viz(y_true, y_scores, thresholds):
     return results
 
 
-def _optimize_coarse_to_fine(base_estimator, X, y, scorer, cv, n_thresholds, 
-                            fine_range_factor, n_jobs, random_state):
+def _optimize_coarse_to_fine(base_estimator, 
+                             X, 
+                             y, 
+                             scorer, 
+                             cv, 
+                             n_thresholds, 
+                            fine_range_factor, 
+                            n_jobs, 
+                            random_state,
+                            retrain=True):
     """
     Two-stage coarse-to-fine threshold optimization.
     
@@ -308,37 +340,56 @@ def _optimize_coarse_to_fine(base_estimator, X, y, scorer, cv, n_thresholds,
     Stage 2: Fine scan around optimum from stage 1
     """
     
-    # Stage 1: Coarse scan over entire possible range
-    # Get score range by fitting estimator on full data temporarily
-    temp_estimator = clone(base_estimator)
-    temp_estimator.fit(X, y)
-    
-    if hasattr(temp_estimator, 'predict_proba'):
-        temp_scores = temp_estimator.predict_proba(X)[:, 1]
-        # For probabilities, use slightly wider range than [0,1] to catch edge cases
-        score_min, score_max = -0.1, 1.1
-    elif hasattr(temp_estimator, 'decision_function'):
-        temp_scores = temp_estimator.decision_function(X)
-        # For decision function, use actual score range with some padding
-        score_min = temp_scores.min() - 0.1 * abs(temp_scores.min())
-        score_max = temp_scores.max() + 0.1 * abs(temp_scores.max())
+    if retrain:
+        # Stage 1: Coarse scan over entire possible range
+        # Get score range by fitting estimator on full data temporarily
+        temp_estimator = clone(base_estimator)
+        temp_estimator.fit(X, y)
+        if hasattr(temp_estimator, 'predict_proba'):
+            temp_scores = temp_estimator.predict_proba(X)[:, 1]
+            score_min, score_max = -0.1, 1.1
+        elif hasattr(temp_estimator, 'decision_function'):
+            temp_scores = temp_estimator.decision_function(X)
+            score_min = temp_scores.min() - 0.1 * abs(temp_scores.min())
+            score_max = temp_scores.max() + 0.1 * abs(temp_scores.max())
+        else:
+            raise ValueError("Estimator must have predict_proba or decision_function method")
     else:
-        raise ValueError("Estimator must have predict_proba or decision_function method")
+        # Shortcut for big models as EuroBERT
+        if hasattr(base_estimator, 'predict_proba'):
+            temp_scores = base_estimator.predict_proba(X)[:, 1]
+            score_min, score_max = 0.0, 1.0
+        elif hasattr(base_estimator, 'decision_function'):
+            temp_scores = base_estimator.decision_function(X)
+            score_min, score_max = temp_scores.min(), temp_scores.max()
+        else:
+            raise ValueError("Estimator must have predict_proba or decision_function method")
+
     
     # Stage 1: Coarse thresholds
     coarse_thresholds = np.linspace(score_min, score_max, n_thresholds)
     
-    coarse_estimator = TunedThresholdClassifierCV(
-        estimator=clone(base_estimator),
-        scoring=scorer,
-        cv=cv,
-        thresholds=coarse_thresholds,
-        n_jobs=n_jobs
-    )
-    coarse_estimator.fit(X, y)
-    
-    # Stage 2: Fine scan around coarse optimum
-    coarse_optimum = coarse_estimator.best_threshold_
+    if retrain:
+        coarse_estimator = TunedThresholdClassifierCV(
+            estimator=clone(base_estimator),
+            scoring=scorer,
+            cv=cv,
+            thresholds=coarse_thresholds,
+            n_jobs=n_jobs
+        )
+        coarse_estimator.fit(X, y)
+        coarse_optimum = coarse_estimator.best_threshold_
+    else:
+        # shortcut: no retraining, just use scores of fitted model
+        scores = base_estimator.predict_proba(X)[:, 1]
+        from sklearn.metrics import fbeta_score
+        best_t, best_s = None, -1
+        for t in coarse_thresholds:
+            preds = (scores >= t).astype(int)
+            s = fbeta_score(y, preds, beta=2, zero_division=0)
+            if s > best_s:
+                best_s, best_t = s, t
+        coarse_optimum = best_t
     total_range = score_max - score_min
     fine_range = total_range * fine_range_factor
     
@@ -355,14 +406,28 @@ def _optimize_coarse_to_fine(base_estimator, X, y, scorer, cv, n_thresholds,
     fine_thresholds = np.linspace(fine_min, fine_max, n_thresholds)
     
     # Final optimization with fine thresholds
-    fine_estimator = TunedThresholdClassifierCV(
-        estimator=clone(base_estimator),
-        scoring=scorer,
-        cv=cv,
-        thresholds=fine_thresholds,
-        n_jobs=n_jobs
-    )
-    fine_estimator.fit(X, y)
-    
-    return fine_estimator
+    if retrain:
+        fine_estimator = TunedThresholdClassifierCV(
+            estimator=clone(base_estimator),
+            scoring=scorer,
+            cv=cv,
+            thresholds=fine_thresholds,
+            n_jobs=n_jobs
+        )
+        fine_estimator.fit(X, y)
+        return fine_estimator
+    else:
+        # shortcut: manual threshold scan without retraining
+        scores = base_estimator.predict_proba(X)[:, 1]
+        from sklearn.metrics import fbeta_score
+        best_t, best_s = None, -1
+        for t in fine_thresholds:
+            preds = (scores >= t).astype(int)
+            s = fbeta_score(y, preds, beta=2, zero_division=0)
+            if s > best_s:
+                best_s, best_t = s, t
+
+    return DummyTuned(best_t, best_s, base_estimator)
+
+
 
