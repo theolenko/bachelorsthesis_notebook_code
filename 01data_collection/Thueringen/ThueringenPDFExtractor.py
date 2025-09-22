@@ -12,9 +12,7 @@ from multi_column import column_boxes
 
 # priorisierte Filterliste für große Dateien
 IMPORTANT_FILTERS = {
-    "vng", "verbundnetz gas", "ontras", "heitmüller",
-    "kaltefleiter", "lng", "wasserstoff", "biomethan", 
-    "biogas", "erdgas", "co2", "kernnetz"
+
 }
 
 # Logging
