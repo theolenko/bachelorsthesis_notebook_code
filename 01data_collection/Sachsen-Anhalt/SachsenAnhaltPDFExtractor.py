@@ -14,9 +14,7 @@ from multi_column import column_boxes
 
 #priorisierte Filterliste für große Dateien
 IMPORTANT_FILTERS = {
-    "vng", "skw", "verbundnetz gas", "ontras", "heimüller",
-    "kaltefleiter", "lng", "wasserstoff", "mibrag",
-    "energiepark", "biomethan", "biogas", "erdgas"
+
 }
 
 # Logging-Konfiguration
